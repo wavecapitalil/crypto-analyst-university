@@ -102,7 +102,7 @@ export function bindInteractions() {
                 const answers = level.topics.map((_, i) => document.querySelector(`#ce_a_${n}_${i}`)?.value || '');
                 const oral = document.querySelector(`#oral_${n}`)?.value || '';
                 const g = gradeChapter(level, scores);
-                progressStore.setChapter(n, { attempted: true, passed: g.passed, avg: g.avg, scores, answers, oral, date: new Date().toISOString() });
+                progressStore.setChapter(n, { attempted: true, passed: g.passed, avg: g.avg, scores: g.scores, answers, oral, date: new Date().toISOString() });
                 const out = document.querySelector('#gradeOut');
                 if (out)
                     out.innerHTML = ` <b class="${g.passed ? 'ok' : 'warn'}">${g.avg}% — ${g.passed ? 'PASSED' : 'REVIEW REQUIRED'}</b>`;
@@ -154,7 +154,7 @@ export function bindInteractions() {
             case 'checkpoint': progressStore.setCheck(Number(el.dataset.level), Number(el.dataset.topic), Number(el.dataset.check), el.checked); render(); break;
             case 'topic-score': progressStore.setTopicScore(Number(el.dataset.level), Number(el.dataset.topic), Number(el.value)); render(); break;
             case 'note': progressStore.setNote(el.dataset.key || '', el.value); break;
-            case 'case-answer': progressStore.setCase(Number(el.dataset.case), el.value); break;
+            case 'case-answer': progressStore.setCase(el.dataset.case || '', el.value); break;
         }
     });
     document.addEventListener('input', e => {
