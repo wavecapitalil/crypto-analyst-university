@@ -28,7 +28,7 @@ for(const s of manifest.levels||[]){
   topics+=l.topics?.length||0;
   if(!Array.isArray(s.topicIds)||s.topicIds.length!==s.topicCount)fail.push(`stable topic ids mismatch L${s.n}`);
   else for(const [i,id] of s.topicIds.entries()){
-    if(typeof id!=='string'||!/^L\\d{2}\\.T\\d{2}$/.test(id))fail.push(`invalid stable topic id ${id} at L${s.n}:${i}`);
+    if(typeof id!=='string'||!/^L\d{2}\.T\d{2}$/.test(id))fail.push(`invalid stable topic id ${id} at L${s.n}:${i}`);
     if(topicIds.has(id))fail.push(`duplicate stable topic id ${id}`);
     topicIds.add(id);
   }
