@@ -2,7 +2,7 @@ import { emptyProgress } from './schema.js';
 import { migrateProgress } from './migrations.js';
 const KEY = 'wave_crypto_uni_v10';
 const LEGACY = ['wave_crypto_uni_v7'];
-const MAX_IMPORT_BYTES = 5000000;
+const MAX_IMPORT_BYTES = 5_000_000;
 let memory = null;
 function get(k) { try {
     return localStorage.getItem(k);
