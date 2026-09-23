@@ -1,6 +1,6 @@
 import type {StudentProfile,StudentSession} from '../../types/auth.js';
 import {backendConfigured} from '../../config/runtime.js';
-import {fetchProfile,refreshSession,signIn,signOut,signUp} from '../../services/supabase.js';
+import {fetchCurrentUser,fetchProfile,refreshSession,signIn,signOut,signUp} from '../../services/supabase.js';
 
 const KEY='wave_crypto_uni_student_session_v1';
 type Listener=()=>void;
@@ -20,6 +20,19 @@ class AuthStore{
   async init(){
     this.configured=await backendConfigured();
     if(!this.configured){this.emit();return}
+    const callback=new URLSearchParams(location.hash.startsWith('#')?location.hash.slice(1):location.hash);
+    const accessToken=callback.get('access_token');
+    const refreshToken=callback.get('refresh_token');
+    if(accessToken&&refreshToken){
+      try{
+        const user=await fetchCurrentUser(accessToken);
+        this.session={accessToken,refreshToken,expiresAt:Date.now()+Number(callback.get('expires_in')||3600)*1000,user};
+        this.persist();
+        this.profile=await fetchProfile(this.session);
+        this.message='האימייל אומת בהצלחה והחשבון מחובר.';
+        history.replaceState(null,'',location.pathname+location.search+'#/student');
+      }catch(e){this.error=e instanceof Error?e.message:'Email confirmation failed'}
+    }
     try{
       const raw=localStorage.getItem(KEY);
       if(raw)this.session=JSON.parse(raw);
