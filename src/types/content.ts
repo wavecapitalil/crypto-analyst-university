@@ -17,7 +17,7 @@ export interface Level {
   academy?: {letter?: string}; prereq?: number[]; exam?: string; source_refs: string[]; [key:string]: unknown;
 }
 export interface LevelSummary {
-  n:number; id?:string; title:string; domain:string; obj:string; topicCount:number;
+  n:number; id?:string; title:string; domain:string; obj:string; topicCount:number; topicIds?:string[];
   academy?: {letter?: string}; prereq?: number[]; exam?: string; source_refs?: string[];
 }
 export interface AcademyDefinition { letter:string; title:string; levelIds:number[] }
