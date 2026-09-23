@@ -85,7 +85,7 @@ export function bindInteractions(){
         const answers=level.topics.map((_,i)=>(document.querySelector(`#ce_a_${n}_${i}`) as HTMLTextAreaElement)?.value||'');
         const oral=(document.querySelector(`#oral_${n}`) as HTMLTextAreaElement)?.value||'';
         const g=gradeChapter(level,scores);
-        progressStore.setChapter(n,{attempted:true,passed:g.passed,avg:g.avg,scores,answers,oral,date:new Date().toISOString()});
+        progressStore.setChapter(n,{attempted:true,passed:g.passed,avg:g.avg,scores:g.scores,answers,oral,date:new Date().toISOString()});
         const out=document.querySelector('#gradeOut');if(out)out.innerHTML=` <b class="${g.passed?'ok':'warn'}">${g.avg}% — ${g.passed?'PASSED':'REVIEW REQUIRED'}</b>`;
         break;
       }
@@ -106,7 +106,7 @@ export function bindInteractions(){
       case'checkpoint':progressStore.setCheck(Number(el.dataset.level),Number(el.dataset.topic),Number(el.dataset.check),(el as HTMLInputElement).checked);render();break;
       case'topic-score':progressStore.setTopicScore(Number(el.dataset.level),Number(el.dataset.topic),Number((el as HTMLInputElement).value));render();break;
       case'note':progressStore.setNote(el.dataset.key||'',el.value);break;
-      case'case-answer':progressStore.setCase(Number(el.dataset.case),el.value);break;
+      case'case-answer':progressStore.setCase(el.dataset.case||'',el.value);break;
     }
   });
   document.addEventListener('input',e=>{const target=e.target as HTMLElement;const tool=target.closest<HTMLElement>('.tool[data-tool]');if(tool)calculate(tool)});
