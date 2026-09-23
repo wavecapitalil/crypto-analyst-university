@@ -103,8 +103,8 @@ export function bindInteractions(){
   document.addEventListener('change',e=>{
     const el=e.target as HTMLInputElement|HTMLTextAreaElement;
     switch(el.dataset.action){
-      case'checkpoint':progressStore.setCheck(Number(el.dataset.level),Number(el.dataset.topic),Number(el.dataset.check),(el as HTMLInputElement).checked);render();break;
-      case'topic-score':progressStore.setTopicScore(Number(el.dataset.level),Number(el.dataset.topic),Number((el as HTMLInputElement).value));render();break;
+      case'checkpoint':progressStore.setCheck(Number(el.dataset.level),Number(el.dataset.topic),Number(el.dataset.check),(el as HTMLInputElement).checked,el.dataset.topicId);render();break;
+      case'topic-score':progressStore.setTopicScore(Number(el.dataset.level),Number(el.dataset.topic),Number((el as HTMLInputElement).value),el.dataset.topicId);render();break;
       case'note':progressStore.setNote(el.dataset.key||'',el.value);break;
       case'case-answer':progressStore.setCase(el.dataset.case||'',el.value);break;
     }
