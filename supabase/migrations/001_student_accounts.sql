@@ -31,7 +31,7 @@ drop policy if exists "profiles_update_own" on public.profiles;
 create policy "profiles_update_own"
 on public.profiles for update
 using (auth.uid() = user_id)
-with check (auth.uid() = user_id and role = (select p.role from public.profiles p where p.user_id = auth.uid()));
+with check (auth.uid() = user_id);
 
 drop policy if exists "progress_select_own" on public.student_progress;
 create policy "progress_select_own"
@@ -102,5 +102,6 @@ for each row execute function public.handle_new_student();
 
 revoke all on public.profiles from anon;
 revoke all on public.student_progress from anon;
-grant select, update on public.profiles to authenticated;
+grant select on public.profiles to authenticated;
+grant update(full_name) on public.profiles to authenticated;
 grant select, insert, update on public.student_progress to authenticated;
