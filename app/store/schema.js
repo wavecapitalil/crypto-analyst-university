@@ -56,5 +56,7 @@ export function normalizeProgress(raw) {
     };
     if (typeof raw.lastVisited === 'string' && raw.lastVisited.startsWith('/'))
         state.lastVisited = raw.lastVisited;
+    if (typeof raw.updatedAt === 'string' && !Number.isNaN(Date.parse(raw.updatedAt)))
+        state.updatedAt = raw.updatedAt;
     return state;
 }
