@@ -1,0 +1,49 @@
+
+
+
+
+
+/* v8 Professor Mode */
+.lecture-stage{background:linear-gradient(135deg,#0b1b2c,#102b45);border:1px solid #2b587b;border-radius:20px;padding:22px;margin:20px 0}
+
+.lecture-stage h2{margin-top:0;color:#d5ebff}
+.lecture-stage h3{color:#aed9ff;margin-bottom:8px}
+.lecture-stage p{line-height:1.9;color:#d3dfeb}
+
+.lecture-step{background:#071827;border:1px solid #23455f;border-radius:14px;padding:16px;margin:12px 0;line-height:1.85}
+
+.lecture-step strong{color:#bfe3ff}
+.concept-map{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:14px 0}
+.concept-node{background:#0a2237;border:1px solid #2c5f86;border-radius:999px;padding:7px 11px;font-size:13px}
+.concept-arrow{color:#6ea9d8;font-weight:900}
+.prof-note{background:#211b12;border:1px solid #5f4d2a;border-right:4px solid #ffc857;border-radius:12px;padding:14px;line-height:1.8;color:#f6e4bd}
+.foundation-check{background:#101d17;border:1px solid #315b43;border-right:4px solid #48d18a;border-radius:12px;padding:14px;line-height:1.75}
+.layer-divider{display:flex;align-items:center;gap:10px;margin:34px 0 14px;color:#9ccdf4;font-weight:900}
+.layer-divider:before,.layer-divider:after{content:"";height:1px;background:#23445e;flex:1}
+.lecture-badge{display:inline-block;padding:5px 9px;border-radius:999px;background:#173b58;color:#cce9ff;font-size:12px;font-weight:850;margin-left:6px}
+
+
+
+/* v9 Professor First */
+.professor-full{background:linear-gradient(145deg,#081827,#0d2740 70%,#0a1e31);border:1px solid #315d7e;border-radius:22px;padding:24px;margin:18px 0 28px}
+.professor-full .lecture-title{font-size:clamp(28px,4vw,46px);margin:8px 0 6px;color:#eef8ff}
+.professor-full .lecture-subtitle{color:#a9c7df;line-height:1.8;max-width:1050px}
+.professor-full .teach-card{background:#071522;border:1px solid #23445d;border-radius:14px;padding:17px;margin:13px 0;line-height:1.95}
+.professor-full .teach-card h3{margin:0 0 8px;color:#b9ddfb;font-size:20px}
+.professor-full .teach-card p{margin:7px 0;color:#d6e2ed}
+.professor-full .teach-card ul,.professor-full .teach-card ol{line-height:1.9}
+.professor-full .teacher-voice{border-right:4px solid #58d7e8}
+.professor-full .mechanism-v9{border-right:4px solid #b99cff}
+.professor-full .worked-v9{border-right:4px solid #48d18a}
+.professor-full .limits-v9{border-right:4px solid #ff6f82}
+.professor-full .investment-v9{border-right:4px solid #ffc857}
+.professor-full .teachback-v9{border-right:4px solid #7ee6a8;background:#0a2119}
+.professor-full .lecture-path{display:flex;gap:7px;flex-wrap:wrap;margin:14px 0 18px}
+.professor-full .lecture-path span{border:1px solid #315a78;background:#0a2135;border-radius:999px;padding:6px 10px;color:#b9dcf6;font-size:12px;font-weight:800}
+.professor-full .keyline{font-size:19px;font-weight:850;color:#eaf6ff;margin:8px 0}
+.professor-full .teacher-note{background:#1e1a12;border:1px solid #5b4c2b;border-radius:12px;padding:14px;color:#f0dfb7;line-height:1.8}
+.professor-full .bridge{background:#0b2033;border:1px solid #2d5878;border-radius:12px;padding:14px;margin-top:15px}
+.chapter-lecture-v9{background:linear-gradient(145deg,#0a1928,#102c45);border:1px solid #315c7d;border-radius:22px;padding:24px;margin:18px 0 26px}
+.chapter-lecture-v9 .chapter-step{background:#071522;border:1px solid #22445e;border-radius:14px;padding:16px;margin:12px 0;line-height:1.9}
+.chapter-lecture-v9 h2{margin:5px 0 12px;color:#d9efff}
+.chapter-lecture-v9 h3{color:#b6dbf7}

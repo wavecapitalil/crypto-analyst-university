@@ -1,0 +1,2 @@
+import test from 'node:test';import assert from 'node:assert/strict';import fs from 'node:fs';
+const m=JSON.parse(fs.readFileSync(new URL('../content/manifest.json',import.meta.url),'utf8'));test('curriculum has 50 levels and 247 topics',()=>{assert.equal(m.levels.length,50);assert.equal(m.levels.reduce((a,l)=>a+l.topicCount,0),247)});test('levels are ordered 0..49',()=>assert.deepEqual(m.levels.map(l=>l.n),Array.from({length:50},(_,i)=>i)));

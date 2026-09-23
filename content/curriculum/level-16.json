@@ -1,0 +1,294 @@
+{
+  "n": 16,
+  "title": "מבחן ה-$50M Fork",
+  "domain": "Moats",
+  "obj": "לבדוק אם מתחרה ממומן יכול לקנות את ה-share",
+  "topics": [
+    {
+      "name": "Forkable vs Unforkable",
+      "definition": "code מול state/liquidity/brand",
+      "method": "בנה evidence table והצלב לפחות שני מקורות.",
+      "trap": "אל תסיק מסקנה מנתון יחיד.",
+      "exercise": "יישם Forkable vs Unforkable על טוקן שלא חקרת קודם.",
+      "formula": "",
+      "deep": {
+        "why": "ב-Level הזה, Forkable vs Unforkable הוא לא פרט טכני אלא חוליה בשרשרת ההחלטה. השאלה אינה רק 'מה המספר?', אלא האם הוא משנה את ההבנה שלנו לגבי איכות העסק, לכידת הערך, עוצמת הביקוש, הסיכון או מה שכבר מתומחר.",
+        "mental": "Open source מחליש code moat; החפיר לרוב נמצא בנזילות, הפצה, integrations, data, security record, users או regulatory access.",
+        "workflow": [
+          "הגדר במילים שלך את המשתנה ואת היחידות שלו לפני שאתה פותח Dashboard.",
+          "בנה evidence table והצלב לפחות שני מקורות.",
+          "אמת לפחות מול מקור נוסף או raw on-chain evidence כאשר אפשר.",
+          "אסוף את שדות הבסיס: Market share, Retention, Depth/slippage, Integrations, Active developers/apps, Switching cost.",
+          "הפרד Level נוכחי, שינוי לאורך זמן ויחס ל-Peer Group.",
+          "כתוב לפחות הסבר אלטרנטיבי אחד לאותה תצפית.",
+          "תרגם את התוצאה להשפעה על Thesis / Valuation / Risk — או ציין שאין השפעה.",
+          "הגדר מראש מה היה גורם לך לשנות את המסקנה."
+        ],
+        "interpret": [
+          "חפיר אמיתי צריך להיות measurable ולהחזיק גם כשהתמריצים מנורמלים.",
+          "השתמש ב-30d/90d/365d כאשר המדד משתנה מהר; בנושאים מבניים השתמש גם ב-history ארוך יותר.",
+          "אל תעשה annualize לתקופת קיצון בלי להציג normalized case.",
+          "כאשר denominator או source methodology לא יציבים, הצג Range ולא מספר יחיד."
+        ],
+        "red": [
+          "אל תסיק מסקנה מנתון יחיד.",
+          "מה ניתן להעתיק?",
+          "מה ניתן לקנות בכסף?",
+          "איזה KPI יראה שהחפיר נשחק?"
+        ],
+        "evidence": "סטנדרט הראיות: מקור ראשוני/חוזה/Docs כאשר אפשר; ספק נתונים עם definition; Cross-check עצמאי; As-of date; confidence; ו-alternative explanation. כאשר שני מקורות חולקים — לא ממוצעים אוטומטית, אלא מיישבים הגדרות.",
+        "analyst_output": "ב-Investment Memo אל תדביק רק את המספר. כתוב: נתון → הגדרה → מקור → Peer/Historical context → Interpretation → Impact on thesis → Falsifier.",
+        "learning_outcomes": [
+          "אני יכול להסביר Forkable vs Unforkable ללא jargon ובמשפט אחד.",
+          "אני יכול למדוד/לחשב Forkable vs Unforkable עם denominator והגדרה נכונים.",
+          "אני יכול לזהות לפחות 3 דרכים שבהן Forkable vs Unforkable עלול להטעות.",
+          "אני יכול לחבר את הנתון ל-Thesis או להסביר למה הוא לא רלוונטי.",
+          "פתרתי את התרגיל ועניתי על Micro Exam לפני שחשפתי את ה-Rubric."
+        ],
+        "exam": [
+          "הגדרה: מה בדיוק Forkable vs Unforkable מודד — ומה הוא במפורש לא מודד?",
+          "יישם Forkable vs Unforkable על טוקן שלא חקרת קודם.",
+          "Adversarial: תן שני מצבים שבהם Forkable vs Unforkable נראה חיובי אך המסקנה ההשקעתית דווקא שלילית."
+        ],
+        "rubric": [
+          "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי.",
+          "שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי.",
+          "לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "חיבור מפורש ל-business/token/valuation/risk במקום קביעה שורית/דובית אוטומטית."
+        ],
+        "source_refs": [
+          "S12",
+          "S13",
+          "S09",
+          "S05",
+          "S03"
+        ],
+        "formula": "",
+        "exercise": "יישם Forkable vs Unforkable על טוקן שלא חקרת קודם.",
+        "definition": "code מול state/liquidity/brand",
+        "critical": false,
+        "data_pull": [
+          "Raw value / absolute level",
+          "30d / 90d / 365d change when applicable",
+          "Historical percentile or regime context",
+          "Peer median / best-in-class comparison",
+          "Source definition + as-of date",
+          "Confidence level + alternative explanation"
+        ],
+        "institutional_questions": [
+          "מה המשתנה Forkable vs Unforkable אומר על העסק/הרשת — לפני הטוקן?",
+          "האם יש transmission אמיתי מהמשתנה לערך הטוקן?",
+          "האם התצפית נובעת ממחיר, תמריצים, leverage, accounting או פעילות אורגנית?",
+          "איזה denominator או cohort ישנה את המסקנה?",
+          "מה השוק כנראה כבר מתמחר מתוך הנתון הזה?",
+          "איזה נתון עתידי יפריך את הפרשנות שלי?"
+        ],
+        "memo_template": "Observation: [הנתון של Forkable vs Unforkable] | Definition: [...] | As-of: [...] | Peer/History: [...] | Interpretation: [...] | Token impact: [...] | Alternative explanation: [...] | Falsifier: [...] | Confidence: High/Medium/Low.",
+        "worked_example": {
+          "prompt": "יישם Forkable vs Unforkable על טוקן שלא חקרת קודם.",
+          "solution": "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי. שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי. לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "lesson": "המטרה אינה להגיע למספר בלבד; צריך להסביר מה המספר כן ולא מוכיח, ואיך הוא משנה את ההסתברות של התזה."
+        }
+      }
+    },
+    {
+      "name": "Subsidisable vs Unsubsidisable",
+      "definition": "rented share",
+      "method": "בנה evidence table והצלב לפחות שני מקורות.",
+      "trap": "אל תסיק מסקנה מנתון יחיד.",
+      "exercise": "יישם Subsidisable vs Unsubsidisable על טוקן שלא חקרת קודם.",
+      "formula": "",
+      "deep": {
+        "why": "ב-Level הזה, Subsidisable vs Unsubsidisable הוא לא פרט טכני אלא חוליה בשרשרת ההחלטה. השאלה אינה רק 'מה המספר?', אלא האם הוא משנה את ההבנה שלנו לגבי איכות העסק, לכידת הערך, עוצמת הביקוש, הסיכון או מה שכבר מתומחר.",
+        "mental": "Open source מחליש code moat; החפיר לרוב נמצא בנזילות, הפצה, integrations, data, security record, users או regulatory access.",
+        "workflow": [
+          "הגדר במילים שלך את המשתנה ואת היחידות שלו לפני שאתה פותח Dashboard.",
+          "בנה evidence table והצלב לפחות שני מקורות.",
+          "אמת לפחות מול מקור נוסף או raw on-chain evidence כאשר אפשר.",
+          "אסוף את שדות הבסיס: Market share, Retention, Depth/slippage, Integrations, Active developers/apps, Switching cost.",
+          "הפרד Level נוכחי, שינוי לאורך זמן ויחס ל-Peer Group.",
+          "כתוב לפחות הסבר אלטרנטיבי אחד לאותה תצפית.",
+          "תרגם את התוצאה להשפעה על Thesis / Valuation / Risk — או ציין שאין השפעה.",
+          "הגדר מראש מה היה גורם לך לשנות את המסקנה."
+        ],
+        "interpret": [
+          "חפיר אמיתי צריך להיות measurable ולהחזיק גם כשהתמריצים מנורמלים.",
+          "השתמש ב-30d/90d/365d כאשר המדד משתנה מהר; בנושאים מבניים השתמש גם ב-history ארוך יותר.",
+          "אל תעשה annualize לתקופת קיצון בלי להציג normalized case.",
+          "כאשר denominator או source methodology לא יציבים, הצג Range ולא מספר יחיד."
+        ],
+        "red": [
+          "אל תסיק מסקנה מנתון יחיד.",
+          "מה ניתן להעתיק?",
+          "מה ניתן לקנות בכסף?",
+          "איזה KPI יראה שהחפיר נשחק?"
+        ],
+        "evidence": "סטנדרט הראיות: מקור ראשוני/חוזה/Docs כאשר אפשר; ספק נתונים עם definition; Cross-check עצמאי; As-of date; confidence; ו-alternative explanation. כאשר שני מקורות חולקים — לא ממוצעים אוטומטית, אלא מיישבים הגדרות.",
+        "analyst_output": "ב-Investment Memo אל תדביק רק את המספר. כתוב: נתון → הגדרה → מקור → Peer/Historical context → Interpretation → Impact on thesis → Falsifier.",
+        "learning_outcomes": [
+          "אני יכול להסביר Subsidisable vs Unsubsidisable ללא jargon ובמשפט אחד.",
+          "אני יכול למדוד/לחשב Subsidisable vs Unsubsidisable עם denominator והגדרה נכונים.",
+          "אני יכול לזהות לפחות 3 דרכים שבהן Subsidisable vs Unsubsidisable עלול להטעות.",
+          "אני יכול לחבר את הנתון ל-Thesis או להסביר למה הוא לא רלוונטי.",
+          "פתרתי את התרגיל ועניתי על Micro Exam לפני שחשפתי את ה-Rubric."
+        ],
+        "exam": [
+          "הגדרה: מה בדיוק Subsidisable vs Unsubsidisable מודד — ומה הוא במפורש לא מודד?",
+          "יישם Subsidisable vs Unsubsidisable על טוקן שלא חקרת קודם.",
+          "Adversarial: תן שני מצבים שבהם Subsidisable vs Unsubsidisable נראה חיובי אך המסקנה ההשקעתית דווקא שלילית."
+        ],
+        "rubric": [
+          "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי.",
+          "שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי.",
+          "לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "חיבור מפורש ל-business/token/valuation/risk במקום קביעה שורית/דובית אוטומטית."
+        ],
+        "source_refs": [
+          "S12",
+          "S13",
+          "S09",
+          "S05",
+          "S03"
+        ],
+        "formula": "",
+        "exercise": "יישם Subsidisable vs Unsubsidisable על טוקן שלא חקרת קודם.",
+        "definition": "rented share",
+        "critical": false,
+        "data_pull": [
+          "Raw value / absolute level",
+          "30d / 90d / 365d change when applicable",
+          "Historical percentile or regime context",
+          "Peer median / best-in-class comparison",
+          "Source definition + as-of date",
+          "Confidence level + alternative explanation"
+        ],
+        "institutional_questions": [
+          "מה המשתנה Subsidisable vs Unsubsidisable אומר על העסק/הרשת — לפני הטוקן?",
+          "האם יש transmission אמיתי מהמשתנה לערך הטוקן?",
+          "האם התצפית נובעת ממחיר, תמריצים, leverage, accounting או פעילות אורגנית?",
+          "איזה denominator או cohort ישנה את המסקנה?",
+          "מה השוק כנראה כבר מתמחר מתוך הנתון הזה?",
+          "איזה נתון עתידי יפריך את הפרשנות שלי?"
+        ],
+        "memo_template": "Observation: [הנתון של Subsidisable vs Unsubsidisable] | Definition: [...] | As-of: [...] | Peer/History: [...] | Interpretation: [...] | Token impact: [...] | Alternative explanation: [...] | Falsifier: [...] | Confidence: High/Medium/Low.",
+        "worked_example": {
+          "prompt": "יישם Subsidisable vs Unsubsidisable על טוקן שלא חקרת קודם.",
+          "solution": "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי. שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי. לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "lesson": "המטרה אינה להגיע למספר בלבד; צריך להסביר מה המספר כן ולא מוכיח, ואיך הוא משנה את ההסתברות של התזה."
+        }
+      }
+    },
+    {
+      "name": "Kill Criteria",
+      "definition": "metric שמראה שחפיר נשחק",
+      "method": "בנה evidence table והצלב לפחות שני מקורות.",
+      "trap": "אל תסיק מסקנה מנתון יחיד.",
+      "exercise": "יישם Kill Criteria על טוקן שלא חקרת קודם.",
+      "formula": "",
+      "deep": {
+        "why": "ב-Level הזה, Kill Criteria הוא לא פרט טכני אלא חוליה בשרשרת ההחלטה. השאלה אינה רק 'מה המספר?', אלא האם הוא משנה את ההבנה שלנו לגבי איכות העסק, לכידת הערך, עוצמת הביקוש, הסיכון או מה שכבר מתומחר.",
+        "mental": "Open source מחליש code moat; החפיר לרוב נמצא בנזילות, הפצה, integrations, data, security record, users או regulatory access.",
+        "workflow": [
+          "הגדר במילים שלך את המשתנה ואת היחידות שלו לפני שאתה פותח Dashboard.",
+          "בנה evidence table והצלב לפחות שני מקורות.",
+          "אמת לפחות מול מקור נוסף או raw on-chain evidence כאשר אפשר.",
+          "אסוף את שדות הבסיס: Market share, Retention, Depth/slippage, Integrations, Active developers/apps, Switching cost.",
+          "הפרד Level נוכחי, שינוי לאורך זמן ויחס ל-Peer Group.",
+          "כתוב לפחות הסבר אלטרנטיבי אחד לאותה תצפית.",
+          "תרגם את התוצאה להשפעה על Thesis / Valuation / Risk — או ציין שאין השפעה.",
+          "הגדר מראש מה היה גורם לך לשנות את המסקנה."
+        ],
+        "interpret": [
+          "חפיר אמיתי צריך להיות measurable ולהחזיק גם כשהתמריצים מנורמלים.",
+          "השתמש ב-30d/90d/365d כאשר המדד משתנה מהר; בנושאים מבניים השתמש גם ב-history ארוך יותר.",
+          "אל תעשה annualize לתקופת קיצון בלי להציג normalized case.",
+          "כאשר denominator או source methodology לא יציבים, הצג Range ולא מספר יחיד."
+        ],
+        "red": [
+          "אל תסיק מסקנה מנתון יחיד.",
+          "מה ניתן להעתיק?",
+          "מה ניתן לקנות בכסף?",
+          "איזה KPI יראה שהחפיר נשחק?"
+        ],
+        "evidence": "סטנדרט הראיות: מקור ראשוני/חוזה/Docs כאשר אפשר; ספק נתונים עם definition; Cross-check עצמאי; As-of date; confidence; ו-alternative explanation. כאשר שני מקורות חולקים — לא ממוצעים אוטומטית, אלא מיישבים הגדרות.",
+        "analyst_output": "ב-Investment Memo אל תדביק רק את המספר. כתוב: נתון → הגדרה → מקור → Peer/Historical context → Interpretation → Impact on thesis → Falsifier.",
+        "learning_outcomes": [
+          "אני יכול להסביר Kill Criteria ללא jargon ובמשפט אחד.",
+          "אני יכול למדוד/לחשב Kill Criteria עם denominator והגדרה נכונים.",
+          "אני יכול לזהות לפחות 3 דרכים שבהן Kill Criteria עלול להטעות.",
+          "אני יכול לחבר את הנתון ל-Thesis או להסביר למה הוא לא רלוונטי.",
+          "פתרתי את התרגיל ועניתי על Micro Exam לפני שחשפתי את ה-Rubric."
+        ],
+        "exam": [
+          "הגדרה: מה בדיוק Kill Criteria מודד — ומה הוא במפורש לא מודד?",
+          "יישם Kill Criteria על טוקן שלא חקרת קודם.",
+          "Adversarial: תן שני מצבים שבהם Kill Criteria נראה חיובי אך המסקנה ההשקעתית דווקא שלילית."
+        ],
+        "rubric": [
+          "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי.",
+          "שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי.",
+          "לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "חיבור מפורש ל-business/token/valuation/risk במקום קביעה שורית/דובית אוטומטית."
+        ],
+        "source_refs": [
+          "S12",
+          "S13",
+          "S09",
+          "S05",
+          "S03"
+        ],
+        "formula": "",
+        "exercise": "יישם Kill Criteria על טוקן שלא חקרת קודם.",
+        "definition": "metric שמראה שחפיר נשחק",
+        "critical": false,
+        "data_pull": [
+          "Raw value / absolute level",
+          "30d / 90d / 365d change when applicable",
+          "Historical percentile or regime context",
+          "Peer median / best-in-class comparison",
+          "Source definition + as-of date",
+          "Confidence level + alternative explanation"
+        ],
+        "institutional_questions": [
+          "מה המשתנה Kill Criteria אומר על העסק/הרשת — לפני הטוקן?",
+          "האם יש transmission אמיתי מהמשתנה לערך הטוקן?",
+          "האם התצפית נובעת ממחיר, תמריצים, leverage, accounting או פעילות אורגנית?",
+          "איזה denominator או cohort ישנה את המסקנה?",
+          "מה השוק כנראה כבר מתמחר מתוך הנתון הזה?",
+          "איזה נתון עתידי יפריך את הפרשנות שלי?"
+        ],
+        "memo_template": "Observation: [הנתון של Kill Criteria] | Definition: [...] | As-of: [...] | Peer/History: [...] | Interpretation: [...] | Token impact: [...] | Alternative explanation: [...] | Falsifier: [...] | Confidence: High/Medium/Low.",
+        "worked_example": {
+          "prompt": "יישם Kill Criteria על טוקן שלא חקרת קודם.",
+          "solution": "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי. שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי. לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "lesson": "המטרה אינה להגיע למספר בלבד; צריך להסביר מה המספר כן ולא מוכיח, ואיך הוא משנה את ההסתברות של התזה."
+        }
+      }
+    }
+  ],
+  "exam": "Cold Case: יישם את כל תתי-הנושאים של מבחן ה-$50M Fork על פרויקט אמיתי.",
+  "critical": false,
+  "source_refs": [
+    "S12",
+    "S13",
+    "S09",
+    "S05",
+    "S03"
+  ],
+  "prereq": [
+    1,
+    2,
+    8
+  ],
+  "academy": {
+    "letter": "C",
+    "title": "ארכיטקטורה וחפיר",
+    "ids": [
+      12,
+      13,
+      14,
+      15,
+      16
+    ]
+  }
+}

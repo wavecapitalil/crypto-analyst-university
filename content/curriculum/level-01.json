@@ -1,0 +1,460 @@
+{
+  "n": 1,
+  "title": "לכידת ערך לטוקן — Broken Chain",
+  "domain": "Value Accrual",
+  "obj": "להפריד הצלחת מוצר/חברה/פרוטוקול מהערך שבאמת מגיע לבעל הטוקן",
+  "topics": [
+    {
+      "name": "Product ≠ Protocol ≠ Token ≠ Equity",
+      "definition": "ארבע ישויות שיכולות להיות בעלות כלכלה שונה.",
+      "method": "כתוב לכל פרויקט ארבע שורות נפרדות ואז קשר ביניהן.",
+      "trap": "שותפות/Revenue/TVL = bullish token בלי מנגנון העברה.",
+      "exercise": "חברה גובה SaaS fees והטוקן governance בלבד — מי לוכד value?",
+      "formula": "",
+      "deep": {
+        "why": "ב-Level הזה, Product ≠ Protocol ≠ Token ≠ Equity הוא לא פרט טכני אלא חוליה בשרשרת ההחלטה. השאלה אינה רק 'מה המספר?', אלא האם הוא משנה את ההבנה שלנו לגבי איכות העסק, לכידת הערך, עוצמת הביקוש, הסיכון או מה שכבר מתומחר.",
+        "mental": "המודל המרכזי הוא שרשרת העברת ערך. Activity או Revenue בפרוטוקול אינם שייכים אוטומטית לטוקן; צריך מנגנון אכיף שמייצר תזרים, שריפה, נעילה או ביקוש הכרחי.",
+        "workflow": [
+          "הגדר במילים שלך את המשתנה ואת היחידות שלו לפני שאתה פותח Dashboard.",
+          "כתוב לכל פרויקט ארבע שורות נפרדות ואז קשר ביניהן.",
+          "אמת לפחות מול מקור נוסף או raw on-chain evidence כאשר אפשר.",
+          "אסוף את שדות הבסיס: User fees, Supply-side fees, Protocol revenue, Holder revenue, Buyback/Burn, Staking source.",
+          "הפרד Level נוכחי, שינוי לאורך זמן ויחס ל-Peer Group.",
+          "כתוב לפחות הסבר אלטרנטיבי אחד לאותה תצפית.",
+          "תרגם את התוצאה להשפעה על Thesis / Valuation / Risk — או ציין שאין השפעה.",
+          "הגדר מראש מה היה גורם לך לשנות את המסקנה."
+        ],
+        "interpret": [
+          "הפרד Business Quality מ-Token Quality. ייתכן עסק חזק עם טוקן חלש ולהפך.",
+          "השתמש ב-30d/90d/365d כאשר המדד משתנה מהר; בנושאים מבניים השתמש גם ב-history ארוך יותר.",
+          "אל תעשה annualize לתקופת קיצון בלי להציג normalized case.",
+          "כאשר denominator או source methodology לא יציבים, הצג Range ולא מספר יחיד."
+        ],
+        "red": [
+          "שותפות/Revenue/TVL = bullish token בלי מנגנון העברה.",
+          "מי משלם?",
+          "מי מקבל כל דולר?",
+          "איזה חלק מגיע לטוקן באופן אכיף ולא רק אופציונלי?"
+        ],
+        "evidence": "סטנדרט הראיות: מקור ראשוני/חוזה/Docs כאשר אפשר; ספק נתונים עם definition; Cross-check עצמאי; As-of date; confidence; ו-alternative explanation. כאשר שני מקורות חולקים — לא ממוצעים אוטומטית, אלא מיישבים הגדרות.",
+        "analyst_output": "ב-Investment Memo אל תדביק רק את המספר. כתוב: נתון → הגדרה → מקור → Peer/Historical context → Interpretation → Impact on thesis → Falsifier.",
+        "learning_outcomes": [
+          "אני יכול להסביר Product ≠ Protocol ≠ Token ≠ Equity ללא jargon ובמשפט אחד.",
+          "אני יכול למדוד/לחשב Product ≠ Protocol ≠ Token ≠ Equity עם denominator והגדרה נכונים.",
+          "אני יכול לזהות לפחות 3 דרכים שבהן Product ≠ Protocol ≠ Token ≠ Equity עלול להטעות.",
+          "אני יכול לחבר את הנתון ל-Thesis או להסביר למה הוא לא רלוונטי.",
+          "פתרתי את התרגיל ועניתי על Micro Exam לפני שחשפתי את ה-Rubric."
+        ],
+        "exam": [
+          "הגדרה: מה בדיוק Product ≠ Protocol ≠ Token ≠ Equity מודד — ומה הוא במפורש לא מודד?",
+          "חברה גובה SaaS fees והטוקן governance בלבד — מי לוכד value?",
+          "Adversarial: תן שני מצבים שבהם Product ≠ Protocol ≠ Token ≠ Equity נראה חיובי אך המסקנה ההשקעתית דווקא שלילית."
+        ],
+        "rubric": [
+          "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי.",
+          "שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי.",
+          "לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "חיבור מפורש ל-business/token/valuation/risk במקום קביעה שורית/דובית אוטומטית."
+        ],
+        "source_refs": [
+          "S01",
+          "S02",
+          "S03",
+          "S04"
+        ],
+        "formula": "",
+        "exercise": "חברה גובה SaaS fees והטוקן governance בלבד — מי לוכד value?",
+        "definition": "ארבע ישויות שיכולות להיות בעלות כלכלה שונה.",
+        "critical": true,
+        "data_pull": [
+          "Raw value / absolute level",
+          "30d / 90d / 365d change when applicable",
+          "Historical percentile or regime context",
+          "Peer median / best-in-class comparison",
+          "Source definition + as-of date",
+          "Confidence level + alternative explanation"
+        ],
+        "institutional_questions": [
+          "מה המשתנה Product ≠ Protocol ≠ Token ≠ Equity אומר על העסק/הרשת — לפני הטוקן?",
+          "האם יש transmission אמיתי מהמשתנה לערך הטוקן?",
+          "האם התצפית נובעת ממחיר, תמריצים, leverage, accounting או פעילות אורגנית?",
+          "איזה denominator או cohort ישנה את המסקנה?",
+          "מה השוק כנראה כבר מתמחר מתוך הנתון הזה?",
+          "איזה נתון עתידי יפריך את הפרשנות שלי?"
+        ],
+        "memo_template": "Observation: [הנתון של Product ≠ Protocol ≠ Token ≠ Equity] | Definition: [...] | As-of: [...] | Peer/History: [...] | Interpretation: [...] | Token impact: [...] | Alternative explanation: [...] | Falsifier: [...] | Confidence: High/Medium/Low.",
+        "worked_example": {
+          "prompt": "חברה גובה SaaS fees והטוקן governance בלבד — מי לוכד value?",
+          "solution": "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי. שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי. לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "lesson": "המטרה אינה להגיע למספר בלבד; צריך להסביר מה המספר כן ולא מוכיח, ואיך הוא משנה את ההסתברות של התזה."
+        }
+      }
+    },
+    {
+      "name": "Fee-to-Holder Path",
+      "definition": "משתמש משלם → recipients → protocol take → token mechanism → holder.",
+      "method": "צייר Waterfall לכל $1 fee.",
+      "trap": "Protocol Revenue = Holder Revenue.",
+      "exercise": "Fee $1: 0.70 LP, 0.25 treasury, 0.05 buyback — מה ה-hard capture?",
+      "formula": "",
+      "deep": {
+        "why": "ב-Level הזה, Fee-to-Holder Path הוא לא פרט טכני אלא חוליה בשרשרת ההחלטה. השאלה אינה רק 'מה המספר?', אלא האם הוא משנה את ההבנה שלנו לגבי איכות העסק, לכידת הערך, עוצמת הביקוש, הסיכון או מה שכבר מתומחר.",
+        "mental": "המודל המרכזי הוא שרשרת העברת ערך. Activity או Revenue בפרוטוקול אינם שייכים אוטומטית לטוקן; צריך מנגנון אכיף שמייצר תזרים, שריפה, נעילה או ביקוש הכרחי.",
+        "workflow": [
+          "הגדר במילים שלך את המשתנה ואת היחידות שלו לפני שאתה פותח Dashboard.",
+          "צייר Waterfall לכל $1 fee.",
+          "אמת לפחות מול מקור נוסף או raw on-chain evidence כאשר אפשר.",
+          "אסוף את שדות הבסיס: User fees, Supply-side fees, Protocol revenue, Holder revenue, Buyback/Burn, Staking source.",
+          "הפרד Level נוכחי, שינוי לאורך זמן ויחס ל-Peer Group.",
+          "כתוב לפחות הסבר אלטרנטיבי אחד לאותה תצפית.",
+          "תרגם את התוצאה להשפעה על Thesis / Valuation / Risk — או ציין שאין השפעה.",
+          "הגדר מראש מה היה גורם לך לשנות את המסקנה."
+        ],
+        "interpret": [
+          "הפרד Business Quality מ-Token Quality. ייתכן עסק חזק עם טוקן חלש ולהפך.",
+          "השתמש ב-30d/90d/365d כאשר המדד משתנה מהר; בנושאים מבניים השתמש גם ב-history ארוך יותר.",
+          "אל תעשה annualize לתקופת קיצון בלי להציג normalized case.",
+          "כאשר denominator או source methodology לא יציבים, הצג Range ולא מספר יחיד."
+        ],
+        "red": [
+          "Protocol Revenue = Holder Revenue.",
+          "מי משלם?",
+          "מי מקבל כל דולר?",
+          "איזה חלק מגיע לטוקן באופן אכיף ולא רק אופציונלי?"
+        ],
+        "evidence": "סטנדרט הראיות: מקור ראשוני/חוזה/Docs כאשר אפשר; ספק נתונים עם definition; Cross-check עצמאי; As-of date; confidence; ו-alternative explanation. כאשר שני מקורות חולקים — לא ממוצעים אוטומטית, אלא מיישבים הגדרות.",
+        "analyst_output": "ב-Investment Memo אל תדביק רק את המספר. כתוב: נתון → הגדרה → מקור → Peer/Historical context → Interpretation → Impact on thesis → Falsifier.",
+        "learning_outcomes": [
+          "אני יכול להסביר Fee-to-Holder Path ללא jargon ובמשפט אחד.",
+          "אני יכול למדוד/לחשב Fee-to-Holder Path עם denominator והגדרה נכונים.",
+          "אני יכול לזהות לפחות 3 דרכים שבהן Fee-to-Holder Path עלול להטעות.",
+          "אני יכול לחבר את הנתון ל-Thesis או להסביר למה הוא לא רלוונטי.",
+          "פתרתי את התרגיל ועניתי על Micro Exam לפני שחשפתי את ה-Rubric."
+        ],
+        "exam": [
+          "הגדרה: מה בדיוק Fee-to-Holder Path מודד — ומה הוא במפורש לא מודד?",
+          "Fee $1: 0.70 LP, 0.25 treasury, 0.05 buyback — מה ה-hard capture?",
+          "Adversarial: תן שני מצבים שבהם Fee-to-Holder Path נראה חיובי אך המסקנה ההשקעתית דווקא שלילית."
+        ],
+        "rubric": [
+          "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי.",
+          "שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי.",
+          "לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "חיבור מפורש ל-business/token/valuation/risk במקום קביעה שורית/דובית אוטומטית."
+        ],
+        "source_refs": [
+          "S01",
+          "S02",
+          "S03",
+          "S04"
+        ],
+        "formula": "",
+        "exercise": "Fee $1: 0.70 LP, 0.25 treasury, 0.05 buyback — מה ה-hard capture?",
+        "definition": "משתמש משלם → recipients → protocol take → token mechanism → holder.",
+        "critical": true,
+        "data_pull": [
+          "Raw value / absolute level",
+          "30d / 90d / 365d change when applicable",
+          "Historical percentile or regime context",
+          "Peer median / best-in-class comparison",
+          "Source definition + as-of date",
+          "Confidence level + alternative explanation"
+        ],
+        "institutional_questions": [
+          "מה המשתנה Fee-to-Holder Path אומר על העסק/הרשת — לפני הטוקן?",
+          "האם יש transmission אמיתי מהמשתנה לערך הטוקן?",
+          "האם התצפית נובעת ממחיר, תמריצים, leverage, accounting או פעילות אורגנית?",
+          "איזה denominator או cohort ישנה את המסקנה?",
+          "מה השוק כנראה כבר מתמחר מתוך הנתון הזה?",
+          "איזה נתון עתידי יפריך את הפרשנות שלי?"
+        ],
+        "memo_template": "Observation: [הנתון של Fee-to-Holder Path] | Definition: [...] | As-of: [...] | Peer/History: [...] | Interpretation: [...] | Token impact: [...] | Alternative explanation: [...] | Falsifier: [...] | Confidence: High/Medium/Low.",
+        "worked_example": {
+          "prompt": "Fee $1: 0.70 LP, 0.25 treasury, 0.05 buyback — מה ה-hard capture?",
+          "solution": "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי. שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי. לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "lesson": "המטרה אינה להגיע למספר בלבד; צריך להסביר מה המספר כן ולא מוכיח, ואיך הוא משנה את ההסתברות של התזה."
+        }
+      }
+    },
+    {
+      "name": "Buyback / Burn / Distribution",
+      "definition": "Buyback יוצר ביקוש, burn מפחית supply, distribution מעביר cashflow.",
+      "method": "בדוק funding source, destination ו-reissuance policy.",
+      "trap": "כותרת buyback בלי להשוות ל-issuance.",
+      "exercise": "Buyback 10M מול rewards 25M — מה ה-net effect?",
+      "formula": "",
+      "deep": {
+        "why": "ב-Level הזה, Buyback / Burn / Distribution הוא לא פרט טכני אלא חוליה בשרשרת ההחלטה. השאלה אינה רק 'מה המספר?', אלא האם הוא משנה את ההבנה שלנו לגבי איכות העסק, לכידת הערך, עוצמת הביקוש, הסיכון או מה שכבר מתומחר.",
+        "mental": "המודל המרכזי הוא שרשרת העברת ערך. Activity או Revenue בפרוטוקול אינם שייכים אוטומטית לטוקן; צריך מנגנון אכיף שמייצר תזרים, שריפה, נעילה או ביקוש הכרחי.",
+        "workflow": [
+          "הגדר במילים שלך את המשתנה ואת היחידות שלו לפני שאתה פותח Dashboard.",
+          "בדוק funding source, destination ו-reissuance policy.",
+          "אמת לפחות מול מקור נוסף או raw on-chain evidence כאשר אפשר.",
+          "אסוף את שדות הבסיס: User fees, Supply-side fees, Protocol revenue, Holder revenue, Buyback/Burn, Staking source.",
+          "הפרד Level נוכחי, שינוי לאורך זמן ויחס ל-Peer Group.",
+          "כתוב לפחות הסבר אלטרנטיבי אחד לאותה תצפית.",
+          "תרגם את התוצאה להשפעה על Thesis / Valuation / Risk — או ציין שאין השפעה.",
+          "הגדר מראש מה היה גורם לך לשנות את המסקנה."
+        ],
+        "interpret": [
+          "הפרד Business Quality מ-Token Quality. ייתכן עסק חזק עם טוקן חלש ולהפך.",
+          "השתמש ב-30d/90d/365d כאשר המדד משתנה מהר; בנושאים מבניים השתמש גם ב-history ארוך יותר.",
+          "אל תעשה annualize לתקופת קיצון בלי להציג normalized case.",
+          "כאשר denominator או source methodology לא יציבים, הצג Range ולא מספר יחיד."
+        ],
+        "red": [
+          "כותרת buyback בלי להשוות ל-issuance.",
+          "מי משלם?",
+          "מי מקבל כל דולר?",
+          "איזה חלק מגיע לטוקן באופן אכיף ולא רק אופציונלי?"
+        ],
+        "evidence": "סטנדרט הראיות: מקור ראשוני/חוזה/Docs כאשר אפשר; ספק נתונים עם definition; Cross-check עצמאי; As-of date; confidence; ו-alternative explanation. כאשר שני מקורות חולקים — לא ממוצעים אוטומטית, אלא מיישבים הגדרות.",
+        "analyst_output": "ב-Investment Memo אל תדביק רק את המספר. כתוב: נתון → הגדרה → מקור → Peer/Historical context → Interpretation → Impact on thesis → Falsifier.",
+        "learning_outcomes": [
+          "אני יכול להסביר Buyback / Burn / Distribution ללא jargon ובמשפט אחד.",
+          "אני יכול למדוד/לחשב Buyback / Burn / Distribution עם denominator והגדרה נכונים.",
+          "אני יכול לזהות לפחות 3 דרכים שבהן Buyback / Burn / Distribution עלול להטעות.",
+          "אני יכול לחבר את הנתון ל-Thesis או להסביר למה הוא לא רלוונטי.",
+          "פתרתי את התרגיל ועניתי על Micro Exam לפני שחשפתי את ה-Rubric."
+        ],
+        "exam": [
+          "הגדרה: מה בדיוק Buyback / Burn / Distribution מודד — ומה הוא במפורש לא מודד?",
+          "Buyback 10M מול rewards 25M — מה ה-net effect?",
+          "Adversarial: תן שני מצבים שבהם Buyback / Burn / Distribution נראה חיובי אך המסקנה ההשקעתית דווקא שלילית."
+        ],
+        "rubric": [
+          "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי.",
+          "שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי.",
+          "לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "חיבור מפורש ל-business/token/valuation/risk במקום קביעה שורית/דובית אוטומטית."
+        ],
+        "source_refs": [
+          "S01",
+          "S02",
+          "S03",
+          "S04"
+        ],
+        "formula": "",
+        "exercise": "Buyback 10M מול rewards 25M — מה ה-net effect?",
+        "definition": "Buyback יוצר ביקוש, burn מפחית supply, distribution מעביר cashflow.",
+        "critical": true,
+        "data_pull": [
+          "Raw value / absolute level",
+          "30d / 90d / 365d change when applicable",
+          "Historical percentile or regime context",
+          "Peer median / best-in-class comparison",
+          "Source definition + as-of date",
+          "Confidence level + alternative explanation"
+        ],
+        "institutional_questions": [
+          "מה המשתנה Buyback / Burn / Distribution אומר על העסק/הרשת — לפני הטוקן?",
+          "האם יש transmission אמיתי מהמשתנה לערך הטוקן?",
+          "האם התצפית נובעת ממחיר, תמריצים, leverage, accounting או פעילות אורגנית?",
+          "איזה denominator או cohort ישנה את המסקנה?",
+          "מה השוק כנראה כבר מתמחר מתוך הנתון הזה?",
+          "איזה נתון עתידי יפריך את הפרשנות שלי?"
+        ],
+        "memo_template": "Observation: [הנתון של Buyback / Burn / Distribution] | Definition: [...] | As-of: [...] | Peer/History: [...] | Interpretation: [...] | Token impact: [...] | Alternative explanation: [...] | Falsifier: [...] | Confidence: High/Medium/Low.",
+        "worked_example": {
+          "prompt": "Buyback 10M מול rewards 25M — מה ה-net effect?",
+          "solution": "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי. שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי. לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "lesson": "המטרה אינה להגיע למספר בלבד; צריך להסביר מה המספר כן ולא מוכיח, ואיך הוא משנה את ההסתברות של התזה."
+        }
+      }
+    },
+    {
+      "name": "Real Yield vs Inflationary Yield",
+      "definition": "Real yield ממומן מפעילות חיצונית; inflationary yield מטוקנים חדשים.",
+      "method": "פרק APY ל-fees/MEV/emissions.",
+      "trap": "APY גבוה = הכנסה גבוהה.",
+      "exercise": "12% APY: 9% issuance, 3% fees — מה real?",
+      "formula": "",
+      "deep": {
+        "why": "ב-Level הזה, Real Yield vs Inflationary Yield הוא לא פרט טכני אלא חוליה בשרשרת ההחלטה. השאלה אינה רק 'מה המספר?', אלא האם הוא משנה את ההבנה שלנו לגבי איכות העסק, לכידת הערך, עוצמת הביקוש, הסיכון או מה שכבר מתומחר.",
+        "mental": "המודל המרכזי הוא שרשרת העברת ערך. Activity או Revenue בפרוטוקול אינם שייכים אוטומטית לטוקן; צריך מנגנון אכיף שמייצר תזרים, שריפה, נעילה או ביקוש הכרחי.",
+        "workflow": [
+          "הגדר במילים שלך את המשתנה ואת היחידות שלו לפני שאתה פותח Dashboard.",
+          "פרק APY ל-fees/MEV/emissions.",
+          "אמת לפחות מול מקור נוסף או raw on-chain evidence כאשר אפשר.",
+          "אסוף את שדות הבסיס: User fees, Supply-side fees, Protocol revenue, Holder revenue, Buyback/Burn, Staking source.",
+          "הפרד Level נוכחי, שינוי לאורך זמן ויחס ל-Peer Group.",
+          "כתוב לפחות הסבר אלטרנטיבי אחד לאותה תצפית.",
+          "תרגם את התוצאה להשפעה על Thesis / Valuation / Risk — או ציין שאין השפעה.",
+          "הגדר מראש מה היה גורם לך לשנות את המסקנה."
+        ],
+        "interpret": [
+          "הפרד Business Quality מ-Token Quality. ייתכן עסק חזק עם טוקן חלש ולהפך.",
+          "השתמש ב-30d/90d/365d כאשר המדד משתנה מהר; בנושאים מבניים השתמש גם ב-history ארוך יותר.",
+          "אל תעשה annualize לתקופת קיצון בלי להציג normalized case.",
+          "כאשר denominator או source methodology לא יציבים, הצג Range ולא מספר יחיד."
+        ],
+        "red": [
+          "APY גבוה = הכנסה גבוהה.",
+          "מי משלם?",
+          "מי מקבל כל דולר?",
+          "איזה חלק מגיע לטוקן באופן אכיף ולא רק אופציונלי?"
+        ],
+        "evidence": "סטנדרט הראיות: מקור ראשוני/חוזה/Docs כאשר אפשר; ספק נתונים עם definition; Cross-check עצמאי; As-of date; confidence; ו-alternative explanation. כאשר שני מקורות חולקים — לא ממוצעים אוטומטית, אלא מיישבים הגדרות.",
+        "analyst_output": "ב-Investment Memo אל תדביק רק את המספר. כתוב: נתון → הגדרה → מקור → Peer/Historical context → Interpretation → Impact on thesis → Falsifier.",
+        "learning_outcomes": [
+          "אני יכול להסביר Real Yield vs Inflationary Yield ללא jargon ובמשפט אחד.",
+          "אני יכול למדוד/לחשב Real Yield vs Inflationary Yield עם denominator והגדרה נכונים.",
+          "אני יכול לזהות לפחות 3 דרכים שבהן Real Yield vs Inflationary Yield עלול להטעות.",
+          "אני יכול לחבר את הנתון ל-Thesis או להסביר למה הוא לא רלוונטי.",
+          "פתרתי את התרגיל ועניתי על Micro Exam לפני שחשפתי את ה-Rubric."
+        ],
+        "exam": [
+          "הגדרה: מה בדיוק Real Yield vs Inflationary Yield מודד — ומה הוא במפורש לא מודד?",
+          "12% APY: 9% issuance, 3% fees — מה real?",
+          "Adversarial: תן שני מצבים שבהם Real Yield vs Inflationary Yield נראה חיובי אך המסקנה ההשקעתית דווקא שלילית."
+        ],
+        "rubric": [
+          "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי.",
+          "שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי.",
+          "לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "חיבור מפורש ל-business/token/valuation/risk במקום קביעה שורית/דובית אוטומטית."
+        ],
+        "source_refs": [
+          "S01",
+          "S02",
+          "S03",
+          "S04"
+        ],
+        "formula": "",
+        "exercise": "12% APY: 9% issuance, 3% fees — מה real?",
+        "definition": "Real yield ממומן מפעילות חיצונית; inflationary yield מטוקנים חדשים.",
+        "critical": true,
+        "data_pull": [
+          "Raw value / absolute level",
+          "30d / 90d / 365d change when applicable",
+          "Historical percentile or regime context",
+          "Peer median / best-in-class comparison",
+          "Source definition + as-of date",
+          "Confidence level + alternative explanation"
+        ],
+        "institutional_questions": [
+          "מה המשתנה Real Yield vs Inflationary Yield אומר על העסק/הרשת — לפני הטוקן?",
+          "האם יש transmission אמיתי מהמשתנה לערך הטוקן?",
+          "האם התצפית נובעת ממחיר, תמריצים, leverage, accounting או פעילות אורגנית?",
+          "איזה denominator או cohort ישנה את המסקנה?",
+          "מה השוק כנראה כבר מתמחר מתוך הנתון הזה?",
+          "איזה נתון עתידי יפריך את הפרשנות שלי?"
+        ],
+        "memo_template": "Observation: [הנתון של Real Yield vs Inflationary Yield] | Definition: [...] | As-of: [...] | Peer/History: [...] | Interpretation: [...] | Token impact: [...] | Alternative explanation: [...] | Falsifier: [...] | Confidence: High/Medium/Low.",
+        "worked_example": {
+          "prompt": "12% APY: 9% issuance, 3% fees — מה real?",
+          "solution": "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי. שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי. לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "lesson": "המטרה אינה להגיע למספר בלבד; צריך להסביר מה המספר כן ולא מוכיח, ואיך הוא משנה את ההסתברות של התזה."
+        }
+      }
+    },
+    {
+      "name": "Mandatory Token Demand & Velocity",
+      "definition": "שימוש חובה אינו בהכרח holding demand אם token מסתובב מהר.",
+      "method": "שאל מי חייב לקנות, לכמה זמן, ומה ניתן לעקוף.",
+      "trap": "Utility = persistent demand.",
+      "exercise": "מה קורה אם token נדרש לשנייה אחת לכל transaction?",
+      "formula": "",
+      "deep": {
+        "why": "ב-Level הזה, Mandatory Token Demand & Velocity הוא לא פרט טכני אלא חוליה בשרשרת ההחלטה. השאלה אינה רק 'מה המספר?', אלא האם הוא משנה את ההבנה שלנו לגבי איכות העסק, לכידת הערך, עוצמת הביקוש, הסיכון או מה שכבר מתומחר.",
+        "mental": "המודל המרכזי הוא שרשרת העברת ערך. Activity או Revenue בפרוטוקול אינם שייכים אוטומטית לטוקן; צריך מנגנון אכיף שמייצר תזרים, שריפה, נעילה או ביקוש הכרחי.",
+        "workflow": [
+          "הגדר במילים שלך את המשתנה ואת היחידות שלו לפני שאתה פותח Dashboard.",
+          "שאל מי חייב לקנות, לכמה זמן, ומה ניתן לעקוף.",
+          "אמת לפחות מול מקור נוסף או raw on-chain evidence כאשר אפשר.",
+          "אסוף את שדות הבסיס: User fees, Supply-side fees, Protocol revenue, Holder revenue, Buyback/Burn, Staking source.",
+          "הפרד Level נוכחי, שינוי לאורך זמן ויחס ל-Peer Group.",
+          "כתוב לפחות הסבר אלטרנטיבי אחד לאותה תצפית.",
+          "תרגם את התוצאה להשפעה על Thesis / Valuation / Risk — או ציין שאין השפעה.",
+          "הגדר מראש מה היה גורם לך לשנות את המסקנה."
+        ],
+        "interpret": [
+          "הפרד Business Quality מ-Token Quality. ייתכן עסק חזק עם טוקן חלש ולהפך.",
+          "השתמש ב-30d/90d/365d כאשר המדד משתנה מהר; בנושאים מבניים השתמש גם ב-history ארוך יותר.",
+          "אל תעשה annualize לתקופת קיצון בלי להציג normalized case.",
+          "כאשר denominator או source methodology לא יציבים, הצג Range ולא מספר יחיד."
+        ],
+        "red": [
+          "Utility = persistent demand.",
+          "מי משלם?",
+          "מי מקבל כל דולר?",
+          "איזה חלק מגיע לטוקן באופן אכיף ולא רק אופציונלי?"
+        ],
+        "evidence": "סטנדרט הראיות: מקור ראשוני/חוזה/Docs כאשר אפשר; ספק נתונים עם definition; Cross-check עצמאי; As-of date; confidence; ו-alternative explanation. כאשר שני מקורות חולקים — לא ממוצעים אוטומטית, אלא מיישבים הגדרות.",
+        "analyst_output": "ב-Investment Memo אל תדביק רק את המספר. כתוב: נתון → הגדרה → מקור → Peer/Historical context → Interpretation → Impact on thesis → Falsifier.",
+        "learning_outcomes": [
+          "אני יכול להסביר Mandatory Token Demand & Velocity ללא jargon ובמשפט אחד.",
+          "אני יכול למדוד/לחשב Mandatory Token Demand & Velocity עם denominator והגדרה נכונים.",
+          "אני יכול לזהות לפחות 3 דרכים שבהן Mandatory Token Demand & Velocity עלול להטעות.",
+          "אני יכול לחבר את הנתון ל-Thesis או להסביר למה הוא לא רלוונטי.",
+          "פתרתי את התרגיל ועניתי על Micro Exam לפני שחשפתי את ה-Rubric."
+        ],
+        "exam": [
+          "הגדרה: מה בדיוק Mandatory Token Demand & Velocity מודד — ומה הוא במפורש לא מודד?",
+          "מה קורה אם token נדרש לשנייה אחת לכל transaction?",
+          "Adversarial: תן שני מצבים שבהם Mandatory Token Demand & Velocity נראה חיובי אך המסקנה ההשקעתית דווקא שלילית."
+        ],
+        "rubric": [
+          "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי.",
+          "שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי.",
+          "לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "חיבור מפורש ל-business/token/valuation/risk במקום קביעה שורית/דובית אוטומטית."
+        ],
+        "source_refs": [
+          "S01",
+          "S02",
+          "S03",
+          "S04"
+        ],
+        "formula": "",
+        "exercise": "מה קורה אם token נדרש לשנייה אחת לכל transaction?",
+        "definition": "שימוש חובה אינו בהכרח holding demand אם token מסתובב מהר.",
+        "critical": true,
+        "data_pull": [
+          "Raw value / absolute level",
+          "30d / 90d / 365d change when applicable",
+          "Historical percentile or regime context",
+          "Peer median / best-in-class comparison",
+          "Source definition + as-of date",
+          "Confidence level + alternative explanation"
+        ],
+        "institutional_questions": [
+          "מה המשתנה Mandatory Token Demand & Velocity אומר על העסק/הרשת — לפני הטוקן?",
+          "האם יש transmission אמיתי מהמשתנה לערך הטוקן?",
+          "האם התצפית נובעת ממחיר, תמריצים, leverage, accounting או פעילות אורגנית?",
+          "איזה denominator או cohort ישנה את המסקנה?",
+          "מה השוק כנראה כבר מתמחר מתוך הנתון הזה?",
+          "איזה נתון עתידי יפריך את הפרשנות שלי?"
+        ],
+        "memo_template": "Observation: [הנתון של Mandatory Token Demand & Velocity] | Definition: [...] | As-of: [...] | Peer/History: [...] | Interpretation: [...] | Token impact: [...] | Alternative explanation: [...] | Falsifier: [...] | Confidence: High/Medium/Low.",
+        "worked_example": {
+          "prompt": "מה קורה אם token נדרש לשנייה אחת לכל transaction?",
+          "solution": "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי. שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי. לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "lesson": "המטרה אינה להגיע למספר בלבד; צריך להסביר מה המספר כן ולא מוכיח, ואיך הוא משנה את ההסתברות של התזה."
+        }
+      }
+    }
+  ],
+  "exam": "קח פרוטוקול עם Revenue גבוה והוכח האם הטוקן מקבל claim כלכלי.",
+  "critical": true,
+  "source_refs": [
+    "S01",
+    "S02",
+    "S03",
+    "S04"
+  ],
+  "prereq": [
+    0
+  ],
+  "academy": {
+    "letter": "A",
+    "title": "יסודות הטוקן והחשבונאות",
+    "ids": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  }
+}

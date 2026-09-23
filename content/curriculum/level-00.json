@@ -1,0 +1,458 @@
+{
+  "n": 0,
+  "title": "היצע, Free Float ודילול",
+  "domain": "Tokenomics",
+  "obj": "להבין מה באמת סחיר היום, מה ייכנס לשוק בעתיד ואיך שינוי במספר הטוקנים משנה ערך פר טוקן",
+  "topics": [
+    {
+      "name": "Circulating / Total / Max",
+      "definition": "שלוש הגדרות היצע שונות; במחזור, קיים, ותקרה תיאורטית.",
+      "method": "אמת מול Docs וחוזה, ואז בנה Supply Bridge.",
+      "trap": "להניח שכל Total יהפוך למחזור או שכל Max קבוע.",
+      "exercise": "חשב MC ו-FDV ל-Price $2, Circulating 200M, Max 1B.",
+      "formula": "MC=Price×Circulating; FDV=Price×Fully Diluted Supply",
+      "deep": {
+        "why": "ב-Level הזה, Circulating / Total / Max הוא לא פרט טכני אלא חוליה בשרשרת ההחלטה. השאלה אינה רק 'מה המספר?', אלא האם הוא משנה את ההבנה שלנו לגבי איכות העסק, לכידת הערך, עוצמת הביקוש, הסיכון או מה שכבר מתומחר.",
+        "mental": "חשוב לחשוב על הטוקן כעל Claim שמחולק למספר יחידות משתנה. כל שינוי בהיצע, בנעילות ובבעלות משנה את ה-claim של המחזיק הקיים גם אם ערך הרשת הכולל לא השתנה.",
+        "workflow": [
+          "הגדר במילים שלך את המשתנה ואת היחידות שלו לפני שאתה פותח Dashboard.",
+          "אמת מול Docs וחוזה, ואז בנה Supply Bridge.",
+          "אמת לפחות מול מקור נוסף או raw on-chain evidence כאשר אפשר.",
+          "אסוף את שדות הבסיס: Price, Circulating supply, Total/Max supply, Free float, Unlock calendar, Recipients.",
+          "הפרד Level נוכחי, שינוי לאורך זמן ויחס ל-Peer Group.",
+          "כתוב לפחות הסבר אלטרנטיבי אחד לאותה תצפית.",
+          "תרגם את התוצאה להשפעה על Thesis / Valuation / Risk — או ציין שאין השפעה.",
+          "הגדר מראש מה היה גורם לך לשנות את המסקנה."
+        ],
+        "interpret": [
+          "תמיד נתח גם Level וגם Flow: כמה היצע קיים היום, וכמה היצע חדש יכול להגיע לשוק בטווח ההחזקה.",
+          "השתמש ב-30d/90d/365d כאשר המדד משתנה מהר; בנושאים מבניים השתמש גם ב-history ארוך יותר.",
+          "אל תעשה annualize לתקופת קיצון בלי להציג normalized case.",
+          "כאשר denominator או source methodology לא יציבים, הצג Range ולא מספר יחיד."
+        ],
+        "red": [
+          "להניח שכל Total יהפוך למחזור או שכל Max קבוע.",
+          "האם המכנה הוא circulating, free float או future diluted supply?",
+          "מי מקבל את ההיצע החדש?",
+          "האם הזרימה לשוק היא אירוע חד-פעמי או קצב מתמשך?"
+        ],
+        "evidence": "סטנדרט הראיות: מקור ראשוני/חוזה/Docs כאשר אפשר; ספק נתונים עם definition; Cross-check עצמאי; As-of date; confidence; ו-alternative explanation. כאשר שני מקורות חולקים — לא ממוצעים אוטומטית, אלא מיישבים הגדרות.",
+        "analyst_output": "ב-Investment Memo אל תדביק רק את המספר. כתוב: נתון → הגדרה → מקור → Peer/Historical context → Interpretation → Impact on thesis → Falsifier.",
+        "learning_outcomes": [
+          "אני יכול להסביר Circulating / Total / Max ללא jargon ובמשפט אחד.",
+          "אני יכול למדוד/לחשב Circulating / Total / Max עם denominator והגדרה נכונים.",
+          "אני יכול לזהות לפחות 3 דרכים שבהן Circulating / Total / Max עלול להטעות.",
+          "אני יכול לחבר את הנתון ל-Thesis או להסביר למה הוא לא רלוונטי.",
+          "פתרתי את התרגיל ועניתי על Micro Exam לפני שחשפתי את ה-Rubric."
+        ],
+        "exam": [
+          "הגדרה: מה בדיוק Circulating / Total / Max מודד — ומה הוא במפורש לא מודד?",
+          "חשב MC ו-FDV ל-Price $2, Circulating 200M, Max 1B.",
+          "Adversarial: תן שני מצבים שבהם Circulating / Total / Max נראה חיובי אך המסקנה ההשקעתית דווקא שלילית."
+        ],
+        "rubric": [
+          "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי.",
+          "שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי.",
+          "לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "חיבור מפורש ל-business/token/valuation/risk במקום קביעה שורית/דובית אוטומטית."
+        ],
+        "source_refs": [
+          "S01",
+          "S02",
+          "S03",
+          "S04"
+        ],
+        "formula": "MC=Price×Circulating; FDV=Price×Fully Diluted Supply",
+        "exercise": "חשב MC ו-FDV ל-Price $2, Circulating 200M, Max 1B.",
+        "definition": "שלוש הגדרות היצע שונות; במחזור, קיים, ותקרה תיאורטית.",
+        "critical": true,
+        "data_pull": [
+          "Raw value / absolute level",
+          "30d / 90d / 365d change when applicable",
+          "Historical percentile or regime context",
+          "Peer median / best-in-class comparison",
+          "Source definition + as-of date",
+          "Confidence level + alternative explanation"
+        ],
+        "institutional_questions": [
+          "מה המשתנה Circulating / Total / Max אומר על העסק/הרשת — לפני הטוקן?",
+          "האם יש transmission אמיתי מהמשתנה לערך הטוקן?",
+          "האם התצפית נובעת ממחיר, תמריצים, leverage, accounting או פעילות אורגנית?",
+          "איזה denominator או cohort ישנה את המסקנה?",
+          "מה השוק כנראה כבר מתמחר מתוך הנתון הזה?",
+          "איזה נתון עתידי יפריך את הפרשנות שלי?"
+        ],
+        "memo_template": "Observation: [הנתון של Circulating / Total / Max] | Definition: [...] | As-of: [...] | Peer/History: [...] | Interpretation: [...] | Token impact: [...] | Alternative explanation: [...] | Falsifier: [...] | Confidence: High/Medium/Low.",
+        "worked_example": {
+          "prompt": "חשב MC ו-FDV ל-Price $2, Circulating 200M, Max 1B.",
+          "solution": "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי. שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי. לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "lesson": "המטרה אינה להגיע למספר בלבד; צריך להסביר מה המספר כן ולא מוכיח, ואיך הוא משנה את ההסתברות של התזה."
+        }
+      }
+    },
+    {
+      "name": "Market Cap מול FDV",
+      "definition": "MC מתמחר היצע במחזור; FDV את ההיצע המדולל.",
+      "method": "חשב MC/FDV ואז פרק את הפער לפי recipients ו-unlocks.",
+      "trap": "Low MC/FDV אינו רע אוטומטית; צריך זמן, בעלות וצמיחה.",
+      "exercise": "Token A MC/FDV=0.85, B=0.18. כתוב 3 בדיקות לפני מסקנה.",
+      "formula": "MC/FDV = Market Cap ÷ FDV",
+      "deep": {
+        "why": "ב-Level הזה, Market Cap מול FDV הוא לא פרט טכני אלא חוליה בשרשרת ההחלטה. השאלה אינה רק 'מה המספר?', אלא האם הוא משנה את ההבנה שלנו לגבי איכות העסק, לכידת הערך, עוצמת הביקוש, הסיכון או מה שכבר מתומחר.",
+        "mental": "חשוב לחשוב על הטוקן כעל Claim שמחולק למספר יחידות משתנה. כל שינוי בהיצע, בנעילות ובבעלות משנה את ה-claim של המחזיק הקיים גם אם ערך הרשת הכולל לא השתנה.",
+        "workflow": [
+          "הגדר במילים שלך את המשתנה ואת היחידות שלו לפני שאתה פותח Dashboard.",
+          "חשב MC/FDV ואז פרק את הפער לפי recipients ו-unlocks.",
+          "אמת לפחות מול מקור נוסף או raw on-chain evidence כאשר אפשר.",
+          "אסוף את שדות הבסיס: Price, Circulating supply, Total/Max supply, Free float, Unlock calendar, Recipients.",
+          "הפרד Level נוכחי, שינוי לאורך זמן ויחס ל-Peer Group.",
+          "כתוב לפחות הסבר אלטרנטיבי אחד לאותה תצפית.",
+          "תרגם את התוצאה להשפעה על Thesis / Valuation / Risk — או ציין שאין השפעה.",
+          "הגדר מראש מה היה גורם לך לשנות את המסקנה."
+        ],
+        "interpret": [
+          "תמיד נתח גם Level וגם Flow: כמה היצע קיים היום, וכמה היצע חדש יכול להגיע לשוק בטווח ההחזקה.",
+          "השתמש ב-30d/90d/365d כאשר המדד משתנה מהר; בנושאים מבניים השתמש גם ב-history ארוך יותר.",
+          "אל תעשה annualize לתקופת קיצון בלי להציג normalized case.",
+          "כאשר denominator או source methodology לא יציבים, הצג Range ולא מספר יחיד."
+        ],
+        "red": [
+          "Low MC/FDV אינו רע אוטומטית; צריך זמן, בעלות וצמיחה.",
+          "האם המכנה הוא circulating, free float או future diluted supply?",
+          "מי מקבל את ההיצע החדש?",
+          "האם הזרימה לשוק היא אירוע חד-פעמי או קצב מתמשך?"
+        ],
+        "evidence": "סטנדרט הראיות: מקור ראשוני/חוזה/Docs כאשר אפשר; ספק נתונים עם definition; Cross-check עצמאי; As-of date; confidence; ו-alternative explanation. כאשר שני מקורות חולקים — לא ממוצעים אוטומטית, אלא מיישבים הגדרות.",
+        "analyst_output": "ב-Investment Memo אל תדביק רק את המספר. כתוב: נתון → הגדרה → מקור → Peer/Historical context → Interpretation → Impact on thesis → Falsifier.",
+        "learning_outcomes": [
+          "אני יכול להסביר Market Cap מול FDV ללא jargon ובמשפט אחד.",
+          "אני יכול למדוד/לחשב Market Cap מול FDV עם denominator והגדרה נכונים.",
+          "אני יכול לזהות לפחות 3 דרכים שבהן Market Cap מול FDV עלול להטעות.",
+          "אני יכול לחבר את הנתון ל-Thesis או להסביר למה הוא לא רלוונטי.",
+          "פתרתי את התרגיל ועניתי על Micro Exam לפני שחשפתי את ה-Rubric."
+        ],
+        "exam": [
+          "הגדרה: מה בדיוק Market Cap מול FDV מודד — ומה הוא במפורש לא מודד?",
+          "Token A MC/FDV=0.85, B=0.18. כתוב 3 בדיקות לפני מסקנה.",
+          "Adversarial: תן שני מצבים שבהם Market Cap מול FDV נראה חיובי אך המסקנה ההשקעתית דווקא שלילית."
+        ],
+        "rubric": [
+          "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי.",
+          "שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי.",
+          "לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "חיבור מפורש ל-business/token/valuation/risk במקום קביעה שורית/דובית אוטומטית."
+        ],
+        "source_refs": [
+          "S01",
+          "S02",
+          "S03",
+          "S04"
+        ],
+        "formula": "MC/FDV = Market Cap ÷ FDV",
+        "exercise": "Token A MC/FDV=0.85, B=0.18. כתוב 3 בדיקות לפני מסקנה.",
+        "definition": "MC מתמחר היצע במחזור; FDV את ההיצע המדולל.",
+        "critical": true,
+        "data_pull": [
+          "Raw value / absolute level",
+          "30d / 90d / 365d change when applicable",
+          "Historical percentile or regime context",
+          "Peer median / best-in-class comparison",
+          "Source definition + as-of date",
+          "Confidence level + alternative explanation"
+        ],
+        "institutional_questions": [
+          "מה המשתנה Market Cap מול FDV אומר על העסק/הרשת — לפני הטוקן?",
+          "האם יש transmission אמיתי מהמשתנה לערך הטוקן?",
+          "האם התצפית נובעת ממחיר, תמריצים, leverage, accounting או פעילות אורגנית?",
+          "איזה denominator או cohort ישנה את המסקנה?",
+          "מה השוק כנראה כבר מתמחר מתוך הנתון הזה?",
+          "איזה נתון עתידי יפריך את הפרשנות שלי?"
+        ],
+        "memo_template": "Observation: [הנתון של Market Cap מול FDV] | Definition: [...] | As-of: [...] | Peer/History: [...] | Interpretation: [...] | Token impact: [...] | Alternative explanation: [...] | Falsifier: [...] | Confidence: High/Medium/Low.",
+        "worked_example": {
+          "prompt": "Token A MC/FDV=0.85, B=0.18. כתוב 3 בדיקות לפני מסקנה.",
+          "solution": "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי. שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי. לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "lesson": "המטרה אינה להגיע למספר בלבד; צריך להסביר מה המספר כן ולא מוכיח, ואיך הוא משנה את ההסתברות של התזה."
+        }
+      }
+    },
+    {
+      "name": "Free Float",
+      "definition": "היצע שניתן כלכלית למסחר; לא כל circulating הוא free float.",
+      "method": "נטרל treasury, contracts, CEX custody, staking לפי מתודולוגיה.",
+      "trap": "לספור wallet של בורסה כ-whale או כל unlocked token כ-float.",
+      "exercise": "MC=$1B, Free-Float MC=$250M, Volume=$200M. השווה turnover.",
+      "formula": "Volume/Free-Float MC",
+      "deep": {
+        "why": "ב-Level הזה, Free Float הוא לא פרט טכני אלא חוליה בשרשרת ההחלטה. השאלה אינה רק 'מה המספר?', אלא האם הוא משנה את ההבנה שלנו לגבי איכות העסק, לכידת הערך, עוצמת הביקוש, הסיכון או מה שכבר מתומחר.",
+        "mental": "חשוב לחשוב על הטוקן כעל Claim שמחולק למספר יחידות משתנה. כל שינוי בהיצע, בנעילות ובבעלות משנה את ה-claim של המחזיק הקיים גם אם ערך הרשת הכולל לא השתנה.",
+        "workflow": [
+          "הגדר במילים שלך את המשתנה ואת היחידות שלו לפני שאתה פותח Dashboard.",
+          "נטרל treasury, contracts, CEX custody, staking לפי מתודולוגיה.",
+          "אמת לפחות מול מקור נוסף או raw on-chain evidence כאשר אפשר.",
+          "אסוף את שדות הבסיס: Price, Circulating supply, Total/Max supply, Free float, Unlock calendar, Recipients.",
+          "הפרד Level נוכחי, שינוי לאורך זמן ויחס ל-Peer Group.",
+          "כתוב לפחות הסבר אלטרנטיבי אחד לאותה תצפית.",
+          "תרגם את התוצאה להשפעה על Thesis / Valuation / Risk — או ציין שאין השפעה.",
+          "הגדר מראש מה היה גורם לך לשנות את המסקנה."
+        ],
+        "interpret": [
+          "תמיד נתח גם Level וגם Flow: כמה היצע קיים היום, וכמה היצע חדש יכול להגיע לשוק בטווח ההחזקה.",
+          "השתמש ב-30d/90d/365d כאשר המדד משתנה מהר; בנושאים מבניים השתמש גם ב-history ארוך יותר.",
+          "אל תעשה annualize לתקופת קיצון בלי להציג normalized case.",
+          "כאשר denominator או source methodology לא יציבים, הצג Range ולא מספר יחיד."
+        ],
+        "red": [
+          "לספור wallet של בורסה כ-whale או כל unlocked token כ-float.",
+          "האם המכנה הוא circulating, free float או future diluted supply?",
+          "מי מקבל את ההיצע החדש?",
+          "האם הזרימה לשוק היא אירוע חד-פעמי או קצב מתמשך?"
+        ],
+        "evidence": "סטנדרט הראיות: מקור ראשוני/חוזה/Docs כאשר אפשר; ספק נתונים עם definition; Cross-check עצמאי; As-of date; confidence; ו-alternative explanation. כאשר שני מקורות חולקים — לא ממוצעים אוטומטית, אלא מיישבים הגדרות.",
+        "analyst_output": "ב-Investment Memo אל תדביק רק את המספר. כתוב: נתון → הגדרה → מקור → Peer/Historical context → Interpretation → Impact on thesis → Falsifier.",
+        "learning_outcomes": [
+          "אני יכול להסביר Free Float ללא jargon ובמשפט אחד.",
+          "אני יכול למדוד/לחשב Free Float עם denominator והגדרה נכונים.",
+          "אני יכול לזהות לפחות 3 דרכים שבהן Free Float עלול להטעות.",
+          "אני יכול לחבר את הנתון ל-Thesis או להסביר למה הוא לא רלוונטי.",
+          "פתרתי את התרגיל ועניתי על Micro Exam לפני שחשפתי את ה-Rubric."
+        ],
+        "exam": [
+          "הגדרה: מה בדיוק Free Float מודד — ומה הוא במפורש לא מודד?",
+          "MC=$1B, Free-Float MC=$250M, Volume=$200M. השווה turnover.",
+          "Adversarial: תן שני מצבים שבהם Free Float נראה חיובי אך המסקנה ההשקעתית דווקא שלילית."
+        ],
+        "rubric": [
+          "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי.",
+          "שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי.",
+          "לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "חיבור מפורש ל-business/token/valuation/risk במקום קביעה שורית/דובית אוטומטית."
+        ],
+        "source_refs": [
+          "S01",
+          "S02",
+          "S03",
+          "S04"
+        ],
+        "formula": "Volume/Free-Float MC",
+        "exercise": "MC=$1B, Free-Float MC=$250M, Volume=$200M. השווה turnover.",
+        "definition": "היצע שניתן כלכלית למסחר; לא כל circulating הוא free float.",
+        "critical": true,
+        "data_pull": [
+          "Raw value / absolute level",
+          "30d / 90d / 365d change when applicable",
+          "Historical percentile or regime context",
+          "Peer median / best-in-class comparison",
+          "Source definition + as-of date",
+          "Confidence level + alternative explanation"
+        ],
+        "institutional_questions": [
+          "מה המשתנה Free Float אומר על העסק/הרשת — לפני הטוקן?",
+          "האם יש transmission אמיתי מהמשתנה לערך הטוקן?",
+          "האם התצפית נובעת ממחיר, תמריצים, leverage, accounting או פעילות אורגנית?",
+          "איזה denominator או cohort ישנה את המסקנה?",
+          "מה השוק כנראה כבר מתמחר מתוך הנתון הזה?",
+          "איזה נתון עתידי יפריך את הפרשנות שלי?"
+        ],
+        "memo_template": "Observation: [הנתון של Free Float] | Definition: [...] | As-of: [...] | Peer/History: [...] | Interpretation: [...] | Token impact: [...] | Alternative explanation: [...] | Falsifier: [...] | Confidence: High/Medium/Low.",
+        "worked_example": {
+          "prompt": "MC=$1B, Free-Float MC=$250M, Volume=$200M. השווה turnover.",
+          "solution": "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי. שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי. לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "lesson": "המטרה אינה להגיע למספר בלבד; צריך להסביר מה המספר כן ולא מוכיח, ואיך הוא משנה את ההסתברות של התזה."
+        }
+      }
+    },
+    {
+      "name": "Unlocks / Vesting / Cliff",
+      "definition": "מעבר מהקצאה נעולה להיצע נזיל; הסיכון תלוי גם בזהות וב-cost basis.",
+      "method": "בנה לוח 30/90/180/365 יום לפי cohort.",
+      "trap": "Unlock=Sell.",
+      "exercise": "Unlock $120M מול Free Float $300M — חשב יחס.",
+      "formula": "Unlock/Free Float",
+      "deep": {
+        "why": "ב-Level הזה, Unlocks / Vesting / Cliff הוא לא פרט טכני אלא חוליה בשרשרת ההחלטה. השאלה אינה רק 'מה המספר?', אלא האם הוא משנה את ההבנה שלנו לגבי איכות העסק, לכידת הערך, עוצמת הביקוש, הסיכון או מה שכבר מתומחר.",
+        "mental": "חשוב לחשוב על הטוקן כעל Claim שמחולק למספר יחידות משתנה. כל שינוי בהיצע, בנעילות ובבעלות משנה את ה-claim של המחזיק הקיים גם אם ערך הרשת הכולל לא השתנה.",
+        "workflow": [
+          "הגדר במילים שלך את המשתנה ואת היחידות שלו לפני שאתה פותח Dashboard.",
+          "בנה לוח 30/90/180/365 יום לפי cohort.",
+          "אמת לפחות מול מקור נוסף או raw on-chain evidence כאשר אפשר.",
+          "אסוף את שדות הבסיס: Price, Circulating supply, Total/Max supply, Free float, Unlock calendar, Recipients.",
+          "הפרד Level נוכחי, שינוי לאורך זמן ויחס ל-Peer Group.",
+          "כתוב לפחות הסבר אלטרנטיבי אחד לאותה תצפית.",
+          "תרגם את התוצאה להשפעה על Thesis / Valuation / Risk — או ציין שאין השפעה.",
+          "הגדר מראש מה היה גורם לך לשנות את המסקנה."
+        ],
+        "interpret": [
+          "תמיד נתח גם Level וגם Flow: כמה היצע קיים היום, וכמה היצע חדש יכול להגיע לשוק בטווח ההחזקה.",
+          "השתמש ב-30d/90d/365d כאשר המדד משתנה מהר; בנושאים מבניים השתמש גם ב-history ארוך יותר.",
+          "אל תעשה annualize לתקופת קיצון בלי להציג normalized case.",
+          "כאשר denominator או source methodology לא יציבים, הצג Range ולא מספר יחיד."
+        ],
+        "red": [
+          "Unlock=Sell.",
+          "האם המכנה הוא circulating, free float או future diluted supply?",
+          "מי מקבל את ההיצע החדש?",
+          "האם הזרימה לשוק היא אירוע חד-פעמי או קצב מתמשך?"
+        ],
+        "evidence": "סטנדרט הראיות: מקור ראשוני/חוזה/Docs כאשר אפשר; ספק נתונים עם definition; Cross-check עצמאי; As-of date; confidence; ו-alternative explanation. כאשר שני מקורות חולקים — לא ממוצעים אוטומטית, אלא מיישבים הגדרות.",
+        "analyst_output": "ב-Investment Memo אל תדביק רק את המספר. כתוב: נתון → הגדרה → מקור → Peer/Historical context → Interpretation → Impact on thesis → Falsifier.",
+        "learning_outcomes": [
+          "אני יכול להסביר Unlocks / Vesting / Cliff ללא jargon ובמשפט אחד.",
+          "אני יכול למדוד/לחשב Unlocks / Vesting / Cliff עם denominator והגדרה נכונים.",
+          "אני יכול לזהות לפחות 3 דרכים שבהן Unlocks / Vesting / Cliff עלול להטעות.",
+          "אני יכול לחבר את הנתון ל-Thesis או להסביר למה הוא לא רלוונטי.",
+          "פתרתי את התרגיל ועניתי על Micro Exam לפני שחשפתי את ה-Rubric."
+        ],
+        "exam": [
+          "הגדרה: מה בדיוק Unlocks / Vesting / Cliff מודד — ומה הוא במפורש לא מודד?",
+          "Unlock $120M מול Free Float $300M — חשב יחס.",
+          "Adversarial: תן שני מצבים שבהם Unlocks / Vesting / Cliff נראה חיובי אך המסקנה ההשקעתית דווקא שלילית."
+        ],
+        "rubric": [
+          "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי.",
+          "שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי.",
+          "לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "חיבור מפורש ל-business/token/valuation/risk במקום קביעה שורית/דובית אוטומטית."
+        ],
+        "source_refs": [
+          "S01",
+          "S02",
+          "S03",
+          "S04"
+        ],
+        "formula": "Unlock/Free Float",
+        "exercise": "Unlock $120M מול Free Float $300M — חשב יחס.",
+        "definition": "מעבר מהקצאה נעולה להיצע נזיל; הסיכון תלוי גם בזהות וב-cost basis.",
+        "critical": true,
+        "data_pull": [
+          "Raw value / absolute level",
+          "30d / 90d / 365d change when applicable",
+          "Historical percentile or regime context",
+          "Peer median / best-in-class comparison",
+          "Source definition + as-of date",
+          "Confidence level + alternative explanation"
+        ],
+        "institutional_questions": [
+          "מה המשתנה Unlocks / Vesting / Cliff אומר על העסק/הרשת — לפני הטוקן?",
+          "האם יש transmission אמיתי מהמשתנה לערך הטוקן?",
+          "האם התצפית נובעת ממחיר, תמריצים, leverage, accounting או פעילות אורגנית?",
+          "איזה denominator או cohort ישנה את המסקנה?",
+          "מה השוק כנראה כבר מתמחר מתוך הנתון הזה?",
+          "איזה נתון עתידי יפריך את הפרשנות שלי?"
+        ],
+        "memo_template": "Observation: [הנתון של Unlocks / Vesting / Cliff] | Definition: [...] | As-of: [...] | Peer/History: [...] | Interpretation: [...] | Token impact: [...] | Alternative explanation: [...] | Falsifier: [...] | Confidence: High/Medium/Low.",
+        "worked_example": {
+          "prompt": "Unlock $120M מול Free Float $300M — חשב יחס.",
+          "solution": "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי. שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי. לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "lesson": "המטרה אינה להגיע למספר בלבד; צריך להסביר מה המספר כן ולא מוכיח, ואיך הוא משנה את ההסתברות של התזה."
+        }
+      }
+    },
+    {
+      "name": "Emissions / Burns / Dilution Coverage",
+      "definition": "הנפקה חדשה מדללת; burn/buyback/distribution יכולים לקזז.",
+      "method": "חשב gross issuance, sinks ו-net issuance בדולר ובטוקנים.",
+      "trap": "לכנות staking emissions תשואה אמיתית.",
+      "exercise": "Issuance 200, Buyback 40, Burn 10, Distribution 20 — coverage?",
+      "formula": "(Buybacks+Burns+Distributions)/New Issuance",
+      "deep": {
+        "why": "ב-Level הזה, Emissions / Burns / Dilution Coverage הוא לא פרט טכני אלא חוליה בשרשרת ההחלטה. השאלה אינה רק 'מה המספר?', אלא האם הוא משנה את ההבנה שלנו לגבי איכות העסק, לכידת הערך, עוצמת הביקוש, הסיכון או מה שכבר מתומחר.",
+        "mental": "חשוב לחשוב על הטוקן כעל Claim שמחולק למספר יחידות משתנה. כל שינוי בהיצע, בנעילות ובבעלות משנה את ה-claim של המחזיק הקיים גם אם ערך הרשת הכולל לא השתנה.",
+        "workflow": [
+          "הגדר במילים שלך את המשתנה ואת היחידות שלו לפני שאתה פותח Dashboard.",
+          "חשב gross issuance, sinks ו-net issuance בדולר ובטוקנים.",
+          "אמת לפחות מול מקור נוסף או raw on-chain evidence כאשר אפשר.",
+          "אסוף את שדות הבסיס: Price, Circulating supply, Total/Max supply, Free float, Unlock calendar, Recipients.",
+          "הפרד Level נוכחי, שינוי לאורך זמן ויחס ל-Peer Group.",
+          "כתוב לפחות הסבר אלטרנטיבי אחד לאותה תצפית.",
+          "תרגם את התוצאה להשפעה על Thesis / Valuation / Risk — או ציין שאין השפעה.",
+          "הגדר מראש מה היה גורם לך לשנות את המסקנה."
+        ],
+        "interpret": [
+          "תמיד נתח גם Level וגם Flow: כמה היצע קיים היום, וכמה היצע חדש יכול להגיע לשוק בטווח ההחזקה.",
+          "השתמש ב-30d/90d/365d כאשר המדד משתנה מהר; בנושאים מבניים השתמש גם ב-history ארוך יותר.",
+          "אל תעשה annualize לתקופת קיצון בלי להציג normalized case.",
+          "כאשר denominator או source methodology לא יציבים, הצג Range ולא מספר יחיד."
+        ],
+        "red": [
+          "לכנות staking emissions תשואה אמיתית.",
+          "האם המכנה הוא circulating, free float או future diluted supply?",
+          "מי מקבל את ההיצע החדש?",
+          "האם הזרימה לשוק היא אירוע חד-פעמי או קצב מתמשך?"
+        ],
+        "evidence": "סטנדרט הראיות: מקור ראשוני/חוזה/Docs כאשר אפשר; ספק נתונים עם definition; Cross-check עצמאי; As-of date; confidence; ו-alternative explanation. כאשר שני מקורות חולקים — לא ממוצעים אוטומטית, אלא מיישבים הגדרות.",
+        "analyst_output": "ב-Investment Memo אל תדביק רק את המספר. כתוב: נתון → הגדרה → מקור → Peer/Historical context → Interpretation → Impact on thesis → Falsifier.",
+        "learning_outcomes": [
+          "אני יכול להסביר Emissions / Burns / Dilution Coverage ללא jargon ובמשפט אחד.",
+          "אני יכול למדוד/לחשב Emissions / Burns / Dilution Coverage עם denominator והגדרה נכונים.",
+          "אני יכול לזהות לפחות 3 דרכים שבהן Emissions / Burns / Dilution Coverage עלול להטעות.",
+          "אני יכול לחבר את הנתון ל-Thesis או להסביר למה הוא לא רלוונטי.",
+          "פתרתי את התרגיל ועניתי על Micro Exam לפני שחשפתי את ה-Rubric."
+        ],
+        "exam": [
+          "הגדרה: מה בדיוק Emissions / Burns / Dilution Coverage מודד — ומה הוא במפורש לא מודד?",
+          "Issuance 200, Buyback 40, Burn 10, Distribution 20 — coverage?",
+          "Adversarial: תן שני מצבים שבהם Emissions / Burns / Dilution Coverage נראה חיובי אך המסקנה ההשקעתית דווקא שלילית."
+        ],
+        "rubric": [
+          "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי.",
+          "שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי.",
+          "לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "חיבור מפורש ל-business/token/valuation/risk במקום קביעה שורית/דובית אוטומטית."
+        ],
+        "source_refs": [
+          "S01",
+          "S02",
+          "S03",
+          "S04"
+        ],
+        "formula": "(Buybacks+Burns+Distributions)/New Issuance",
+        "exercise": "Issuance 200, Buyback 40, Burn 10, Distribution 20 — coverage?",
+        "definition": "הנפקה חדשה מדללת; burn/buyback/distribution יכולים לקזז.",
+        "critical": true,
+        "data_pull": [
+          "Raw value / absolute level",
+          "30d / 90d / 365d change when applicable",
+          "Historical percentile or regime context",
+          "Peer median / best-in-class comparison",
+          "Source definition + as-of date",
+          "Confidence level + alternative explanation"
+        ],
+        "institutional_questions": [
+          "מה המשתנה Emissions / Burns / Dilution Coverage אומר על העסק/הרשת — לפני הטוקן?",
+          "האם יש transmission אמיתי מהמשתנה לערך הטוקן?",
+          "האם התצפית נובעת ממחיר, תמריצים, leverage, accounting או פעילות אורגנית?",
+          "איזה denominator או cohort ישנה את המסקנה?",
+          "מה השוק כנראה כבר מתמחר מתוך הנתון הזה?",
+          "איזה נתון עתידי יפריך את הפרשנות שלי?"
+        ],
+        "memo_template": "Observation: [הנתון של Emissions / Burns / Dilution Coverage] | Definition: [...] | As-of: [...] | Peer/History: [...] | Interpretation: [...] | Token impact: [...] | Alternative explanation: [...] | Falsifier: [...] | Confidence: High/Medium/Low.",
+        "worked_example": {
+          "prompt": "Issuance 200, Buyback 40, Burn 10, Distribution 20 — coverage?",
+          "solution": "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי. שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי. לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "lesson": "המטרה אינה להגיע למספר בלבד; צריך להסביר מה המספר כן ולא מוכיח, ואיך הוא משנה את ההסתברות של התזה."
+        }
+      }
+    }
+  ],
+  "exam": "בנה Supply Bridge מלא לטוקן אמיתי והסבר את סיכון ההיצע המרכזי.",
+  "critical": true,
+  "source_refs": [
+    "S01",
+    "S02",
+    "S03",
+    "S04"
+  ],
+  "prereq": [],
+  "academy": {
+    "letter": "A",
+    "title": "יסודות הטוקן והחשבונאות",
+    "ids": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  }
+}

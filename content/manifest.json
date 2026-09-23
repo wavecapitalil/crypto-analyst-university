@@ -1,0 +1,1958 @@
+{
+  "meta": {
+    "version": "7",
+    "as_of": "2026-09-22",
+    "levels": 50,
+    "topics": 247,
+    "content_standard": "University for Exceptional Analysts",
+    "verification": "multi-source methodology/primary docs/independent/academic"
+  },
+  "levels": [
+    {
+      "n": 0,
+      "title": "היצע, Free Float ודילול",
+      "domain": "Tokenomics",
+      "obj": "להבין מה באמת סחיר היום, מה ייכנס לשוק בעתיד ואיך שינוי במספר הטוקנים משנה ערך פר טוקן",
+      "academy": {
+        "letter": "A",
+        "title": "יסודות הטוקן והחשבונאות",
+        "ids": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "prereq": [],
+      "exam": "בנה Supply Bridge מלא לטוקן אמיתי והסבר את סיכון ההיצע המרכזי.",
+      "source_refs": [
+        "S01",
+        "S02",
+        "S03",
+        "S04"
+      ],
+      "topicCount": 5
+    },
+    {
+      "n": 1,
+      "title": "לכידת ערך לטוקן — Broken Chain",
+      "domain": "Value Accrual",
+      "obj": "להפריד הצלחת מוצר/חברה/פרוטוקול מהערך שבאמת מגיע לבעל הטוקן",
+      "academy": {
+        "letter": "A",
+        "title": "יסודות הטוקן והחשבונאות",
+        "ids": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "prereq": [
+        0
+      ],
+      "exam": "קח פרוטוקול עם Revenue גבוה והוכח האם הטוקן מקבל claim כלכלי.",
+      "source_refs": [
+        "S01",
+        "S02",
+        "S03",
+        "S04"
+      ],
+      "topicCount": 5
+    },
+    {
+      "n": 2,
+      "title": "חשבונאות פרוטוקול — Crypto P&L",
+      "domain": "Accounting",
+      "obj": "לבנות שפה עקבית ל-Fees, Revenue, Incentives, Earnings ו-Holder Revenue",
+      "academy": {
+        "letter": "A",
+        "title": "יסודות הטוקן והחשבונאות",
+        "ids": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "prereq": [
+        0,
+        1
+      ],
+      "exam": "בנה P&L אמיתי עם reconciliation בין שני מקורות.",
+      "source_refs": [
+        "S01",
+        "S02",
+        "S03",
+        "S04"
+      ],
+      "topicCount": 5
+    },
+    {
+      "n": 3,
+      "title": "כלכלת יחידה — Unit Economics",
+      "domain": "Accounting",
+      "obj": "להבדיל בין growth איכותי לבין growth מסובסד או לא רווחי",
+      "academy": {
+        "letter": "A",
+        "title": "יסודות הטוקן והחשבונאות",
+        "ids": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "prereq": [
+        0,
+        1,
+        2
+      ],
+      "exam": "השווה שני protocols עם אותה הכנסה והסבר מי עסק איכותי יותר.",
+      "source_refs": [
+        "S01",
+        "S02",
+        "S03",
+        "S04"
+      ],
+      "topicCount": 5
+    },
+    {
+      "n": 4,
+      "title": "מעבדת יחסים — Ratio Laboratory",
+      "domain": "Ratios",
+      "obj": "להשתמש ביחסים כ-diagnostics עם שליטה במכנה, אמינות הנתון והקשר היסטורי/יחסי",
+      "academy": {
+        "letter": "A",
+        "title": "יסודות הטוקן והחשבונאות",
+        "ids": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      },
+      "prereq": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "exam": "בנה Ratio Sheet עם numerator/denominator audit, peer benchmark ו-percentiles.",
+      "source_refs": [
+        "S01",
+        "S02",
+        "S03",
+        "S04"
+      ],
+      "topicCount": 6
+    },
+    {
+      "n": 5,
+      "title": "טבלת בעלות ו-Cap Table",
+      "domain": "Ownership",
+      "obj": "לשחזר מי מחזיק ומה באמת נזיל",
+      "academy": {
+        "letter": "B",
+        "title": "בעלות, On-chain ונתונים",
+        "ids": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      "prereq": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "exam": "Cold Case: יישם את כל תתי-הנושאים של טבלת בעלות ו-Cap Table על פרויקט אמיתי.",
+      "source_refs": [
+        "S14",
+        "S15",
+        "S16",
+        "S17"
+      ],
+      "topicCount": 4
+    },
+    {
+      "n": 6,
+      "title": "מודיעין VC, בסיס עלות ו-Unlocks",
+      "domain": "Ownership",
+      "obj": "להבין מי קנה לפניי ובאיזה תנאים",
+      "academy": {
+        "letter": "B",
+        "title": "בעלות, On-chain ונתונים",
+        "ids": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      "prereq": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "exam": "Cold Case: יישם את כל תתי-הנושאים של מודיעין VC, בסיס עלות ו-Unlocks על פרויקט אמיתי.",
+      "source_refs": [
+        "S14",
+        "S15",
+        "S16",
+        "S17"
+      ],
+      "topicCount": 4
+    },
+    {
+      "n": 7,
+      "title": "פורנזיקת ארנקים ו-Flow Intelligence",
+      "domain": "Wallets",
+      "obj": "לפרש flows בלי להפוך labels לעובדות",
+      "academy": {
+        "letter": "B",
+        "title": "בעלות, On-chain ונתונים",
+        "ids": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      "prereq": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "exam": "Cold Case: יישם את כל תתי-הנושאים של פורנזיקת ארנקים ו-Flow Intelligence על פרויקט אמיתי.",
+      "source_refs": [
+        "S14",
+        "S15",
+        "S16",
+        "S17"
+      ],
+      "topicCount": 5
+    },
+    {
+      "n": 8,
+      "title": "On-chain Fundamentals",
+      "domain": "On-chain",
+      "obj": "לתרגם chain data ל-demand/economics",
+      "academy": {
+        "letter": "B",
+        "title": "בעלות, On-chain ונתונים",
+        "ids": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      "prereq": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "exam": "Cold Case: יישם את כל תתי-הנושאים של On-chain Fundamentals על פרויקט אמיתי.",
+      "source_refs": [
+        "S01",
+        "S03",
+        "S16",
+        "S17"
+      ],
+      "topicCount": 5
+    },
+    {
+      "n": 9,
+      "title": "איך כל מדד יכול לשקר",
+      "domain": "Data Quality",
+      "obj": "לפתח adversarial data thinking",
+      "academy": {
+        "letter": "B",
+        "title": "בעלות, On-chain ונתונים",
+        "ids": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      "prereq": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "exam": "Cold Case: יישם את כל תתי-הנושאים של איך כל מדד יכול לשקר על פרויקט אמיתי.",
+      "source_refs": [
+        "S01",
+        "S03",
+        "S16",
+        "S17"
+      ],
+      "topicCount": 4
+    },
+    {
+      "n": 10,
+      "title": "Cohorts, Retention ו-Quality of Demand",
+      "domain": "Cohorts",
+      "obj": "למדוד אם משתמשים חוזרים אחרי שהסיבה הזמנית נעלמת",
+      "academy": {
+        "letter": "B",
+        "title": "בעלות, On-chain ונתונים",
+        "ids": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      "prereq": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "exam": "Cold Case: יישם את כל תתי-הנושאים של Cohorts, Retention ו-Quality of Demand על פרויקט אמיתי.",
+      "source_refs": [
+        "S01",
+        "S03",
+        "S16",
+        "S17"
+      ],
+      "topicCount": 4
+    },
+    {
+      "n": 11,
+      "title": "Data Engineering לאנליסט",
+      "domain": "Data Engineering",
+      "obj": "לשחזר KPI ולתעד lineage",
+      "academy": {
+        "letter": "B",
+        "title": "בעלות, On-chain ונתונים",
+        "ids": [
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11
+        ]
+      },
+      "prereq": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "exam": "Cold Case: יישם את כל תתי-הנושאים של Data Engineering לאנליסט על פרויקט אמיתי.",
+      "source_refs": [
+        "S01",
+        "S03",
+        "S16",
+        "S17"
+      ],
+      "topicCount": 4
+    },
+    {
+      "n": 12,
+      "title": "כלכלת בלוקצ׳יין",
+      "domain": "Architecture",
+      "obj": "להבין blockspace, security budget, issuance ו-MEV",
+      "academy": {
+        "letter": "C",
+        "title": "ארכיטקטורה וחפיר",
+        "ids": [
+          12,
+          13,
+          14,
+          15,
+          16
+        ]
+      },
+      "prereq": [
+        1,
+        2,
+        8
+      ],
+      "exam": "Cold Case: יישם את כל תתי-הנושאים של כלכלת בלוקצ׳יין על פרויקט אמיתי.",
+      "source_refs": [
+        "S05",
+        "S06",
+        "S03",
+        "S09"
+      ],
+      "topicCount": 4
+    },
+    {
+      "n": 13,
+      "title": "Crypto Stack",
+      "domain": "Architecture",
+      "obj": "למקם execution, settlement, DA ו-sequencing",
+      "academy": {
+        "letter": "C",
+        "title": "ארכיטקטורה וחפיר",
+        "ids": [
+          12,
+          13,
+          14,
+          15,
+          16
+        ]
+      },
+      "prereq": [
+        1,
+        2,
+        8
+      ],
+      "exam": "Cold Case: יישם את כל תתי-הנושאים של Crypto Stack על פרויקט אמיתי.",
+      "source_refs": [
+        "S05",
+        "S07",
+        "S08",
+        "S09",
+        "S03"
+      ],
+      "topicCount": 4
+    },
+    {
+      "n": 14,
+      "title": "Token Demand Mechanics & Velocity",
+      "domain": "Token Demand",
+      "obj": "להפריד ביקוש חובה, אופציונלי וספקולטיבי",
+      "academy": {
+        "letter": "C",
+        "title": "ארכיטקטורה וחפיר",
+        "ids": [
+          12,
+          13,
+          14,
+          15,
+          16
+        ]
+      },
+      "prereq": [
+        1,
+        2,
+        8
+      ],
+      "exam": "Cold Case: יישם את כל תתי-הנושאים של Token Demand Mechanics & Velocity על פרויקט אמיתי.",
+      "source_refs": [
+        "S03",
+        "S12",
+        "S23",
+        "S27",
+        "S05",
+        "S09"
+      ],
+      "topicCount": 4
+    },
+    {
+      "n": 15,
+      "title": "חפיר בקריפטו",
+      "domain": "Moats",
+      "obj": "להוכיח moat עם KPI ולא adjective",
+      "academy": {
+        "letter": "C",
+        "title": "ארכיטקטורה וחפיר",
+        "ids": [
+          12,
+          13,
+          14,
+          15,
+          16
+        ]
+      },
+      "prereq": [
+        1,
+        2,
+        8
+      ],
+      "exam": "Cold Case: יישם את כל תתי-הנושאים של חפיר בקריפטו על פרויקט אמיתי.",
+      "source_refs": [
+        "S12",
+        "S13",
+        "S09",
+        "S05",
+        "S03"
+      ],
+      "topicCount": 4
+    },
+    {
+      "n": 16,
+      "title": "מבחן ה-$50M Fork",
+      "domain": "Moats",
+      "obj": "לבדוק אם מתחרה ממומן יכול לקנות את ה-share",
+      "academy": {
+        "letter": "C",
+        "title": "ארכיטקטורה וחפיר",
+        "ids": [
+          12,
+          13,
+          14,
+          15,
+          16
+        ]
+      },
+      "prereq": [
+        1,
+        2,
+        8
+      ],
+      "exam": "Cold Case: יישם את כל תתי-הנושאים של מבחן ה-$50M Fork על פרויקט אמיתי.",
+      "source_refs": [
+        "S12",
+        "S13",
+        "S09",
+        "S05",
+        "S03"
+      ],
+      "topicCount": 3
+    },
+    {
+      "n": 17,
+      "title": "סקטור: DEX",
+      "domain": "Sector Mastery",
+      "obj": "לנתח DEX כ-Industry Analyst: business → KPI → economics → moat → token capture → valuation → kill criteria",
+      "academy": {
+        "letter": "D",
+        "title": "שליטה בסקטורים",
+        "ids": [
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ]
+      },
+      "prereq": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        8,
+        15
+      ],
+      "exam": "השווה 3 פרויקטי DEX בלי לראות מחיר; אחר כך חשוף valuation ובדוק מה כבר מתומחר.",
+      "source_refs": [
+        "S12",
+        "S13",
+        "S01",
+        "S03"
+      ],
+      "topicCount": 7
+    },
+    {
+      "n": 18,
+      "title": "סקטור: Perp DEX",
+      "domain": "Sector Mastery",
+      "obj": "לנתח Perp DEX כ-Industry Analyst: business → KPI → economics → moat → token capture → valuation → kill criteria",
+      "academy": {
+        "letter": "D",
+        "title": "שליטה בסקטורים",
+        "ids": [
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ]
+      },
+      "prereq": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        8,
+        15
+      ],
+      "exam": "השווה 3 פרויקטי Perp DEX בלי לראות מחיר; אחר כך חשוף valuation ובדוק מה כבר מתומחר.",
+      "source_refs": [
+        "S26",
+        "S01",
+        "S03"
+      ],
+      "topicCount": 7
+    },
+    {
+      "n": 19,
+      "title": "סקטור: Lending",
+      "domain": "Sector Mastery",
+      "obj": "לנתח Lending כ-Industry Analyst: business → KPI → economics → moat → token capture → valuation → kill criteria",
+      "academy": {
+        "letter": "D",
+        "title": "שליטה בסקטורים",
+        "ids": [
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ]
+      },
+      "prereq": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        8,
+        15
+      ],
+      "exam": "השווה 3 פרויקטי Lending בלי לראות מחיר; אחר כך חשוף valuation ובדוק מה כבר מתומחר.",
+      "source_refs": [
+        "S11",
+        "S01",
+        "S03"
+      ],
+      "topicCount": 7
+    },
+    {
+      "n": 20,
+      "title": "סקטור: Stablecoins",
+      "domain": "Sector Mastery",
+      "obj": "לנתח Stablecoins כ-Industry Analyst: business → KPI → economics → moat → token capture → valuation → kill criteria",
+      "academy": {
+        "letter": "D",
+        "title": "שליטה בסקטורים",
+        "ids": [
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ]
+      },
+      "prereq": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        8,
+        15
+      ],
+      "exam": "השווה 3 פרויקטי Stablecoins בלי לראות מחיר; אחר כך חשוף valuation ובדוק מה כבר מתומחר.",
+      "source_refs": [
+        "S18",
+        "S01",
+        "S03"
+      ],
+      "topicCount": 7
+    },
+    {
+      "n": 21,
+      "title": "סקטור: L1",
+      "domain": "Sector Mastery",
+      "obj": "לנתח L1 כ-Industry Analyst: business → KPI → economics → moat → token capture → valuation → kill criteria",
+      "academy": {
+        "letter": "D",
+        "title": "שליטה בסקטורים",
+        "ids": [
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ]
+      },
+      "prereq": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        8,
+        15
+      ],
+      "exam": "השווה 3 פרויקטי L1 בלי לראות מחיר; אחר כך חשוף valuation ובדוק מה כבר מתומחר.",
+      "source_refs": [
+        "S05",
+        "S06",
+        "S01",
+        "S03"
+      ],
+      "topicCount": 7
+    },
+    {
+      "n": 22,
+      "title": "סקטור: L2",
+      "domain": "Sector Mastery",
+      "obj": "לנתח L2 כ-Industry Analyst: business → KPI → economics → moat → token capture → valuation → kill criteria",
+      "academy": {
+        "letter": "D",
+        "title": "שליטה בסקטורים",
+        "ids": [
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ]
+      },
+      "prereq": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        8,
+        15
+      ],
+      "exam": "השווה 3 פרויקטי L2 בלי לראות מחיר; אחר כך חשוף valuation ובדוק מה כבר מתומחר.",
+      "source_refs": [
+        "S05",
+        "S07",
+        "S08",
+        "S09",
+        "S10",
+        "S01"
+      ],
+      "topicCount": 7
+    },
+    {
+      "n": 23,
+      "title": "סקטור: LST",
+      "domain": "Sector Mastery",
+      "obj": "לנתח LST כ-Industry Analyst: business → KPI → economics → moat → token capture → valuation → kill criteria",
+      "academy": {
+        "letter": "D",
+        "title": "שליטה בסקטורים",
+        "ids": [
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ]
+      },
+      "prereq": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        8,
+        15
+      ],
+      "exam": "השווה 3 פרויקטי LST בלי לראות מחיר; אחר כך חשוף valuation ובדוק מה כבר מתומחר.",
+      "source_refs": [
+        "S19",
+        "S03",
+        "S01"
+      ],
+      "topicCount": 7
+    },
+    {
+      "n": 24,
+      "title": "סקטור: Restaking",
+      "domain": "Sector Mastery",
+      "obj": "לנתח Restaking כ-Industry Analyst: business → KPI → economics → moat → token capture → valuation → kill criteria",
+      "academy": {
+        "letter": "D",
+        "title": "שליטה בסקטורים",
+        "ids": [
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ]
+      },
+      "prereq": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        8,
+        15
+      ],
+      "exam": "השווה 3 פרויקטי Restaking בלי לראות מחיר; אחר כך חשוף valuation ובדוק מה כבר מתומחר.",
+      "source_refs": [
+        "S20",
+        "S05",
+        "S03",
+        "S01"
+      ],
+      "topicCount": 7
+    },
+    {
+      "n": 25,
+      "title": "סקטור: RWA",
+      "domain": "Sector Mastery",
+      "obj": "לנתח RWA כ-Industry Analyst: business → KPI → economics → moat → token capture → valuation → kill criteria",
+      "academy": {
+        "letter": "D",
+        "title": "שליטה בסקטורים",
+        "ids": [
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ]
+      },
+      "prereq": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        8,
+        15
+      ],
+      "exam": "השווה 3 פרויקטי RWA בלי לראות מחיר; אחר כך חשוף valuation ובדוק מה כבר מתומחר.",
+      "source_refs": [
+        "S21",
+        "S18",
+        "S03",
+        "S01"
+      ],
+      "topicCount": 7
+    },
+    {
+      "n": 26,
+      "title": "סקטור: DePIN",
+      "domain": "Sector Mastery",
+      "obj": "לנתח DePIN כ-Industry Analyst: business → KPI → economics → moat → token capture → valuation → kill criteria",
+      "academy": {
+        "letter": "D",
+        "title": "שליטה בסקטורים",
+        "ids": [
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ]
+      },
+      "prereq": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        8,
+        15
+      ],
+      "exam": "השווה 3 פרויקטי DePIN בלי לראות מחיר; אחר כך חשוף valuation ובדוק מה כבר מתומחר.",
+      "source_refs": [
+        "S27",
+        "S28",
+        "S03",
+        "S01"
+      ],
+      "topicCount": 7
+    },
+    {
+      "n": 27,
+      "title": "סקטור: AI × Crypto",
+      "domain": "Sector Mastery",
+      "obj": "לנתח AI × Crypto כ-Industry Analyst: business → KPI → economics → moat → token capture → valuation → kill criteria",
+      "academy": {
+        "letter": "D",
+        "title": "שליטה בסקטורים",
+        "ids": [
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ]
+      },
+      "prereq": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        8,
+        15
+      ],
+      "exam": "השווה 3 פרויקטי AI × Crypto בלי לראות מחיר; אחר כך חשוף valuation ובדוק מה כבר מתומחר.",
+      "source_refs": [
+        "S22",
+        "S23",
+        "S03",
+        "S01"
+      ],
+      "topicCount": 7
+    },
+    {
+      "n": 28,
+      "title": "סקטור: Oracles",
+      "domain": "Sector Mastery",
+      "obj": "לנתח Oracles כ-Industry Analyst: business → KPI → economics → moat → token capture → valuation → kill criteria",
+      "academy": {
+        "letter": "D",
+        "title": "שליטה בסקטורים",
+        "ids": [
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ]
+      },
+      "prereq": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        8,
+        15
+      ],
+      "exam": "השווה 3 פרויקטי Oracles בלי לראות מחיר; אחר כך חשוף valuation ובדוק מה כבר מתומחר.",
+      "source_refs": [
+        "S24",
+        "S11",
+        "S03",
+        "S01"
+      ],
+      "topicCount": 7
+    },
+    {
+      "n": 29,
+      "title": "סקטור: Bridges",
+      "domain": "Sector Mastery",
+      "obj": "לנתח Bridges כ-Industry Analyst: business → KPI → economics → moat → token capture → valuation → kill criteria",
+      "academy": {
+        "letter": "D",
+        "title": "שליטה בסקטורים",
+        "ids": [
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ]
+      },
+      "prereq": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        8,
+        15
+      ],
+      "exam": "השווה 3 פרויקטי Bridges בלי לראות מחיר; אחר כך חשוף valuation ובדוק מה כבר מתומחר.",
+      "source_refs": [
+        "S05",
+        "S09",
+        "S17",
+        "S01",
+        "S03"
+      ],
+      "topicCount": 7
+    },
+    {
+      "n": 30,
+      "title": "סקטור: Prediction Markets",
+      "domain": "Sector Mastery",
+      "obj": "לנתח Prediction Markets כ-Industry Analyst: business → KPI → economics → moat → token capture → valuation → kill criteria",
+      "academy": {
+        "letter": "D",
+        "title": "שליטה בסקטורים",
+        "ids": [
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ]
+      },
+      "prereq": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        8,
+        15
+      ],
+      "exam": "השווה 3 פרויקטי Prediction Markets בלי לראות מחיר; אחר כך חשוף valuation ובדוק מה כבר מתומחר.",
+      "source_refs": [
+        "S25",
+        "S01",
+        "S03"
+      ],
+      "topicCount": 7
+    },
+    {
+      "n": 31,
+      "title": "Asset Classification — מה בעצם אני מתמחר?",
+      "domain": "Valuation",
+      "obj": "לבחור מודל לפי nature of claim",
+      "academy": {
+        "letter": "E",
+        "title": "תמחור ומודלים",
+        "ids": [
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39
+        ]
+      },
+      "prereq": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        31
+      ],
+      "exam": "בחינת מעבר: לבחור מודל לפי nature of claim על טוקן שלא חקרת קודם.",
+      "source_refs": [
+        "S03",
+        "S04",
+        "S01"
+      ],
+      "topicCount": 4
+    },
+    {
+      "n": 32,
+      "title": "Comparable Valuation",
+      "domain": "Valuation",
+      "obj": "לבנות comps עקביים ולהסביר premium/discount",
+      "academy": {
+        "letter": "E",
+        "title": "תמחור ומודלים",
+        "ids": [
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39
+        ]
+      },
+      "prereq": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        31
+      ],
+      "exam": "בחינת מעבר: לבנות comps עקביים ולהסביר premium/discount על טוקן שלא חקרת קודם.",
+      "source_refs": [
+        "S03",
+        "S04",
+        "S01"
+      ],
+      "topicCount": 4
+    },
+    {
+      "n": 33,
+      "title": "Driver-Based Forecasting",
+      "domain": "Forecasting",
+      "obj": "לחזות דרך drivers ולא Revenue +30%",
+      "academy": {
+        "letter": "E",
+        "title": "תמחור ומודלים",
+        "ids": [
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39
+        ]
+      },
+      "prereq": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        31
+      ],
+      "exam": "בחינת מעבר: לחזות דרך drivers ולא Revenue +30% על טוקן שלא חקרת קודם.",
+      "source_refs": [
+        "S03",
+        "S04",
+        "S01"
+      ],
+      "topicCount": 4
+    },
+    {
+      "n": 34,
+      "title": "Reverse Valuation",
+      "domain": "Valuation",
+      "obj": "לתרגם מחיר להנחות שהשוק כבר מתמחר",
+      "academy": {
+        "letter": "E",
+        "title": "תמחור ומודלים",
+        "ids": [
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39
+        ]
+      },
+      "prereq": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        31
+      ],
+      "exam": "בחינת מעבר: לתרגם מחיר להנחות שהשוק כבר מתמחר על טוקן שלא חקרת קודם.",
+      "source_refs": [
+        "S03",
+        "S04",
+        "S01"
+      ],
+      "topicCount": 4
+    },
+    {
+      "n": 35,
+      "title": "Scenario Modeling & Sensitivity",
+      "domain": "Valuation",
+      "obj": "לבנות Bear/Base/Bull מ-drivers",
+      "academy": {
+        "letter": "E",
+        "title": "תמחור ומודלים",
+        "ids": [
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39
+        ]
+      },
+      "prereq": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        31
+      ],
+      "exam": "בחינת מעבר: לבנות Bear/Base/Bull מ-drivers על טוקן שלא חקרת קודם.",
+      "source_refs": [
+        "S03",
+        "S04",
+        "S01"
+      ],
+      "topicCount": 4
+    },
+    {
+      "n": 36,
+      "title": "DCF, Required Return, Terminal Value",
+      "domain": "Valuation",
+      "obj": "להשתמש בהיוון בלי false precision",
+      "academy": {
+        "letter": "E",
+        "title": "תמחור ומודלים",
+        "ids": [
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39
+        ]
+      },
+      "prereq": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        31
+      ],
+      "exam": "בחינת מעבר: להשתמש בהיוון בלי false precision על טוקן שלא חקרת קודם.",
+      "source_refs": [
+        "S03",
+        "S04",
+        "S01"
+      ],
+      "topicCount": 4
+    },
+    {
+      "n": 37,
+      "title": "Supply-Adjusted Valuation",
+      "domain": "Valuation",
+      "obj": "לשלב future supply בתוך per-token value",
+      "academy": {
+        "letter": "E",
+        "title": "תמחור ומודלים",
+        "ids": [
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39
+        ]
+      },
+      "prereq": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        31
+      ],
+      "exam": "בחינת מעבר: לשלב future supply בתוך per-token value על טוקן שלא חקרת קודם.",
+      "source_refs": [
+        "S03",
+        "S04",
+        "S01"
+      ],
+      "topicCount": 4
+    },
+    {
+      "n": 38,
+      "title": "Expectations Investing & Variant Perception",
+      "domain": "Expectations",
+      "obj": "להפריד good asset מ-good investment",
+      "academy": {
+        "letter": "E",
+        "title": "תמחור ומודלים",
+        "ids": [
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39
+        ]
+      },
+      "prereq": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        31
+      ],
+      "exam": "בחינת מעבר: להפריד good asset מ-good investment על טוקן שלא חקרת קודם.",
+      "source_refs": [
+        "S03",
+        "S04",
+        "S01"
+      ],
+      "topicCount": 4
+    },
+    {
+      "n": 39,
+      "title": "Factor Testing & Empirical Research",
+      "domain": "Quant Research",
+      "obj": "לבדוק אם ratios באמת קשורים ל-forward returns",
+      "academy": {
+        "letter": "E",
+        "title": "תמחור ומודלים",
+        "ids": [
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39
+        ]
+      },
+      "prereq": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        31
+      ],
+      "exam": "בחינת מעבר: לבדוק אם ratios באמת קשורים ל-forward returns על טוקן שלא חקרת קודם.",
+      "source_refs": [
+        "S29",
+        "S30",
+        "S31",
+        "S32"
+      ],
+      "topicCount": 4
+    },
+    {
+      "n": 40,
+      "title": "Narratives & Reflexivity",
+      "domain": "Market Structure",
+      "obj": "לנתח feedback בין מחיר, attention, liquidity ו-usage",
+      "academy": {
+        "letter": "F",
+        "title": "מבנה שוק, סיכון ותיק",
+        "ids": [
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48
+        ]
+      },
+      "prereq": [
+        4,
+        8,
+        12
+      ],
+      "exam": "בחינת מעבר: לנתח feedback בין מחיר, attention, liquidity ו-usage על טוקן שלא חקרת קודם.",
+      "source_refs": [
+        "S29",
+        "S32",
+        "S03",
+        "S01"
+      ],
+      "topicCount": 3
+    },
+    {
+      "n": 41,
+      "title": "Derivatives, OI, Funding, Basis ו-IV",
+      "domain": "Derivatives",
+      "obj": "למדוד positioning/overheating ולא לתת signal חד-ממדי",
+      "academy": {
+        "letter": "F",
+        "title": "מבנה שוק, סיכון ותיק",
+        "ids": [
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48
+        ]
+      },
+      "prereq": [
+        4,
+        8,
+        12
+      ],
+      "exam": "בחינת מעבר: למדוד positioning/overheating ולא לתת signal חד-ממדי על טוקן שלא חקרת קודם.",
+      "source_refs": [
+        "S29",
+        "S03",
+        "S26",
+        "S01"
+      ],
+      "topicCount": 4
+    },
+    {
+      "n": 42,
+      "title": "סיכון טכני",
+      "domain": "Risk",
+      "obj": "לזהות נתיבי permanent loss",
+      "academy": {
+        "letter": "F",
+        "title": "מבנה שוק, סיכון ותיק",
+        "ids": [
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48
+        ]
+      },
+      "prereq": [
+        4,
+        8,
+        12
+      ],
+      "exam": "בחינת מעבר: לזהות נתיבי permanent loss על טוקן שלא חקרת קודם.",
+      "source_refs": [
+        "S05",
+        "S09",
+        "S11",
+        "S20"
+      ],
+      "topicCount": 4
+    },
+    {
+      "n": 43,
+      "title": "סיכון כלכלי ורפלקסיבי",
+      "domain": "Risk",
+      "obj": "לזהות failure modes ללא bug",
+      "academy": {
+        "letter": "F",
+        "title": "מבנה שוק, סיכון ותיק",
+        "ids": [
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48
+        ]
+      },
+      "prereq": [
+        4,
+        8,
+        12
+      ],
+      "exam": "בחינת מעבר: לזהות failure modes ללא bug על טוקן שלא חקרת קודם.",
+      "source_refs": [
+        "S05",
+        "S09",
+        "S11",
+        "S20"
+      ],
+      "topicCount": 4
+    },
+    {
+      "n": 44,
+      "title": "Governance, רגולציה ו-Counterparty",
+      "domain": "Risk",
+      "obj": "לזהות off-chain kill switches",
+      "academy": {
+        "letter": "F",
+        "title": "מבנה שוק, סיכון ותיק",
+        "ids": [
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48
+        ]
+      },
+      "prereq": [
+        4,
+        8,
+        12
+      ],
+      "exam": "בחינת מעבר: לזהות off-chain kill switches על טוקן שלא חקרת קודם.",
+      "source_refs": [
+        "S05",
+        "S09",
+        "S11",
+        "S20"
+      ],
+      "topicCount": 4
+    },
+    {
+      "n": 45,
+      "title": "Return Attribution",
+      "domain": "Portfolio",
+      "obj": "להבדיל alpha מ-beta",
+      "academy": {
+        "letter": "F",
+        "title": "מבנה שוק, סיכון ותיק",
+        "ids": [
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48
+        ]
+      },
+      "prereq": [
+        31,
+        34,
+        35,
+        41,
+        42,
+        43
+      ],
+      "exam": "בחינת מעבר: להבדיל alpha מ-beta על טוקן שלא חקרת קודם.",
+      "source_refs": [
+        "S29",
+        "S30",
+        "S31"
+      ],
+      "topicCount": 3
+    },
+    {
+      "n": 46,
+      "title": "Sizing, Liquidity ו-Correlation",
+      "domain": "Portfolio",
+      "obj": "לקבוע exposure לפי risk capacity",
+      "academy": {
+        "letter": "F",
+        "title": "מבנה שוק, סיכון ותיק",
+        "ids": [
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48
+        ]
+      },
+      "prereq": [
+        31,
+        34,
+        35,
+        41,
+        42,
+        43
+      ],
+      "exam": "בחינת מעבר: לקבוע exposure לפי risk capacity על טוקן שלא חקרת קודם.",
+      "source_refs": [
+        "S29",
+        "S30",
+        "S31"
+      ],
+      "topicCount": 4
+    },
+    {
+      "n": 47,
+      "title": "Portfolio Architecture",
+      "domain": "Portfolio",
+      "obj": "לבנות book עם roles ו-factor exposures",
+      "academy": {
+        "letter": "F",
+        "title": "מבנה שוק, סיכון ותיק",
+        "ids": [
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48
+        ]
+      },
+      "prereq": [
+        31,
+        34,
+        35,
+        41,
+        42,
+        43
+      ],
+      "exam": "בחינת מעבר: לבנות book עם roles ו-factor exposures על טוקן שלא חקרת קודם.",
+      "source_refs": [
+        "S29",
+        "S30",
+        "S31"
+      ],
+      "topicCount": 4
+    },
+    {
+      "n": 48,
+      "title": "Decision Log & Research OS",
+      "domain": "Research Process",
+      "obj": "להפוך כל החלטה לניסוי auditable",
+      "academy": {
+        "letter": "F",
+        "title": "מבנה שוק, סיכון ותיק",
+        "ids": [
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48
+        ]
+      },
+      "prereq": [
+        31,
+        34,
+        35,
+        41,
+        42,
+        43
+      ],
+      "exam": "בחינת מעבר: להפוך כל החלטה לניסוי auditable על טוקן שלא חקרת קודם.",
+      "source_refs": [
+        "S01",
+        "S03",
+        "S14",
+        "S16",
+        "S29",
+        "S30"
+      ],
+      "topicCount": 4
+    },
+    {
+      "n": 49,
+      "title": "קאפסטון — Hostile Investment Committee",
+      "domain": "Capstone",
+      "obj": "להגן על מחקר מלא או להרוג את התזה",
+      "academy": {
+        "letter": "G",
+        "title": "קאפסטון",
+        "ids": [
+          49
+        ]
+      },
+      "prereq": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48
+      ],
+      "exam": "בחינת מעבר: להגן על מחקר מלא או להרוג את התזה על טוקן שלא חקרת קודם.",
+      "source_refs": [
+        "S01",
+        "S03",
+        "S09",
+        "S14",
+        "S30"
+      ],
+      "topicCount": 4
+    }
+  ],
+  "academies": [
+    [
+      "A",
+      "יסודות הטוקן והחשבונאות",
+      [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    ],
+    [
+      "B",
+      "בעלות, On-chain ונתונים",
+      [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11
+      ]
+    ],
+    [
+      "C",
+      "ארכיטקטורה וחפיר",
+      [
+        12,
+        13,
+        14,
+        15,
+        16
+      ]
+    ],
+    [
+      "D",
+      "שליטה בסקטורים",
+      [
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ]
+    ],
+    [
+      "E",
+      "תמחור ומודלים",
+      [
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ]
+    ],
+    [
+      "F",
+      "מבנה שוק, סיכון ותיק",
+      [
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48
+      ]
+    ],
+    [
+      "G",
+      "קאפסטון",
+      [
+        49
+      ]
+    ]
+  ]
+}
