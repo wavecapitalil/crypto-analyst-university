@@ -1,0 +1,383 @@
+{
+  "n": 39,
+  "title": "Factor Testing & Empirical Research",
+  "domain": "Quant Research",
+  "obj": "לבדוק אם ratios באמת קשורים ל-forward returns",
+  "topics": [
+    {
+      "name": "Cross-sectional Factors",
+      "definition": "rank/portfolio",
+      "method": "בנה מודל/טבלה/מפה שמכריחה הנחות להיות מפורשות.",
+      "trap": "False precision, definition mismatch או conclusion לפני evidence.",
+      "exercise": "יישם Cross-sectional Factors על Cold Case והצג את ההנחה הכי רגישה.",
+      "formula": "",
+      "deep": {
+        "why": "ב-Level הזה, Cross-sectional Factors הוא לא פרט טכני אלא חוליה בשרשרת ההחלטה. השאלה אינה רק 'מה המספר?', אלא האם הוא משנה את ההבנה שלנו לגבי איכות העסק, לכידת הערך, עוצמת הביקוש, הסיכון או מה שכבר מתומחר.",
+        "mental": "Factor research דורש Point-in-Time data, universe rules, OOS, multiple-testing control ו-robustness. אחרת קל לייצר factor zoo.",
+        "workflow": [
+          "הגדר במילים שלך את המשתנה ואת היחידות שלו לפני שאתה פותח Dashboard.",
+          "בנה מודל/טבלה/מפה שמכריחה הנחות להיות מפורשות.",
+          "אמת לפחות מול מקור נוסף או raw on-chain evidence כאשר אפשר.",
+          "אסוף את שדות הבסיס: Universe, Signal timestamp, Rebalance, Forward return, Transaction costs, Sector/size neutralization.",
+          "הפרד Level נוכחי, שינוי לאורך זמן ויחס ל-Peer Group.",
+          "כתוב לפחות הסבר אלטרנטיבי אחד לאותה תצפית.",
+          "תרגם את התוצאה להשפעה על Thesis / Valuation / Risk — או ציין שאין השפעה.",
+          "הגדר מראש מה היה גורם לך לשנות את המסקנה."
+        ],
+        "interpret": [
+          "תוצאה יפה In-Sample היא התחלה, לא ראיה ל-edge.",
+          "השתמש ב-30d/90d/365d כאשר המדד משתנה מהר; בנושאים מבניים השתמש גם ב-history ארוך יותר.",
+          "אל תעשה annualize לתקופת קיצון בלי להציג normalized case.",
+          "כאשר denominator או source methodology לא יציבים, הצג Range ולא מספר יחיד."
+        ],
+        "red": [
+          "False precision, definition mismatch או conclusion לפני evidence.",
+          "יש look-ahead?",
+          "יש survivorship?",
+          "כמה hypotheses נבדקו?"
+        ],
+        "evidence": "סטנדרט הראיות: מקור ראשוני/חוזה/Docs כאשר אפשר; ספק נתונים עם definition; Cross-check עצמאי; As-of date; confidence; ו-alternative explanation. כאשר שני מקורות חולקים — לא ממוצעים אוטומטית, אלא מיישבים הגדרות.",
+        "analyst_output": "ב-Investment Memo אל תדביק רק את המספר. כתוב: נתון → הגדרה → מקור → Peer/Historical context → Interpretation → Impact on thesis → Falsifier.",
+        "learning_outcomes": [
+          "אני יכול להסביר Cross-sectional Factors ללא jargon ובמשפט אחד.",
+          "אני יכול למדוד/לחשב Cross-sectional Factors עם denominator והגדרה נכונים.",
+          "אני יכול לזהות לפחות 3 דרכים שבהן Cross-sectional Factors עלול להטעות.",
+          "אני יכול לחבר את הנתון ל-Thesis או להסביר למה הוא לא רלוונטי.",
+          "פתרתי את התרגיל ועניתי על Micro Exam לפני שחשפתי את ה-Rubric."
+        ],
+        "exam": [
+          "הגדרה: מה בדיוק Cross-sectional Factors מודד — ומה הוא במפורש לא מודד?",
+          "יישם Cross-sectional Factors על Cold Case והצג את ההנחה הכי רגישה.",
+          "Adversarial: תן שני מצבים שבהם Cross-sectional Factors נראה חיובי אך המסקנה ההשקעתית דווקא שלילית."
+        ],
+        "rubric": [
+          "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי.",
+          "שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי.",
+          "לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "חיבור מפורש ל-business/token/valuation/risk במקום קביעה שורית/דובית אוטומטית."
+        ],
+        "source_refs": [
+          "S29",
+          "S30",
+          "S31",
+          "S32"
+        ],
+        "formula": "",
+        "exercise": "יישם Cross-sectional Factors על Cold Case והצג את ההנחה הכי רגישה.",
+        "definition": "rank/portfolio",
+        "critical": false,
+        "data_pull": [
+          "Raw value / absolute level",
+          "30d / 90d / 365d change when applicable",
+          "Historical percentile or regime context",
+          "Peer median / best-in-class comparison",
+          "Source definition + as-of date",
+          "Confidence level + alternative explanation"
+        ],
+        "institutional_questions": [
+          "מה המשתנה Cross-sectional Factors אומר על העסק/הרשת — לפני הטוקן?",
+          "האם יש transmission אמיתי מהמשתנה לערך הטוקן?",
+          "האם התצפית נובעת ממחיר, תמריצים, leverage, accounting או פעילות אורגנית?",
+          "איזה denominator או cohort ישנה את המסקנה?",
+          "מה השוק כנראה כבר מתמחר מתוך הנתון הזה?",
+          "איזה נתון עתידי יפריך את הפרשנות שלי?"
+        ],
+        "memo_template": "Observation: [הנתון של Cross-sectional Factors] | Definition: [...] | As-of: [...] | Peer/History: [...] | Interpretation: [...] | Token impact: [...] | Alternative explanation: [...] | Falsifier: [...] | Confidence: High/Medium/Low.",
+        "worked_example": {
+          "prompt": "יישם Cross-sectional Factors על Cold Case והצג את ההנחה הכי רגישה.",
+          "solution": "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי. שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי. לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "lesson": "המטרה אינה להגיע למספר בלבד; צריך להסביר מה המספר כן ולא מוכיח, ואיך הוא משנה את ההסתברות של התזה."
+        }
+      }
+    },
+    {
+      "name": "Point-in-Time Data",
+      "definition": "avoid look-ahead",
+      "method": "בנה מודל/טבלה/מפה שמכריחה הנחות להיות מפורשות.",
+      "trap": "False precision, definition mismatch או conclusion לפני evidence.",
+      "exercise": "יישם Point-in-Time Data על Cold Case והצג את ההנחה הכי רגישה.",
+      "formula": "",
+      "deep": {
+        "why": "ב-Level הזה, Point-in-Time Data הוא לא פרט טכני אלא חוליה בשרשרת ההחלטה. השאלה אינה רק 'מה המספר?', אלא האם הוא משנה את ההבנה שלנו לגבי איכות העסק, לכידת הערך, עוצמת הביקוש, הסיכון או מה שכבר מתומחר.",
+        "mental": "Factor research דורש Point-in-Time data, universe rules, OOS, multiple-testing control ו-robustness. אחרת קל לייצר factor zoo.",
+        "workflow": [
+          "הגדר במילים שלך את המשתנה ואת היחידות שלו לפני שאתה פותח Dashboard.",
+          "בנה מודל/טבלה/מפה שמכריחה הנחות להיות מפורשות.",
+          "אמת לפחות מול מקור נוסף או raw on-chain evidence כאשר אפשר.",
+          "אסוף את שדות הבסיס: Universe, Signal timestamp, Rebalance, Forward return, Transaction costs, Sector/size neutralization.",
+          "הפרד Level נוכחי, שינוי לאורך זמן ויחס ל-Peer Group.",
+          "כתוב לפחות הסבר אלטרנטיבי אחד לאותה תצפית.",
+          "תרגם את התוצאה להשפעה על Thesis / Valuation / Risk — או ציין שאין השפעה.",
+          "הגדר מראש מה היה גורם לך לשנות את המסקנה."
+        ],
+        "interpret": [
+          "תוצאה יפה In-Sample היא התחלה, לא ראיה ל-edge.",
+          "השתמש ב-30d/90d/365d כאשר המדד משתנה מהר; בנושאים מבניים השתמש גם ב-history ארוך יותר.",
+          "אל תעשה annualize לתקופת קיצון בלי להציג normalized case.",
+          "כאשר denominator או source methodology לא יציבים, הצג Range ולא מספר יחיד."
+        ],
+        "red": [
+          "False precision, definition mismatch או conclusion לפני evidence.",
+          "יש look-ahead?",
+          "יש survivorship?",
+          "כמה hypotheses נבדקו?"
+        ],
+        "evidence": "סטנדרט הראיות: מקור ראשוני/חוזה/Docs כאשר אפשר; ספק נתונים עם definition; Cross-check עצמאי; As-of date; confidence; ו-alternative explanation. כאשר שני מקורות חולקים — לא ממוצעים אוטומטית, אלא מיישבים הגדרות.",
+        "analyst_output": "ב-Investment Memo אל תדביק רק את המספר. כתוב: נתון → הגדרה → מקור → Peer/Historical context → Interpretation → Impact on thesis → Falsifier.",
+        "learning_outcomes": [
+          "אני יכול להסביר Point-in-Time Data ללא jargon ובמשפט אחד.",
+          "אני יכול למדוד/לחשב Point-in-Time Data עם denominator והגדרה נכונים.",
+          "אני יכול לזהות לפחות 3 דרכים שבהן Point-in-Time Data עלול להטעות.",
+          "אני יכול לחבר את הנתון ל-Thesis או להסביר למה הוא לא רלוונטי.",
+          "פתרתי את התרגיל ועניתי על Micro Exam לפני שחשפתי את ה-Rubric."
+        ],
+        "exam": [
+          "הגדרה: מה בדיוק Point-in-Time Data מודד — ומה הוא במפורש לא מודד?",
+          "יישם Point-in-Time Data על Cold Case והצג את ההנחה הכי רגישה.",
+          "Adversarial: תן שני מצבים שבהם Point-in-Time Data נראה חיובי אך המסקנה ההשקעתית דווקא שלילית."
+        ],
+        "rubric": [
+          "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי.",
+          "שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי.",
+          "לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "חיבור מפורש ל-business/token/valuation/risk במקום קביעה שורית/דובית אוטומטית."
+        ],
+        "source_refs": [
+          "S29",
+          "S30",
+          "S31",
+          "S32"
+        ],
+        "formula": "",
+        "exercise": "יישם Point-in-Time Data על Cold Case והצג את ההנחה הכי רגישה.",
+        "definition": "avoid look-ahead",
+        "critical": true,
+        "data_pull": [
+          "Raw value / absolute level",
+          "30d / 90d / 365d change when applicable",
+          "Historical percentile or regime context",
+          "Peer median / best-in-class comparison",
+          "Source definition + as-of date",
+          "Confidence level + alternative explanation"
+        ],
+        "institutional_questions": [
+          "מה המשתנה Point-in-Time Data אומר על העסק/הרשת — לפני הטוקן?",
+          "האם יש transmission אמיתי מהמשתנה לערך הטוקן?",
+          "האם התצפית נובעת ממחיר, תמריצים, leverage, accounting או פעילות אורגנית?",
+          "איזה denominator או cohort ישנה את המסקנה?",
+          "מה השוק כנראה כבר מתמחר מתוך הנתון הזה?",
+          "איזה נתון עתידי יפריך את הפרשנות שלי?"
+        ],
+        "memo_template": "Observation: [הנתון של Point-in-Time Data] | Definition: [...] | As-of: [...] | Peer/History: [...] | Interpretation: [...] | Token impact: [...] | Alternative explanation: [...] | Falsifier: [...] | Confidence: High/Medium/Low.",
+        "worked_example": {
+          "prompt": "יישם Point-in-Time Data על Cold Case והצג את ההנחה הכי רגישה.",
+          "solution": "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי. שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי. לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "lesson": "המטרה אינה להגיע למספר בלבד; צריך להסביר מה המספר כן ולא מוכיח, ואיך הוא משנה את ההסתברות של התזה."
+        }
+      }
+    },
+    {
+      "name": "Forward Horizons",
+      "definition": "30/90/180/365",
+      "method": "בנה מודל/טבלה/מפה שמכריחה הנחות להיות מפורשות.",
+      "trap": "False precision, definition mismatch או conclusion לפני evidence.",
+      "exercise": "יישם Forward Horizons על Cold Case והצג את ההנחה הכי רגישה.",
+      "formula": "",
+      "deep": {
+        "why": "ב-Level הזה, Forward Horizons הוא לא פרט טכני אלא חוליה בשרשרת ההחלטה. השאלה אינה רק 'מה המספר?', אלא האם הוא משנה את ההבנה שלנו לגבי איכות העסק, לכידת הערך, עוצמת הביקוש, הסיכון או מה שכבר מתומחר.",
+        "mental": "Factor research דורש Point-in-Time data, universe rules, OOS, multiple-testing control ו-robustness. אחרת קל לייצר factor zoo.",
+        "workflow": [
+          "הגדר במילים שלך את המשתנה ואת היחידות שלו לפני שאתה פותח Dashboard.",
+          "בנה מודל/טבלה/מפה שמכריחה הנחות להיות מפורשות.",
+          "אמת לפחות מול מקור נוסף או raw on-chain evidence כאשר אפשר.",
+          "אסוף את שדות הבסיס: Universe, Signal timestamp, Rebalance, Forward return, Transaction costs, Sector/size neutralization.",
+          "הפרד Level נוכחי, שינוי לאורך זמן ויחס ל-Peer Group.",
+          "כתוב לפחות הסבר אלטרנטיבי אחד לאותה תצפית.",
+          "תרגם את התוצאה להשפעה על Thesis / Valuation / Risk — או ציין שאין השפעה.",
+          "הגדר מראש מה היה גורם לך לשנות את המסקנה."
+        ],
+        "interpret": [
+          "תוצאה יפה In-Sample היא התחלה, לא ראיה ל-edge.",
+          "השתמש ב-30d/90d/365d כאשר המדד משתנה מהר; בנושאים מבניים השתמש גם ב-history ארוך יותר.",
+          "אל תעשה annualize לתקופת קיצון בלי להציג normalized case.",
+          "כאשר denominator או source methodology לא יציבים, הצג Range ולא מספר יחיד."
+        ],
+        "red": [
+          "False precision, definition mismatch או conclusion לפני evidence.",
+          "יש look-ahead?",
+          "יש survivorship?",
+          "כמה hypotheses נבדקו?"
+        ],
+        "evidence": "סטנדרט הראיות: מקור ראשוני/חוזה/Docs כאשר אפשר; ספק נתונים עם definition; Cross-check עצמאי; As-of date; confidence; ו-alternative explanation. כאשר שני מקורות חולקים — לא ממוצעים אוטומטית, אלא מיישבים הגדרות.",
+        "analyst_output": "ב-Investment Memo אל תדביק רק את המספר. כתוב: נתון → הגדרה → מקור → Peer/Historical context → Interpretation → Impact on thesis → Falsifier.",
+        "learning_outcomes": [
+          "אני יכול להסביר Forward Horizons ללא jargon ובמשפט אחד.",
+          "אני יכול למדוד/לחשב Forward Horizons עם denominator והגדרה נכונים.",
+          "אני יכול לזהות לפחות 3 דרכים שבהן Forward Horizons עלול להטעות.",
+          "אני יכול לחבר את הנתון ל-Thesis או להסביר למה הוא לא רלוונטי.",
+          "פתרתי את התרגיל ועניתי על Micro Exam לפני שחשפתי את ה-Rubric."
+        ],
+        "exam": [
+          "הגדרה: מה בדיוק Forward Horizons מודד — ומה הוא במפורש לא מודד?",
+          "יישם Forward Horizons על Cold Case והצג את ההנחה הכי רגישה.",
+          "Adversarial: תן שני מצבים שבהם Forward Horizons נראה חיובי אך המסקנה ההשקעתית דווקא שלילית."
+        ],
+        "rubric": [
+          "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי.",
+          "שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי.",
+          "לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "חיבור מפורש ל-business/token/valuation/risk במקום קביעה שורית/דובית אוטומטית."
+        ],
+        "source_refs": [
+          "S29",
+          "S30",
+          "S31",
+          "S32"
+        ],
+        "formula": "",
+        "exercise": "יישם Forward Horizons על Cold Case והצג את ההנחה הכי רגישה.",
+        "definition": "30/90/180/365",
+        "critical": false,
+        "data_pull": [
+          "Raw value / absolute level",
+          "30d / 90d / 365d change when applicable",
+          "Historical percentile or regime context",
+          "Peer median / best-in-class comparison",
+          "Source definition + as-of date",
+          "Confidence level + alternative explanation"
+        ],
+        "institutional_questions": [
+          "מה המשתנה Forward Horizons אומר על העסק/הרשת — לפני הטוקן?",
+          "האם יש transmission אמיתי מהמשתנה לערך הטוקן?",
+          "האם התצפית נובעת ממחיר, תמריצים, leverage, accounting או פעילות אורגנית?",
+          "איזה denominator או cohort ישנה את המסקנה?",
+          "מה השוק כנראה כבר מתמחר מתוך הנתון הזה?",
+          "איזה נתון עתידי יפריך את הפרשנות שלי?"
+        ],
+        "memo_template": "Observation: [הנתון של Forward Horizons] | Definition: [...] | As-of: [...] | Peer/History: [...] | Interpretation: [...] | Token impact: [...] | Alternative explanation: [...] | Falsifier: [...] | Confidence: High/Medium/Low.",
+        "worked_example": {
+          "prompt": "יישם Forward Horizons על Cold Case והצג את ההנחה הכי רגישה.",
+          "solution": "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי. שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי. לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "lesson": "המטרה אינה להגיע למספר בלבד; צריך להסביר מה המספר כן ולא מוכיח, ואיך הוא משנה את ההסתברות של התזה."
+        }
+      }
+    },
+    {
+      "name": "Multiple Testing/FDR",
+      "definition": "avoid data mining",
+      "method": "בנה מודל/טבלה/מפה שמכריחה הנחות להיות מפורשות.",
+      "trap": "False precision, definition mismatch או conclusion לפני evidence.",
+      "exercise": "יישם Multiple Testing/FDR על Cold Case והצג את ההנחה הכי רגישה.",
+      "formula": "",
+      "deep": {
+        "why": "ב-Level הזה, Multiple Testing/FDR הוא לא פרט טכני אלא חוליה בשרשרת ההחלטה. השאלה אינה רק 'מה המספר?', אלא האם הוא משנה את ההבנה שלנו לגבי איכות העסק, לכידת הערך, עוצמת הביקוש, הסיכון או מה שכבר מתומחר.",
+        "mental": "Factor research דורש Point-in-Time data, universe rules, OOS, multiple-testing control ו-robustness. אחרת קל לייצר factor zoo.",
+        "workflow": [
+          "הגדר במילים שלך את המשתנה ואת היחידות שלו לפני שאתה פותח Dashboard.",
+          "בנה מודל/טבלה/מפה שמכריחה הנחות להיות מפורשות.",
+          "אמת לפחות מול מקור נוסף או raw on-chain evidence כאשר אפשר.",
+          "אסוף את שדות הבסיס: Universe, Signal timestamp, Rebalance, Forward return, Transaction costs, Sector/size neutralization.",
+          "הפרד Level נוכחי, שינוי לאורך זמן ויחס ל-Peer Group.",
+          "כתוב לפחות הסבר אלטרנטיבי אחד לאותה תצפית.",
+          "תרגם את התוצאה להשפעה על Thesis / Valuation / Risk — או ציין שאין השפעה.",
+          "הגדר מראש מה היה גורם לך לשנות את המסקנה."
+        ],
+        "interpret": [
+          "תוצאה יפה In-Sample היא התחלה, לא ראיה ל-edge.",
+          "השתמש ב-30d/90d/365d כאשר המדד משתנה מהר; בנושאים מבניים השתמש גם ב-history ארוך יותר.",
+          "אל תעשה annualize לתקופת קיצון בלי להציג normalized case.",
+          "כאשר denominator או source methodology לא יציבים, הצג Range ולא מספר יחיד."
+        ],
+        "red": [
+          "False precision, definition mismatch או conclusion לפני evidence.",
+          "יש look-ahead?",
+          "יש survivorship?",
+          "כמה hypotheses נבדקו?"
+        ],
+        "evidence": "סטנדרט הראיות: מקור ראשוני/חוזה/Docs כאשר אפשר; ספק נתונים עם definition; Cross-check עצמאי; As-of date; confidence; ו-alternative explanation. כאשר שני מקורות חולקים — לא ממוצעים אוטומטית, אלא מיישבים הגדרות.",
+        "analyst_output": "ב-Investment Memo אל תדביק רק את המספר. כתוב: נתון → הגדרה → מקור → Peer/Historical context → Interpretation → Impact on thesis → Falsifier.",
+        "learning_outcomes": [
+          "אני יכול להסביר Multiple Testing/FDR ללא jargon ובמשפט אחד.",
+          "אני יכול למדוד/לחשב Multiple Testing/FDR עם denominator והגדרה נכונים.",
+          "אני יכול לזהות לפחות 3 דרכים שבהן Multiple Testing/FDR עלול להטעות.",
+          "אני יכול לחבר את הנתון ל-Thesis או להסביר למה הוא לא רלוונטי.",
+          "פתרתי את התרגיל ועניתי על Micro Exam לפני שחשפתי את ה-Rubric."
+        ],
+        "exam": [
+          "הגדרה: מה בדיוק Multiple Testing/FDR מודד — ומה הוא במפורש לא מודד?",
+          "יישם Multiple Testing/FDR על Cold Case והצג את ההנחה הכי רגישה.",
+          "Adversarial: תן שני מצבים שבהם Multiple Testing/FDR נראה חיובי אך המסקנה ההשקעתית דווקא שלילית."
+        ],
+        "rubric": [
+          "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי.",
+          "שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי.",
+          "לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "חיבור מפורש ל-business/token/valuation/risk במקום קביעה שורית/דובית אוטומטית."
+        ],
+        "source_refs": [
+          "S29",
+          "S30",
+          "S31",
+          "S32"
+        ],
+        "formula": "",
+        "exercise": "יישם Multiple Testing/FDR על Cold Case והצג את ההנחה הכי רגישה.",
+        "definition": "avoid data mining",
+        "critical": false,
+        "data_pull": [
+          "Raw value / absolute level",
+          "30d / 90d / 365d change when applicable",
+          "Historical percentile or regime context",
+          "Peer median / best-in-class comparison",
+          "Source definition + as-of date",
+          "Confidence level + alternative explanation"
+        ],
+        "institutional_questions": [
+          "מה המשתנה Multiple Testing/FDR אומר על העסק/הרשת — לפני הטוקן?",
+          "האם יש transmission אמיתי מהמשתנה לערך הטוקן?",
+          "האם התצפית נובעת ממחיר, תמריצים, leverage, accounting או פעילות אורגנית?",
+          "איזה denominator או cohort ישנה את המסקנה?",
+          "מה השוק כנראה כבר מתמחר מתוך הנתון הזה?",
+          "איזה נתון עתידי יפריך את הפרשנות שלי?"
+        ],
+        "memo_template": "Observation: [הנתון של Multiple Testing/FDR] | Definition: [...] | As-of: [...] | Peer/History: [...] | Interpretation: [...] | Token impact: [...] | Alternative explanation: [...] | Falsifier: [...] | Confidence: High/Medium/Low.",
+        "worked_example": {
+          "prompt": "יישם Multiple Testing/FDR על Cold Case והצג את ההנחה הכי רגישה.",
+          "solution": "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי. שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי. לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "lesson": "המטרה אינה להגיע למספר בלבד; צריך להסביר מה המספר כן ולא מוכיח, ואיך הוא משנה את ההסתברות של התזה."
+        }
+      }
+    }
+  ],
+  "exam": "בחינת מעבר: לבדוק אם ratios באמת קשורים ל-forward returns על טוקן שלא חקרת קודם.",
+  "critical": false,
+  "source_refs": [
+    "S29",
+    "S30",
+    "S31",
+    "S32"
+  ],
+  "prereq": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    31
+  ],
+  "academy": {
+    "letter": "E",
+    "title": "תמחור ומודלים",
+    "ids": [
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39
+    ]
+  }
+}

@@ -1,0 +1,5 @@
+@media(max-width:1050px){.kpis{grid-template-columns:repeat(3,1fr)}.chapters,.lesson-grid,.sourcegrid,.toolgrid{grid-template-columns:1fr}.skillgrid{grid-template-columns:repeat(2,1fr)}}
+@media print{.top,.actions,.lessonnav,.sticky-progress{display:none!important}.app{max-width:none}.box,.source,.card{break-inside:avoid}body{background:#fff;color:#111}.box,.source,.card,.lesson-hero,.callout{background:#fff;color:#111;border-color:#bbb}.muted,.small{color:#444}}
+@media(max-width:650px){.app{padding:9px}.top{position:relative}.kpis{grid-template-columns:repeat(2,1fr)}.hero{padding:19px}.topicrow{grid-template-columns:26px 1fr}.topicrow .actions{grid-column:2}.qa{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:760px){.chapter-map{grid-template-columns:1fr}.lecture-stage{padding:16px}}
+@media(max-width:650px){.professor-full,.chapter-lecture-v9{padding:16px}.professor-full .teach-card{padding:14px}}

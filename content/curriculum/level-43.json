@@ -1,0 +1,380 @@
+{
+  "n": 43,
+  "title": "סיכון כלכלי ורפלקסיבי",
+  "domain": "Risk",
+  "obj": "לזהות failure modes ללא bug",
+  "topics": [
+    {
+      "name": "Depeg/Bank Run",
+      "definition": "liquidity mismatch",
+      "method": "בנה מודל/טבלה/מפה שמכריחה הנחות להיות מפורשות.",
+      "trap": "False precision, definition mismatch או conclusion לפני evidence.",
+      "exercise": "יישם Depeg/Bank Run על Cold Case והצג את ההנחה הכי רגישה.",
+      "formula": "",
+      "deep": {
+        "why": "ב-Level הזה, Depeg/Bank Run הוא לא פרט טכני אלא חוליה בשרשרת ההחלטה. השאלה אינה רק 'מה המספר?', אלא האם הוא משנה את ההבנה שלנו לגבי איכות העסק, לכידת הערך, עוצמת הביקוש, הסיכון או מה שכבר מתומחר.",
+        "mental": "Risk analysis מתחיל מ-pre-mortem: איך ההשקעה נכשלת? הפרד Technical, Economic, Governance, Regulatory ו-Counterparty.",
+        "workflow": [
+          "הגדר במילים שלך את המשתנה ואת היחידות שלו לפני שאתה פותח Dashboard.",
+          "בנה מודל/טבלה/מפה שמכריחה הנחות להיות מפורשות.",
+          "אמת לפחות מול מקור נוסף או raw on-chain evidence כאשר אפשר.",
+          "אסוף את שדות הבסיס: Admin controls, Upgradeability, Oracle/bridge, Collateral, Liquidity, Governance concentration.",
+          "הפרד Level נוכחי, שינוי לאורך זמן ויחס ל-Peer Group.",
+          "כתוב לפחות הסבר אלטרנטיבי אחד לאותה תצפית.",
+          "תרגם את התוצאה להשפעה על Thesis / Valuation / Risk — או ציין שאין השפעה.",
+          "הגדר מראש מה היה גורם לך לשנות את המסקנה."
+        ],
+        "interpret": [
+          "Risk חייב להפוך ל-monitorable variable ול-Kill Criterion.",
+          "השתמש ב-30d/90d/365d כאשר המדד משתנה מהר; בנושאים מבניים השתמש גם ב-history ארוך יותר.",
+          "אל תעשה annualize לתקופת קיצון בלי להציג normalized case.",
+          "כאשר denominator או source methodology לא יציבים, הצג Range ולא מספר יחיד."
+        ],
+        "red": [
+          "False precision, definition mismatch או conclusion לפני evidence.",
+          "מהו single point of failure?",
+          "מהו feedback loop?",
+          "איזה risk הוא binary?"
+        ],
+        "evidence": "סטנדרט הראיות: מקור ראשוני/חוזה/Docs כאשר אפשר; ספק נתונים עם definition; Cross-check עצמאי; As-of date; confidence; ו-alternative explanation. כאשר שני מקורות חולקים — לא ממוצעים אוטומטית, אלא מיישבים הגדרות.",
+        "analyst_output": "ב-Investment Memo אל תדביק רק את המספר. כתוב: נתון → הגדרה → מקור → Peer/Historical context → Interpretation → Impact on thesis → Falsifier.",
+        "learning_outcomes": [
+          "אני יכול להסביר Depeg/Bank Run ללא jargon ובמשפט אחד.",
+          "אני יכול למדוד/לחשב Depeg/Bank Run עם denominator והגדרה נכונים.",
+          "אני יכול לזהות לפחות 3 דרכים שבהן Depeg/Bank Run עלול להטעות.",
+          "אני יכול לחבר את הנתון ל-Thesis או להסביר למה הוא לא רלוונטי.",
+          "פתרתי את התרגיל ועניתי על Micro Exam לפני שחשפתי את ה-Rubric."
+        ],
+        "exam": [
+          "הגדרה: מה בדיוק Depeg/Bank Run מודד — ומה הוא במפורש לא מודד?",
+          "יישם Depeg/Bank Run על Cold Case והצג את ההנחה הכי רגישה.",
+          "Adversarial: תן שני מצבים שבהם Depeg/Bank Run נראה חיובי אך המסקנה ההשקעתית דווקא שלילית."
+        ],
+        "rubric": [
+          "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי.",
+          "שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי.",
+          "לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "חיבור מפורש ל-business/token/valuation/risk במקום קביעה שורית/דובית אוטומטית."
+        ],
+        "source_refs": [
+          "S05",
+          "S09",
+          "S11",
+          "S20"
+        ],
+        "formula": "",
+        "exercise": "יישם Depeg/Bank Run על Cold Case והצג את ההנחה הכי רגישה.",
+        "definition": "liquidity mismatch",
+        "critical": false,
+        "data_pull": [
+          "Raw value / absolute level",
+          "30d / 90d / 365d change when applicable",
+          "Historical percentile or regime context",
+          "Peer median / best-in-class comparison",
+          "Source definition + as-of date",
+          "Confidence level + alternative explanation"
+        ],
+        "institutional_questions": [
+          "מה המשתנה Depeg/Bank Run אומר על העסק/הרשת — לפני הטוקן?",
+          "האם יש transmission אמיתי מהמשתנה לערך הטוקן?",
+          "האם התצפית נובעת ממחיר, תמריצים, leverage, accounting או פעילות אורגנית?",
+          "איזה denominator או cohort ישנה את המסקנה?",
+          "מה השוק כנראה כבר מתמחר מתוך הנתון הזה?",
+          "איזה נתון עתידי יפריך את הפרשנות שלי?"
+        ],
+        "memo_template": "Observation: [הנתון של Depeg/Bank Run] | Definition: [...] | As-of: [...] | Peer/History: [...] | Interpretation: [...] | Token impact: [...] | Alternative explanation: [...] | Falsifier: [...] | Confidence: High/Medium/Low.",
+        "worked_example": {
+          "prompt": "יישם Depeg/Bank Run על Cold Case והצג את ההנחה הכי רגישה.",
+          "solution": "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי. שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי. לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "lesson": "המטרה אינה להגיע למספר בלבד; צריך להסביר מה המספר כן ולא מוכיח, ואיך הוא משנה את ההסתברות של התזה."
+        }
+      }
+    },
+    {
+      "name": "Liquidation Spiral",
+      "definition": "forced selling feedback",
+      "method": "בנה מודל/טבלה/מפה שמכריחה הנחות להיות מפורשות.",
+      "trap": "False precision, definition mismatch או conclusion לפני evidence.",
+      "exercise": "יישם Liquidation Spiral על Cold Case והצג את ההנחה הכי רגישה.",
+      "formula": "",
+      "deep": {
+        "why": "ב-Level הזה, Liquidation Spiral הוא לא פרט טכני אלא חוליה בשרשרת ההחלטה. השאלה אינה רק 'מה המספר?', אלא האם הוא משנה את ההבנה שלנו לגבי איכות העסק, לכידת הערך, עוצמת הביקוש, הסיכון או מה שכבר מתומחר.",
+        "mental": "Risk analysis מתחיל מ-pre-mortem: איך ההשקעה נכשלת? הפרד Technical, Economic, Governance, Regulatory ו-Counterparty.",
+        "workflow": [
+          "הגדר במילים שלך את המשתנה ואת היחידות שלו לפני שאתה פותח Dashboard.",
+          "בנה מודל/טבלה/מפה שמכריחה הנחות להיות מפורשות.",
+          "אמת לפחות מול מקור נוסף או raw on-chain evidence כאשר אפשר.",
+          "אסוף את שדות הבסיס: Admin controls, Upgradeability, Oracle/bridge, Collateral, Liquidity, Governance concentration.",
+          "הפרד Level נוכחי, שינוי לאורך זמן ויחס ל-Peer Group.",
+          "כתוב לפחות הסבר אלטרנטיבי אחד לאותה תצפית.",
+          "תרגם את התוצאה להשפעה על Thesis / Valuation / Risk — או ציין שאין השפעה.",
+          "הגדר מראש מה היה גורם לך לשנות את המסקנה."
+        ],
+        "interpret": [
+          "Risk חייב להפוך ל-monitorable variable ול-Kill Criterion.",
+          "השתמש ב-30d/90d/365d כאשר המדד משתנה מהר; בנושאים מבניים השתמש גם ב-history ארוך יותר.",
+          "אל תעשה annualize לתקופת קיצון בלי להציג normalized case.",
+          "כאשר denominator או source methodology לא יציבים, הצג Range ולא מספר יחיד."
+        ],
+        "red": [
+          "False precision, definition mismatch או conclusion לפני evidence.",
+          "מהו single point of failure?",
+          "מהו feedback loop?",
+          "איזה risk הוא binary?"
+        ],
+        "evidence": "סטנדרט הראיות: מקור ראשוני/חוזה/Docs כאשר אפשר; ספק נתונים עם definition; Cross-check עצמאי; As-of date; confidence; ו-alternative explanation. כאשר שני מקורות חולקים — לא ממוצעים אוטומטית, אלא מיישבים הגדרות.",
+        "analyst_output": "ב-Investment Memo אל תדביק רק את המספר. כתוב: נתון → הגדרה → מקור → Peer/Historical context → Interpretation → Impact on thesis → Falsifier.",
+        "learning_outcomes": [
+          "אני יכול להסביר Liquidation Spiral ללא jargon ובמשפט אחד.",
+          "אני יכול למדוד/לחשב Liquidation Spiral עם denominator והגדרה נכונים.",
+          "אני יכול לזהות לפחות 3 דרכים שבהן Liquidation Spiral עלול להטעות.",
+          "אני יכול לחבר את הנתון ל-Thesis או להסביר למה הוא לא רלוונטי.",
+          "פתרתי את התרגיל ועניתי על Micro Exam לפני שחשפתי את ה-Rubric."
+        ],
+        "exam": [
+          "הגדרה: מה בדיוק Liquidation Spiral מודד — ומה הוא במפורש לא מודד?",
+          "יישם Liquidation Spiral על Cold Case והצג את ההנחה הכי רגישה.",
+          "Adversarial: תן שני מצבים שבהם Liquidation Spiral נראה חיובי אך המסקנה ההשקעתית דווקא שלילית."
+        ],
+        "rubric": [
+          "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי.",
+          "שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי.",
+          "לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "חיבור מפורש ל-business/token/valuation/risk במקום קביעה שורית/דובית אוטומטית."
+        ],
+        "source_refs": [
+          "S05",
+          "S09",
+          "S11",
+          "S20"
+        ],
+        "formula": "",
+        "exercise": "יישם Liquidation Spiral על Cold Case והצג את ההנחה הכי רגישה.",
+        "definition": "forced selling feedback",
+        "critical": false,
+        "data_pull": [
+          "Raw value / absolute level",
+          "30d / 90d / 365d change when applicable",
+          "Historical percentile or regime context",
+          "Peer median / best-in-class comparison",
+          "Source definition + as-of date",
+          "Confidence level + alternative explanation"
+        ],
+        "institutional_questions": [
+          "מה המשתנה Liquidation Spiral אומר על העסק/הרשת — לפני הטוקן?",
+          "האם יש transmission אמיתי מהמשתנה לערך הטוקן?",
+          "האם התצפית נובעת ממחיר, תמריצים, leverage, accounting או פעילות אורגנית?",
+          "איזה denominator או cohort ישנה את המסקנה?",
+          "מה השוק כנראה כבר מתמחר מתוך הנתון הזה?",
+          "איזה נתון עתידי יפריך את הפרשנות שלי?"
+        ],
+        "memo_template": "Observation: [הנתון של Liquidation Spiral] | Definition: [...] | As-of: [...] | Peer/History: [...] | Interpretation: [...] | Token impact: [...] | Alternative explanation: [...] | Falsifier: [...] | Confidence: High/Medium/Low.",
+        "worked_example": {
+          "prompt": "יישם Liquidation Spiral על Cold Case והצג את ההנחה הכי רגישה.",
+          "solution": "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי. שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי. לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "lesson": "המטרה אינה להגיע למספר בלבד; צריך להסביר מה המספר כן ולא מוכיח, ואיך הוא משנה את ההסתברות של התזה."
+        }
+      }
+    },
+    {
+      "name": "Collateral Loops",
+      "definition": "rehypothecation",
+      "method": "בנה מודל/טבלה/מפה שמכריחה הנחות להיות מפורשות.",
+      "trap": "False precision, definition mismatch או conclusion לפני evidence.",
+      "exercise": "יישם Collateral Loops על Cold Case והצג את ההנחה הכי רגישה.",
+      "formula": "",
+      "deep": {
+        "why": "ב-Level הזה, Collateral Loops הוא לא פרט טכני אלא חוליה בשרשרת ההחלטה. השאלה אינה רק 'מה המספר?', אלא האם הוא משנה את ההבנה שלנו לגבי איכות העסק, לכידת הערך, עוצמת הביקוש, הסיכון או מה שכבר מתומחר.",
+        "mental": "Risk analysis מתחיל מ-pre-mortem: איך ההשקעה נכשלת? הפרד Technical, Economic, Governance, Regulatory ו-Counterparty.",
+        "workflow": [
+          "הגדר במילים שלך את המשתנה ואת היחידות שלו לפני שאתה פותח Dashboard.",
+          "בנה מודל/טבלה/מפה שמכריחה הנחות להיות מפורשות.",
+          "אמת לפחות מול מקור נוסף או raw on-chain evidence כאשר אפשר.",
+          "אסוף את שדות הבסיס: Admin controls, Upgradeability, Oracle/bridge, Collateral, Liquidity, Governance concentration.",
+          "הפרד Level נוכחי, שינוי לאורך זמן ויחס ל-Peer Group.",
+          "כתוב לפחות הסבר אלטרנטיבי אחד לאותה תצפית.",
+          "תרגם את התוצאה להשפעה על Thesis / Valuation / Risk — או ציין שאין השפעה.",
+          "הגדר מראש מה היה גורם לך לשנות את המסקנה."
+        ],
+        "interpret": [
+          "Risk חייב להפוך ל-monitorable variable ול-Kill Criterion.",
+          "השתמש ב-30d/90d/365d כאשר המדד משתנה מהר; בנושאים מבניים השתמש גם ב-history ארוך יותר.",
+          "אל תעשה annualize לתקופת קיצון בלי להציג normalized case.",
+          "כאשר denominator או source methodology לא יציבים, הצג Range ולא מספר יחיד."
+        ],
+        "red": [
+          "False precision, definition mismatch או conclusion לפני evidence.",
+          "מהו single point of failure?",
+          "מהו feedback loop?",
+          "איזה risk הוא binary?"
+        ],
+        "evidence": "סטנדרט הראיות: מקור ראשוני/חוזה/Docs כאשר אפשר; ספק נתונים עם definition; Cross-check עצמאי; As-of date; confidence; ו-alternative explanation. כאשר שני מקורות חולקים — לא ממוצעים אוטומטית, אלא מיישבים הגדרות.",
+        "analyst_output": "ב-Investment Memo אל תדביק רק את המספר. כתוב: נתון → הגדרה → מקור → Peer/Historical context → Interpretation → Impact on thesis → Falsifier.",
+        "learning_outcomes": [
+          "אני יכול להסביר Collateral Loops ללא jargon ובמשפט אחד.",
+          "אני יכול למדוד/לחשב Collateral Loops עם denominator והגדרה נכונים.",
+          "אני יכול לזהות לפחות 3 דרכים שבהן Collateral Loops עלול להטעות.",
+          "אני יכול לחבר את הנתון ל-Thesis או להסביר למה הוא לא רלוונטי.",
+          "פתרתי את התרגיל ועניתי על Micro Exam לפני שחשפתי את ה-Rubric."
+        ],
+        "exam": [
+          "הגדרה: מה בדיוק Collateral Loops מודד — ומה הוא במפורש לא מודד?",
+          "יישם Collateral Loops על Cold Case והצג את ההנחה הכי רגישה.",
+          "Adversarial: תן שני מצבים שבהם Collateral Loops נראה חיובי אך המסקנה ההשקעתית דווקא שלילית."
+        ],
+        "rubric": [
+          "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי.",
+          "שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי.",
+          "לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "חיבור מפורש ל-business/token/valuation/risk במקום קביעה שורית/דובית אוטומטית."
+        ],
+        "source_refs": [
+          "S05",
+          "S09",
+          "S11",
+          "S20"
+        ],
+        "formula": "",
+        "exercise": "יישם Collateral Loops על Cold Case והצג את ההנחה הכי רגישה.",
+        "definition": "rehypothecation",
+        "critical": false,
+        "data_pull": [
+          "Raw value / absolute level",
+          "30d / 90d / 365d change when applicable",
+          "Historical percentile or regime context",
+          "Peer median / best-in-class comparison",
+          "Source definition + as-of date",
+          "Confidence level + alternative explanation"
+        ],
+        "institutional_questions": [
+          "מה המשתנה Collateral Loops אומר על העסק/הרשת — לפני הטוקן?",
+          "האם יש transmission אמיתי מהמשתנה לערך הטוקן?",
+          "האם התצפית נובעת ממחיר, תמריצים, leverage, accounting או פעילות אורגנית?",
+          "איזה denominator או cohort ישנה את המסקנה?",
+          "מה השוק כנראה כבר מתמחר מתוך הנתון הזה?",
+          "איזה נתון עתידי יפריך את הפרשנות שלי?"
+        ],
+        "memo_template": "Observation: [הנתון של Collateral Loops] | Definition: [...] | As-of: [...] | Peer/History: [...] | Interpretation: [...] | Token impact: [...] | Alternative explanation: [...] | Falsifier: [...] | Confidence: High/Medium/Low.",
+        "worked_example": {
+          "prompt": "יישם Collateral Loops על Cold Case והצג את ההנחה הכי רגישה.",
+          "solution": "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי. שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי. לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "lesson": "המטרה אינה להגיע למספר בלבד; צריך להסביר מה המספר כן ולא מוכיח, ואיך הוא משנה את ההסתברות של התזה."
+        }
+      }
+    },
+    {
+      "name": "Incentive Collapse",
+      "definition": "zero-subsidy stress",
+      "method": "בנה מודל/טבלה/מפה שמכריחה הנחות להיות מפורשות.",
+      "trap": "False precision, definition mismatch או conclusion לפני evidence.",
+      "exercise": "יישם Incentive Collapse על Cold Case והצג את ההנחה הכי רגישה.",
+      "formula": "",
+      "deep": {
+        "why": "ב-Level הזה, Incentive Collapse הוא לא פרט טכני אלא חוליה בשרשרת ההחלטה. השאלה אינה רק 'מה המספר?', אלא האם הוא משנה את ההבנה שלנו לגבי איכות העסק, לכידת הערך, עוצמת הביקוש, הסיכון או מה שכבר מתומחר.",
+        "mental": "Risk analysis מתחיל מ-pre-mortem: איך ההשקעה נכשלת? הפרד Technical, Economic, Governance, Regulatory ו-Counterparty.",
+        "workflow": [
+          "הגדר במילים שלך את המשתנה ואת היחידות שלו לפני שאתה פותח Dashboard.",
+          "בנה מודל/טבלה/מפה שמכריחה הנחות להיות מפורשות.",
+          "אמת לפחות מול מקור נוסף או raw on-chain evidence כאשר אפשר.",
+          "אסוף את שדות הבסיס: Admin controls, Upgradeability, Oracle/bridge, Collateral, Liquidity, Governance concentration.",
+          "הפרד Level נוכחי, שינוי לאורך זמן ויחס ל-Peer Group.",
+          "כתוב לפחות הסבר אלטרנטיבי אחד לאותה תצפית.",
+          "תרגם את התוצאה להשפעה על Thesis / Valuation / Risk — או ציין שאין השפעה.",
+          "הגדר מראש מה היה גורם לך לשנות את המסקנה."
+        ],
+        "interpret": [
+          "Risk חייב להפוך ל-monitorable variable ול-Kill Criterion.",
+          "השתמש ב-30d/90d/365d כאשר המדד משתנה מהר; בנושאים מבניים השתמש גם ב-history ארוך יותר.",
+          "אל תעשה annualize לתקופת קיצון בלי להציג normalized case.",
+          "כאשר denominator או source methodology לא יציבים, הצג Range ולא מספר יחיד."
+        ],
+        "red": [
+          "False precision, definition mismatch או conclusion לפני evidence.",
+          "מהו single point of failure?",
+          "מהו feedback loop?",
+          "איזה risk הוא binary?"
+        ],
+        "evidence": "סטנדרט הראיות: מקור ראשוני/חוזה/Docs כאשר אפשר; ספק נתונים עם definition; Cross-check עצמאי; As-of date; confidence; ו-alternative explanation. כאשר שני מקורות חולקים — לא ממוצעים אוטומטית, אלא מיישבים הגדרות.",
+        "analyst_output": "ב-Investment Memo אל תדביק רק את המספר. כתוב: נתון → הגדרה → מקור → Peer/Historical context → Interpretation → Impact on thesis → Falsifier.",
+        "learning_outcomes": [
+          "אני יכול להסביר Incentive Collapse ללא jargon ובמשפט אחד.",
+          "אני יכול למדוד/לחשב Incentive Collapse עם denominator והגדרה נכונים.",
+          "אני יכול לזהות לפחות 3 דרכים שבהן Incentive Collapse עלול להטעות.",
+          "אני יכול לחבר את הנתון ל-Thesis או להסביר למה הוא לא רלוונטי.",
+          "פתרתי את התרגיל ועניתי על Micro Exam לפני שחשפתי את ה-Rubric."
+        ],
+        "exam": [
+          "הגדרה: מה בדיוק Incentive Collapse מודד — ומה הוא במפורש לא מודד?",
+          "יישם Incentive Collapse על Cold Case והצג את ההנחה הכי רגישה.",
+          "Adversarial: תן שני מצבים שבהם Incentive Collapse נראה חיובי אך המסקנה ההשקעתית דווקא שלילית."
+        ],
+        "rubric": [
+          "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי.",
+          "שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי.",
+          "לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "חיבור מפורש ל-business/token/valuation/risk במקום קביעה שורית/דובית אוטומטית."
+        ],
+        "source_refs": [
+          "S05",
+          "S09",
+          "S11",
+          "S20"
+        ],
+        "formula": "",
+        "exercise": "יישם Incentive Collapse על Cold Case והצג את ההנחה הכי רגישה.",
+        "definition": "zero-subsidy stress",
+        "critical": false,
+        "data_pull": [
+          "Raw value / absolute level",
+          "30d / 90d / 365d change when applicable",
+          "Historical percentile or regime context",
+          "Peer median / best-in-class comparison",
+          "Source definition + as-of date",
+          "Confidence level + alternative explanation"
+        ],
+        "institutional_questions": [
+          "מה המשתנה Incentive Collapse אומר על העסק/הרשת — לפני הטוקן?",
+          "האם יש transmission אמיתי מהמשתנה לערך הטוקן?",
+          "האם התצפית נובעת ממחיר, תמריצים, leverage, accounting או פעילות אורגנית?",
+          "איזה denominator או cohort ישנה את המסקנה?",
+          "מה השוק כנראה כבר מתמחר מתוך הנתון הזה?",
+          "איזה נתון עתידי יפריך את הפרשנות שלי?"
+        ],
+        "memo_template": "Observation: [הנתון של Incentive Collapse] | Definition: [...] | As-of: [...] | Peer/History: [...] | Interpretation: [...] | Token impact: [...] | Alternative explanation: [...] | Falsifier: [...] | Confidence: High/Medium/Low.",
+        "worked_example": {
+          "prompt": "יישם Incentive Collapse על Cold Case והצג את ההנחה הכי רגישה.",
+          "solution": "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי. שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי. לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "lesson": "המטרה אינה להגיע למספר בלבד; צריך להסביר מה המספר כן ולא מוכיח, ואיך הוא משנה את ההסתברות של התזה."
+        }
+      }
+    }
+  ],
+  "exam": "בחינת מעבר: לזהות failure modes ללא bug על טוקן שלא חקרת קודם.",
+  "critical": false,
+  "source_refs": [
+    "S05",
+    "S09",
+    "S11",
+    "S20"
+  ],
+  "prereq": [
+    4,
+    8,
+    12
+  ],
+  "academy": {
+    "letter": "F",
+    "title": "מבנה שוק, סיכון ותיק",
+    "ids": [
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48
+    ]
+  }
+}

@@ -1,0 +1,380 @@
+{
+  "n": 41,
+  "title": "Derivatives, OI, Funding, Basis ו-IV",
+  "domain": "Derivatives",
+  "obj": "למדוד positioning/overheating ולא לתת signal חד-ממדי",
+  "topics": [
+    {
+      "name": "Open Interest",
+      "definition": "commitment not direction",
+      "method": "בנה מודל/טבלה/מפה שמכריחה הנחות להיות מפורשות.",
+      "trap": "False precision, definition mismatch או conclusion לפני evidence.",
+      "exercise": "יישם Open Interest על Cold Case והצג את ההנחה הכי רגישה.",
+      "formula": "",
+      "deep": {
+        "why": "ב-Level הזה, Open Interest הוא לא פרט טכני אלא חוליה בשרשרת ההחלטה. השאלה אינה רק 'מה המספר?', אלא האם הוא משנה את ההבנה שלנו לגבי איכות העסק, לכידת הערך, עוצמת הביקוש, הסיכון או מה שכבר מתומחר.",
+        "mental": "OI, funding, basis ו-IV מתארים positioning ומחיר הסיכון. אף אחד מהם לבדו אינו signal כיווני.",
+        "workflow": [
+          "הגדר במילים שלך את המשתנה ואת היחידות שלו לפני שאתה פותח Dashboard.",
+          "בנה מודל/טבלה/מפה שמכריחה הנחות להיות מפורשות.",
+          "אמת לפחות מול מקור נוסף או raw on-chain evidence כאשר אפשר.",
+          "אסוף את שדות הבסיס: OI, OI/MC, Funding, Basis, IV, Skew.",
+          "הפרד Level נוכחי, שינוי לאורך זמן ויחס ל-Peer Group.",
+          "כתוב לפחות הסבר אלטרנטיבי אחד לאותה תצפית.",
+          "תרגם את התוצאה להשפעה על Thesis / Valuation / Risk — או ציין שאין השפעה.",
+          "הגדר מראש מה היה גורם לך לשנות את המסקנה."
+        ],
+        "interpret": [
+          "השתמש ב-derivatives כ-context ל-crowding, leverage ו-volatility.",
+          "השתמש ב-30d/90d/365d כאשר המדד משתנה מהר; בנושאים מבניים השתמש גם ב-history ארוך יותר.",
+          "אל תעשה annualize לתקופת קיצון בלי להציג normalized case.",
+          "כאשר denominator או source methodology לא יציבים, הצג Range ולא מספר יחיד."
+        ],
+        "red": [
+          "False precision, definition mismatch או conclusion לפני evidence.",
+          "האם OI גדל יחד עם price?",
+          "funding consistent across venues?",
+          "IV relative to realized?"
+        ],
+        "evidence": "סטנדרט הראיות: מקור ראשוני/חוזה/Docs כאשר אפשר; ספק נתונים עם definition; Cross-check עצמאי; As-of date; confidence; ו-alternative explanation. כאשר שני מקורות חולקים — לא ממוצעים אוטומטית, אלא מיישבים הגדרות.",
+        "analyst_output": "ב-Investment Memo אל תדביק רק את המספר. כתוב: נתון → הגדרה → מקור → Peer/Historical context → Interpretation → Impact on thesis → Falsifier.",
+        "learning_outcomes": [
+          "אני יכול להסביר Open Interest ללא jargon ובמשפט אחד.",
+          "אני יכול למדוד/לחשב Open Interest עם denominator והגדרה נכונים.",
+          "אני יכול לזהות לפחות 3 דרכים שבהן Open Interest עלול להטעות.",
+          "אני יכול לחבר את הנתון ל-Thesis או להסביר למה הוא לא רלוונטי.",
+          "פתרתי את התרגיל ועניתי על Micro Exam לפני שחשפתי את ה-Rubric."
+        ],
+        "exam": [
+          "הגדרה: מה בדיוק Open Interest מודד — ומה הוא במפורש לא מודד?",
+          "יישם Open Interest על Cold Case והצג את ההנחה הכי רגישה.",
+          "Adversarial: תן שני מצבים שבהם Open Interest נראה חיובי אך המסקנה ההשקעתית דווקא שלילית."
+        ],
+        "rubric": [
+          "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי.",
+          "שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי.",
+          "לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "חיבור מפורש ל-business/token/valuation/risk במקום קביעה שורית/דובית אוטומטית."
+        ],
+        "source_refs": [
+          "S29",
+          "S03",
+          "S26",
+          "S01"
+        ],
+        "formula": "",
+        "exercise": "יישם Open Interest על Cold Case והצג את ההנחה הכי רגישה.",
+        "definition": "commitment not direction",
+        "critical": false,
+        "data_pull": [
+          "Raw value / absolute level",
+          "30d / 90d / 365d change when applicable",
+          "Historical percentile or regime context",
+          "Peer median / best-in-class comparison",
+          "Source definition + as-of date",
+          "Confidence level + alternative explanation"
+        ],
+        "institutional_questions": [
+          "מה המשתנה Open Interest אומר על העסק/הרשת — לפני הטוקן?",
+          "האם יש transmission אמיתי מהמשתנה לערך הטוקן?",
+          "האם התצפית נובעת ממחיר, תמריצים, leverage, accounting או פעילות אורגנית?",
+          "איזה denominator או cohort ישנה את המסקנה?",
+          "מה השוק כנראה כבר מתמחר מתוך הנתון הזה?",
+          "איזה נתון עתידי יפריך את הפרשנות שלי?"
+        ],
+        "memo_template": "Observation: [הנתון של Open Interest] | Definition: [...] | As-of: [...] | Peer/History: [...] | Interpretation: [...] | Token impact: [...] | Alternative explanation: [...] | Falsifier: [...] | Confidence: High/Medium/Low.",
+        "worked_example": {
+          "prompt": "יישם Open Interest על Cold Case והצג את ההנחה הכי רגישה.",
+          "solution": "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי. שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי. לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "lesson": "המטרה אינה להגיע למספר בלבד; צריך להסביר מה המספר כן ולא מוכיח, ואיך הוא משנה את ההסתברות של התזה."
+        }
+      }
+    },
+    {
+      "name": "Funding",
+      "definition": "leverage imbalance",
+      "method": "בנה מודל/טבלה/מפה שמכריחה הנחות להיות מפורשות.",
+      "trap": "False precision, definition mismatch או conclusion לפני evidence.",
+      "exercise": "יישם Funding על Cold Case והצג את ההנחה הכי רגישה.",
+      "formula": "",
+      "deep": {
+        "why": "ב-Level הזה, Funding הוא לא פרט טכני אלא חוליה בשרשרת ההחלטה. השאלה אינה רק 'מה המספר?', אלא האם הוא משנה את ההבנה שלנו לגבי איכות העסק, לכידת הערך, עוצמת הביקוש, הסיכון או מה שכבר מתומחר.",
+        "mental": "OI, funding, basis ו-IV מתארים positioning ומחיר הסיכון. אף אחד מהם לבדו אינו signal כיווני.",
+        "workflow": [
+          "הגדר במילים שלך את המשתנה ואת היחידות שלו לפני שאתה פותח Dashboard.",
+          "בנה מודל/טבלה/מפה שמכריחה הנחות להיות מפורשות.",
+          "אמת לפחות מול מקור נוסף או raw on-chain evidence כאשר אפשר.",
+          "אסוף את שדות הבסיס: OI, OI/MC, Funding, Basis, IV, Skew.",
+          "הפרד Level נוכחי, שינוי לאורך זמן ויחס ל-Peer Group.",
+          "כתוב לפחות הסבר אלטרנטיבי אחד לאותה תצפית.",
+          "תרגם את התוצאה להשפעה על Thesis / Valuation / Risk — או ציין שאין השפעה.",
+          "הגדר מראש מה היה גורם לך לשנות את המסקנה."
+        ],
+        "interpret": [
+          "השתמש ב-derivatives כ-context ל-crowding, leverage ו-volatility.",
+          "השתמש ב-30d/90d/365d כאשר המדד משתנה מהר; בנושאים מבניים השתמש גם ב-history ארוך יותר.",
+          "אל תעשה annualize לתקופת קיצון בלי להציג normalized case.",
+          "כאשר denominator או source methodology לא יציבים, הצג Range ולא מספר יחיד."
+        ],
+        "red": [
+          "False precision, definition mismatch או conclusion לפני evidence.",
+          "האם OI גדל יחד עם price?",
+          "funding consistent across venues?",
+          "IV relative to realized?"
+        ],
+        "evidence": "סטנדרט הראיות: מקור ראשוני/חוזה/Docs כאשר אפשר; ספק נתונים עם definition; Cross-check עצמאי; As-of date; confidence; ו-alternative explanation. כאשר שני מקורות חולקים — לא ממוצעים אוטומטית, אלא מיישבים הגדרות.",
+        "analyst_output": "ב-Investment Memo אל תדביק רק את המספר. כתוב: נתון → הגדרה → מקור → Peer/Historical context → Interpretation → Impact on thesis → Falsifier.",
+        "learning_outcomes": [
+          "אני יכול להסביר Funding ללא jargon ובמשפט אחד.",
+          "אני יכול למדוד/לחשב Funding עם denominator והגדרה נכונים.",
+          "אני יכול לזהות לפחות 3 דרכים שבהן Funding עלול להטעות.",
+          "אני יכול לחבר את הנתון ל-Thesis או להסביר למה הוא לא רלוונטי.",
+          "פתרתי את התרגיל ועניתי על Micro Exam לפני שחשפתי את ה-Rubric."
+        ],
+        "exam": [
+          "הגדרה: מה בדיוק Funding מודד — ומה הוא במפורש לא מודד?",
+          "יישם Funding על Cold Case והצג את ההנחה הכי רגישה.",
+          "Adversarial: תן שני מצבים שבהם Funding נראה חיובי אך המסקנה ההשקעתית דווקא שלילית."
+        ],
+        "rubric": [
+          "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי.",
+          "שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי.",
+          "לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "חיבור מפורש ל-business/token/valuation/risk במקום קביעה שורית/דובית אוטומטית."
+        ],
+        "source_refs": [
+          "S29",
+          "S03",
+          "S26",
+          "S01"
+        ],
+        "formula": "",
+        "exercise": "יישם Funding על Cold Case והצג את ההנחה הכי רגישה.",
+        "definition": "leverage imbalance",
+        "critical": false,
+        "data_pull": [
+          "Raw value / absolute level",
+          "30d / 90d / 365d change when applicable",
+          "Historical percentile or regime context",
+          "Peer median / best-in-class comparison",
+          "Source definition + as-of date",
+          "Confidence level + alternative explanation"
+        ],
+        "institutional_questions": [
+          "מה המשתנה Funding אומר על העסק/הרשת — לפני הטוקן?",
+          "האם יש transmission אמיתי מהמשתנה לערך הטוקן?",
+          "האם התצפית נובעת ממחיר, תמריצים, leverage, accounting או פעילות אורגנית?",
+          "איזה denominator או cohort ישנה את המסקנה?",
+          "מה השוק כנראה כבר מתמחר מתוך הנתון הזה?",
+          "איזה נתון עתידי יפריך את הפרשנות שלי?"
+        ],
+        "memo_template": "Observation: [הנתון של Funding] | Definition: [...] | As-of: [...] | Peer/History: [...] | Interpretation: [...] | Token impact: [...] | Alternative explanation: [...] | Falsifier: [...] | Confidence: High/Medium/Low.",
+        "worked_example": {
+          "prompt": "יישם Funding על Cold Case והצג את ההנחה הכי רגישה.",
+          "solution": "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי. שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי. לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "lesson": "המטרה אינה להגיע למספר בלבד; צריך להסביר מה המספר כן ולא מוכיח, ואיך הוא משנה את ההסתברות של התזה."
+        }
+      }
+    },
+    {
+      "name": "Basis",
+      "definition": "carry and convergence",
+      "method": "בנה מודל/טבלה/מפה שמכריחה הנחות להיות מפורשות.",
+      "trap": "False precision, definition mismatch או conclusion לפני evidence.",
+      "exercise": "יישם Basis על Cold Case והצג את ההנחה הכי רגישה.",
+      "formula": "",
+      "deep": {
+        "why": "ב-Level הזה, Basis הוא לא פרט טכני אלא חוליה בשרשרת ההחלטה. השאלה אינה רק 'מה המספר?', אלא האם הוא משנה את ההבנה שלנו לגבי איכות העסק, לכידת הערך, עוצמת הביקוש, הסיכון או מה שכבר מתומחר.",
+        "mental": "OI, funding, basis ו-IV מתארים positioning ומחיר הסיכון. אף אחד מהם לבדו אינו signal כיווני.",
+        "workflow": [
+          "הגדר במילים שלך את המשתנה ואת היחידות שלו לפני שאתה פותח Dashboard.",
+          "בנה מודל/טבלה/מפה שמכריחה הנחות להיות מפורשות.",
+          "אמת לפחות מול מקור נוסף או raw on-chain evidence כאשר אפשר.",
+          "אסוף את שדות הבסיס: OI, OI/MC, Funding, Basis, IV, Skew.",
+          "הפרד Level נוכחי, שינוי לאורך זמן ויחס ל-Peer Group.",
+          "כתוב לפחות הסבר אלטרנטיבי אחד לאותה תצפית.",
+          "תרגם את התוצאה להשפעה על Thesis / Valuation / Risk — או ציין שאין השפעה.",
+          "הגדר מראש מה היה גורם לך לשנות את המסקנה."
+        ],
+        "interpret": [
+          "השתמש ב-derivatives כ-context ל-crowding, leverage ו-volatility.",
+          "השתמש ב-30d/90d/365d כאשר המדד משתנה מהר; בנושאים מבניים השתמש גם ב-history ארוך יותר.",
+          "אל תעשה annualize לתקופת קיצון בלי להציג normalized case.",
+          "כאשר denominator או source methodology לא יציבים, הצג Range ולא מספר יחיד."
+        ],
+        "red": [
+          "False precision, definition mismatch או conclusion לפני evidence.",
+          "האם OI גדל יחד עם price?",
+          "funding consistent across venues?",
+          "IV relative to realized?"
+        ],
+        "evidence": "סטנדרט הראיות: מקור ראשוני/חוזה/Docs כאשר אפשר; ספק נתונים עם definition; Cross-check עצמאי; As-of date; confidence; ו-alternative explanation. כאשר שני מקורות חולקים — לא ממוצעים אוטומטית, אלא מיישבים הגדרות.",
+        "analyst_output": "ב-Investment Memo אל תדביק רק את המספר. כתוב: נתון → הגדרה → מקור → Peer/Historical context → Interpretation → Impact on thesis → Falsifier.",
+        "learning_outcomes": [
+          "אני יכול להסביר Basis ללא jargon ובמשפט אחד.",
+          "אני יכול למדוד/לחשב Basis עם denominator והגדרה נכונים.",
+          "אני יכול לזהות לפחות 3 דרכים שבהן Basis עלול להטעות.",
+          "אני יכול לחבר את הנתון ל-Thesis או להסביר למה הוא לא רלוונטי.",
+          "פתרתי את התרגיל ועניתי על Micro Exam לפני שחשפתי את ה-Rubric."
+        ],
+        "exam": [
+          "הגדרה: מה בדיוק Basis מודד — ומה הוא במפורש לא מודד?",
+          "יישם Basis על Cold Case והצג את ההנחה הכי רגישה.",
+          "Adversarial: תן שני מצבים שבהם Basis נראה חיובי אך המסקנה ההשקעתית דווקא שלילית."
+        ],
+        "rubric": [
+          "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי.",
+          "שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי.",
+          "לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "חיבור מפורש ל-business/token/valuation/risk במקום קביעה שורית/דובית אוטומטית."
+        ],
+        "source_refs": [
+          "S29",
+          "S03",
+          "S26",
+          "S01"
+        ],
+        "formula": "",
+        "exercise": "יישם Basis על Cold Case והצג את ההנחה הכי רגישה.",
+        "definition": "carry and convergence",
+        "critical": false,
+        "data_pull": [
+          "Raw value / absolute level",
+          "30d / 90d / 365d change when applicable",
+          "Historical percentile or regime context",
+          "Peer median / best-in-class comparison",
+          "Source definition + as-of date",
+          "Confidence level + alternative explanation"
+        ],
+        "institutional_questions": [
+          "מה המשתנה Basis אומר על העסק/הרשת — לפני הטוקן?",
+          "האם יש transmission אמיתי מהמשתנה לערך הטוקן?",
+          "האם התצפית נובעת ממחיר, תמריצים, leverage, accounting או פעילות אורגנית?",
+          "איזה denominator או cohort ישנה את המסקנה?",
+          "מה השוק כנראה כבר מתמחר מתוך הנתון הזה?",
+          "איזה נתון עתידי יפריך את הפרשנות שלי?"
+        ],
+        "memo_template": "Observation: [הנתון של Basis] | Definition: [...] | As-of: [...] | Peer/History: [...] | Interpretation: [...] | Token impact: [...] | Alternative explanation: [...] | Falsifier: [...] | Confidence: High/Medium/Low.",
+        "worked_example": {
+          "prompt": "יישם Basis על Cold Case והצג את ההנחה הכי רגישה.",
+          "solution": "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי. שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי. לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "lesson": "המטרה אינה להגיע למספר בלבד; צריך להסביר מה המספר כן ולא מוכיח, ואיך הוא משנה את ההסתברות של התזה."
+        }
+      }
+    },
+    {
+      "name": "IV/Skew/Term",
+      "definition": "priced volatility and tails",
+      "method": "בנה מודל/טבלה/מפה שמכריחה הנחות להיות מפורשות.",
+      "trap": "False precision, definition mismatch או conclusion לפני evidence.",
+      "exercise": "יישם IV/Skew/Term על Cold Case והצג את ההנחה הכי רגישה.",
+      "formula": "",
+      "deep": {
+        "why": "ב-Level הזה, IV/Skew/Term הוא לא פרט טכני אלא חוליה בשרשרת ההחלטה. השאלה אינה רק 'מה המספר?', אלא האם הוא משנה את ההבנה שלנו לגבי איכות העסק, לכידת הערך, עוצמת הביקוש, הסיכון או מה שכבר מתומחר.",
+        "mental": "OI, funding, basis ו-IV מתארים positioning ומחיר הסיכון. אף אחד מהם לבדו אינו signal כיווני.",
+        "workflow": [
+          "הגדר במילים שלך את המשתנה ואת היחידות שלו לפני שאתה פותח Dashboard.",
+          "בנה מודל/טבלה/מפה שמכריחה הנחות להיות מפורשות.",
+          "אמת לפחות מול מקור נוסף או raw on-chain evidence כאשר אפשר.",
+          "אסוף את שדות הבסיס: OI, OI/MC, Funding, Basis, IV, Skew.",
+          "הפרד Level נוכחי, שינוי לאורך זמן ויחס ל-Peer Group.",
+          "כתוב לפחות הסבר אלטרנטיבי אחד לאותה תצפית.",
+          "תרגם את התוצאה להשפעה על Thesis / Valuation / Risk — או ציין שאין השפעה.",
+          "הגדר מראש מה היה גורם לך לשנות את המסקנה."
+        ],
+        "interpret": [
+          "השתמש ב-derivatives כ-context ל-crowding, leverage ו-volatility.",
+          "השתמש ב-30d/90d/365d כאשר המדד משתנה מהר; בנושאים מבניים השתמש גם ב-history ארוך יותר.",
+          "אל תעשה annualize לתקופת קיצון בלי להציג normalized case.",
+          "כאשר denominator או source methodology לא יציבים, הצג Range ולא מספר יחיד."
+        ],
+        "red": [
+          "False precision, definition mismatch או conclusion לפני evidence.",
+          "האם OI גדל יחד עם price?",
+          "funding consistent across venues?",
+          "IV relative to realized?"
+        ],
+        "evidence": "סטנדרט הראיות: מקור ראשוני/חוזה/Docs כאשר אפשר; ספק נתונים עם definition; Cross-check עצמאי; As-of date; confidence; ו-alternative explanation. כאשר שני מקורות חולקים — לא ממוצעים אוטומטית, אלא מיישבים הגדרות.",
+        "analyst_output": "ב-Investment Memo אל תדביק רק את המספר. כתוב: נתון → הגדרה → מקור → Peer/Historical context → Interpretation → Impact on thesis → Falsifier.",
+        "learning_outcomes": [
+          "אני יכול להסביר IV/Skew/Term ללא jargon ובמשפט אחד.",
+          "אני יכול למדוד/לחשב IV/Skew/Term עם denominator והגדרה נכונים.",
+          "אני יכול לזהות לפחות 3 דרכים שבהן IV/Skew/Term עלול להטעות.",
+          "אני יכול לחבר את הנתון ל-Thesis או להסביר למה הוא לא רלוונטי.",
+          "פתרתי את התרגיל ועניתי על Micro Exam לפני שחשפתי את ה-Rubric."
+        ],
+        "exam": [
+          "הגדרה: מה בדיוק IV/Skew/Term מודד — ומה הוא במפורש לא מודד?",
+          "יישם IV/Skew/Term על Cold Case והצג את ההנחה הכי רגישה.",
+          "Adversarial: תן שני מצבים שבהם IV/Skew/Term נראה חיובי אך המסקנה ההשקעתית דווקא שלילית."
+        ],
+        "rubric": [
+          "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי.",
+          "שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי.",
+          "לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "חיבור מפורש ל-business/token/valuation/risk במקום קביעה שורית/דובית אוטומטית."
+        ],
+        "source_refs": [
+          "S29",
+          "S03",
+          "S26",
+          "S01"
+        ],
+        "formula": "",
+        "exercise": "יישם IV/Skew/Term על Cold Case והצג את ההנחה הכי רגישה.",
+        "definition": "priced volatility and tails",
+        "critical": false,
+        "data_pull": [
+          "Raw value / absolute level",
+          "30d / 90d / 365d change when applicable",
+          "Historical percentile or regime context",
+          "Peer median / best-in-class comparison",
+          "Source definition + as-of date",
+          "Confidence level + alternative explanation"
+        ],
+        "institutional_questions": [
+          "מה המשתנה IV/Skew/Term אומר על העסק/הרשת — לפני הטוקן?",
+          "האם יש transmission אמיתי מהמשתנה לערך הטוקן?",
+          "האם התצפית נובעת ממחיר, תמריצים, leverage, accounting או פעילות אורגנית?",
+          "איזה denominator או cohort ישנה את המסקנה?",
+          "מה השוק כנראה כבר מתמחר מתוך הנתון הזה?",
+          "איזה נתון עתידי יפריך את הפרשנות שלי?"
+        ],
+        "memo_template": "Observation: [הנתון של IV/Skew/Term] | Definition: [...] | As-of: [...] | Peer/History: [...] | Interpretation: [...] | Token impact: [...] | Alternative explanation: [...] | Falsifier: [...] | Confidence: High/Medium/Low.",
+        "worked_example": {
+          "prompt": "יישם IV/Skew/Term על Cold Case והצג את ההנחה הכי רגישה.",
+          "solution": "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי. שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי. לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "lesson": "המטרה אינה להגיע למספר בלבד; צריך להסביר מה המספר כן ולא מוכיח, ואיך הוא משנה את ההסתברות של התזה."
+        }
+      }
+    }
+  ],
+  "exam": "בחינת מעבר: למדוד positioning/overheating ולא לתת signal חד-ממדי על טוקן שלא חקרת קודם.",
+  "critical": false,
+  "source_refs": [
+    "S29",
+    "S03",
+    "S26",
+    "S01"
+  ],
+  "prereq": [
+    4,
+    8,
+    12
+  ],
+  "academy": {
+    "letter": "F",
+    "title": "מבנה שוק, סיכון ותיק",
+    "ids": [
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48
+    ]
+  }
+}

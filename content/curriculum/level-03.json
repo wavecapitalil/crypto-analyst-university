@@ -1,0 +1,462 @@
+{
+  "n": 3,
+  "title": "כלכלת יחידה — Unit Economics",
+  "domain": "Accounting",
+  "obj": "להבדיל בין growth איכותי לבין growth מסובסד או לא רווחי",
+  "topics": [
+    {
+      "name": "Take Rate",
+      "definition": "אחוז מהפעילות שהופך ל-fees/revenue.",
+      "method": "עקוב gross fee rate ו-protocol take בנפרד.",
+      "trap": "להשוות take בין סקטורים שונים.",
+      "exercise": "Volume 10B, Revenue 5M — take rate?",
+      "formula": "Take Rate=Revenue/Activity",
+      "deep": {
+        "why": "ב-Level הזה, Take Rate הוא לא פרט טכני אלא חוליה בשרשרת ההחלטה. השאלה אינה רק 'מה המספר?', אלא האם הוא משנה את ההבנה שלנו לגבי איכות העסק, לכידת הערך, עוצמת הביקוש, הסיכון או מה שכבר מתומחר.",
+        "mental": "בנה Waterfall כלכלי עקבי: פעילות → Fees → תשלומים לספקים → Revenue → Incentives/Costs → Earnings → Holder Revenue. אל תחליף הגדרה בין פרויקטים.",
+        "workflow": [
+          "הגדר במילים שלך את המשתנה ואת היחידות שלו לפני שאתה פותח Dashboard.",
+          "עקוב gross fee rate ו-protocol take בנפרד.",
+          "אמת לפחות מול מקור נוסף או raw on-chain evidence כאשר אפשר.",
+          "אסוף את שדות הבסיס: GMV/Activity, Fees, Supply-side fees, Revenue, Cost of revenue, Token incentives.",
+          "הפרד Level נוכחי, שינוי לאורך זמן ויחס ל-Peer Group.",
+          "כתוב לפחות הסבר אלטרנטיבי אחד לאותה תצפית.",
+          "תרגם את התוצאה להשפעה על Thesis / Valuation / Risk — או ציין שאין השפעה.",
+          "הגדר מראש מה היה גורם לך לשנות את המסקנה."
+        ],
+        "interpret": [
+          "כל מספר צריך להישען על הגדרה חשבונאית, לא על label של dashboard.",
+          "השתמש ב-30d/90d/365d כאשר המדד משתנה מהר; בנושאים מבניים השתמש גם ב-history ארוך יותר.",
+          "אל תעשה annualize לתקופת קיצון בלי להציג normalized case.",
+          "כאשר denominator או source methodology לא יציבים, הצג Range ולא מספר יחיד."
+        ],
+        "red": [
+          "להשוות take בין סקטורים שונים.",
+          "האם Fees ו-Revenue הוגדרו זהה אצל peers?",
+          "האם incentives הם עלות כלכלית?",
+          "האם earnings כוללים/לא כוללים off-chain opex?"
+        ],
+        "evidence": "סטנדרט הראיות: מקור ראשוני/חוזה/Docs כאשר אפשר; ספק נתונים עם definition; Cross-check עצמאי; As-of date; confidence; ו-alternative explanation. כאשר שני מקורות חולקים — לא ממוצעים אוטומטית, אלא מיישבים הגדרות.",
+        "analyst_output": "ב-Investment Memo אל תדביק רק את המספר. כתוב: נתון → הגדרה → מקור → Peer/Historical context → Interpretation → Impact on thesis → Falsifier.",
+        "learning_outcomes": [
+          "אני יכול להסביר Take Rate ללא jargon ובמשפט אחד.",
+          "אני יכול למדוד/לחשב Take Rate עם denominator והגדרה נכונים.",
+          "אני יכול לזהות לפחות 3 דרכים שבהן Take Rate עלול להטעות.",
+          "אני יכול לחבר את הנתון ל-Thesis או להסביר למה הוא לא רלוונטי.",
+          "פתרתי את התרגיל ועניתי על Micro Exam לפני שחשפתי את ה-Rubric."
+        ],
+        "exam": [
+          "הגדרה: מה בדיוק Take Rate מודד — ומה הוא במפורש לא מודד?",
+          "Volume 10B, Revenue 5M — take rate?",
+          "Adversarial: תן שני מצבים שבהם Take Rate נראה חיובי אך המסקנה ההשקעתית דווקא שלילית."
+        ],
+        "rubric": [
+          "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי.",
+          "שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי.",
+          "לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "חיבור מפורש ל-business/token/valuation/risk במקום קביעה שורית/דובית אוטומטית."
+        ],
+        "source_refs": [
+          "S01",
+          "S02",
+          "S03",
+          "S04"
+        ],
+        "formula": "Take Rate=Revenue/Activity",
+        "exercise": "Volume 10B, Revenue 5M — take rate?",
+        "definition": "אחוז מהפעילות שהופך ל-fees/revenue.",
+        "critical": false,
+        "data_pull": [
+          "Raw value / absolute level",
+          "30d / 90d / 365d change when applicable",
+          "Historical percentile or regime context",
+          "Peer median / best-in-class comparison",
+          "Source definition + as-of date",
+          "Confidence level + alternative explanation"
+        ],
+        "institutional_questions": [
+          "מה המשתנה Take Rate אומר על העסק/הרשת — לפני הטוקן?",
+          "האם יש transmission אמיתי מהמשתנה לערך הטוקן?",
+          "האם התצפית נובעת ממחיר, תמריצים, leverage, accounting או פעילות אורגנית?",
+          "איזה denominator או cohort ישנה את המסקנה?",
+          "מה השוק כנראה כבר מתמחר מתוך הנתון הזה?",
+          "איזה נתון עתידי יפריך את הפרשנות שלי?"
+        ],
+        "memo_template": "Observation: [הנתון של Take Rate] | Definition: [...] | As-of: [...] | Peer/History: [...] | Interpretation: [...] | Token impact: [...] | Alternative explanation: [...] | Falsifier: [...] | Confidence: High/Medium/Low.",
+        "worked_example": {
+          "prompt": "Volume 10B, Revenue 5M — take rate?",
+          "solution": "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי. שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי. לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "lesson": "המטרה אינה להגיע למספר בלבד; צריך להסביר מה המספר כן ולא מוכיח, ואיך הוא משנה את ההסתברות של התזה."
+        }
+      }
+    },
+    {
+      "name": "Revenue / Paying User",
+      "definition": "Monetization למשתמש משלם.",
+      "method": "הגדר payer, segment whales, median/average.",
+      "trap": "Wallet=user.",
+      "exercise": "20k payers, 4M revenue — revenue/payer?",
+      "formula": "",
+      "deep": {
+        "why": "ב-Level הזה, Revenue / Paying User הוא לא פרט טכני אלא חוליה בשרשרת ההחלטה. השאלה אינה רק 'מה המספר?', אלא האם הוא משנה את ההבנה שלנו לגבי איכות העסק, לכידת הערך, עוצמת הביקוש, הסיכון או מה שכבר מתומחר.",
+        "mental": "בנה Waterfall כלכלי עקבי: פעילות → Fees → תשלומים לספקים → Revenue → Incentives/Costs → Earnings → Holder Revenue. אל תחליף הגדרה בין פרויקטים.",
+        "workflow": [
+          "הגדר במילים שלך את המשתנה ואת היחידות שלו לפני שאתה פותח Dashboard.",
+          "הגדר payer, segment whales, median/average.",
+          "אמת לפחות מול מקור נוסף או raw on-chain evidence כאשר אפשר.",
+          "אסוף את שדות הבסיס: GMV/Activity, Fees, Supply-side fees, Revenue, Cost of revenue, Token incentives.",
+          "הפרד Level נוכחי, שינוי לאורך זמן ויחס ל-Peer Group.",
+          "כתוב לפחות הסבר אלטרנטיבי אחד לאותה תצפית.",
+          "תרגם את התוצאה להשפעה על Thesis / Valuation / Risk — או ציין שאין השפעה.",
+          "הגדר מראש מה היה גורם לך לשנות את המסקנה."
+        ],
+        "interpret": [
+          "כל מספר צריך להישען על הגדרה חשבונאית, לא על label של dashboard.",
+          "השתמש ב-30d/90d/365d כאשר המדד משתנה מהר; בנושאים מבניים השתמש גם ב-history ארוך יותר.",
+          "אל תעשה annualize לתקופת קיצון בלי להציג normalized case.",
+          "כאשר denominator או source methodology לא יציבים, הצג Range ולא מספר יחיד."
+        ],
+        "red": [
+          "Wallet=user.",
+          "האם Fees ו-Revenue הוגדרו זהה אצל peers?",
+          "האם incentives הם עלות כלכלית?",
+          "האם earnings כוללים/לא כוללים off-chain opex?"
+        ],
+        "evidence": "סטנדרט הראיות: מקור ראשוני/חוזה/Docs כאשר אפשר; ספק נתונים עם definition; Cross-check עצמאי; As-of date; confidence; ו-alternative explanation. כאשר שני מקורות חולקים — לא ממוצעים אוטומטית, אלא מיישבים הגדרות.",
+        "analyst_output": "ב-Investment Memo אל תדביק רק את המספר. כתוב: נתון → הגדרה → מקור → Peer/Historical context → Interpretation → Impact on thesis → Falsifier.",
+        "learning_outcomes": [
+          "אני יכול להסביר Revenue / Paying User ללא jargon ובמשפט אחד.",
+          "אני יכול למדוד/לחשב Revenue / Paying User עם denominator והגדרה נכונים.",
+          "אני יכול לזהות לפחות 3 דרכים שבהן Revenue / Paying User עלול להטעות.",
+          "אני יכול לחבר את הנתון ל-Thesis או להסביר למה הוא לא רלוונטי.",
+          "פתרתי את התרגיל ועניתי על Micro Exam לפני שחשפתי את ה-Rubric."
+        ],
+        "exam": [
+          "הגדרה: מה בדיוק Revenue / Paying User מודד — ומה הוא במפורש לא מודד?",
+          "20k payers, 4M revenue — revenue/payer?",
+          "Adversarial: תן שני מצבים שבהם Revenue / Paying User נראה חיובי אך המסקנה ההשקעתית דווקא שלילית."
+        ],
+        "rubric": [
+          "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי.",
+          "שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי.",
+          "לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "חיבור מפורש ל-business/token/valuation/risk במקום קביעה שורית/דובית אוטומטית."
+        ],
+        "source_refs": [
+          "S01",
+          "S02",
+          "S03",
+          "S04"
+        ],
+        "formula": "",
+        "exercise": "20k payers, 4M revenue — revenue/payer?",
+        "definition": "Monetization למשתמש משלם.",
+        "critical": false,
+        "data_pull": [
+          "Raw value / absolute level",
+          "30d / 90d / 365d change when applicable",
+          "Historical percentile or regime context",
+          "Peer median / best-in-class comparison",
+          "Source definition + as-of date",
+          "Confidence level + alternative explanation"
+        ],
+        "institutional_questions": [
+          "מה המשתנה Revenue / Paying User אומר על העסק/הרשת — לפני הטוקן?",
+          "האם יש transmission אמיתי מהמשתנה לערך הטוקן?",
+          "האם התצפית נובעת ממחיר, תמריצים, leverage, accounting או פעילות אורגנית?",
+          "איזה denominator או cohort ישנה את המסקנה?",
+          "מה השוק כנראה כבר מתמחר מתוך הנתון הזה?",
+          "איזה נתון עתידי יפריך את הפרשנות שלי?"
+        ],
+        "memo_template": "Observation: [הנתון של Revenue / Paying User] | Definition: [...] | As-of: [...] | Peer/History: [...] | Interpretation: [...] | Token impact: [...] | Alternative explanation: [...] | Falsifier: [...] | Confidence: High/Medium/Low.",
+        "worked_example": {
+          "prompt": "20k payers, 4M revenue — revenue/payer?",
+          "solution": "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי. שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי. לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "lesson": "המטרה אינה להגיע למספר בלבד; צריך להסביר מה המספר כן ולא מוכיח, ואיך הוא משנה את ההסתברות של התזה."
+        }
+      }
+    },
+    {
+      "name": "Volume / User & Retention",
+      "definition": "מפריד breadth של users מ-depth של activity.",
+      "method": "בנה cohorts D7/D30/D90.",
+      "trap": "spike חד=PMF.",
+      "exercise": "Volume +40%, users +10% — volume/user?",
+      "formula": "",
+      "deep": {
+        "why": "ב-Level הזה, Volume / User & Retention הוא לא פרט טכני אלא חוליה בשרשרת ההחלטה. השאלה אינה רק 'מה המספר?', אלא האם הוא משנה את ההבנה שלנו לגבי איכות העסק, לכידת הערך, עוצמת הביקוש, הסיכון או מה שכבר מתומחר.",
+        "mental": "בנה Waterfall כלכלי עקבי: פעילות → Fees → תשלומים לספקים → Revenue → Incentives/Costs → Earnings → Holder Revenue. אל תחליף הגדרה בין פרויקטים.",
+        "workflow": [
+          "הגדר במילים שלך את המשתנה ואת היחידות שלו לפני שאתה פותח Dashboard.",
+          "בנה cohorts D7/D30/D90.",
+          "אמת לפחות מול מקור נוסף או raw on-chain evidence כאשר אפשר.",
+          "אסוף את שדות הבסיס: GMV/Activity, Fees, Supply-side fees, Revenue, Cost of revenue, Token incentives.",
+          "הפרד Level נוכחי, שינוי לאורך זמן ויחס ל-Peer Group.",
+          "כתוב לפחות הסבר אלטרנטיבי אחד לאותה תצפית.",
+          "תרגם את התוצאה להשפעה על Thesis / Valuation / Risk — או ציין שאין השפעה.",
+          "הגדר מראש מה היה גורם לך לשנות את המסקנה."
+        ],
+        "interpret": [
+          "כל מספר צריך להישען על הגדרה חשבונאית, לא על label של dashboard.",
+          "השתמש ב-30d/90d/365d כאשר המדד משתנה מהר; בנושאים מבניים השתמש גם ב-history ארוך יותר.",
+          "אל תעשה annualize לתקופת קיצון בלי להציג normalized case.",
+          "כאשר denominator או source methodology לא יציבים, הצג Range ולא מספר יחיד."
+        ],
+        "red": [
+          "spike חד=PMF.",
+          "האם Fees ו-Revenue הוגדרו זהה אצל peers?",
+          "האם incentives הם עלות כלכלית?",
+          "האם earnings כוללים/לא כוללים off-chain opex?"
+        ],
+        "evidence": "סטנדרט הראיות: מקור ראשוני/חוזה/Docs כאשר אפשר; ספק נתונים עם definition; Cross-check עצמאי; As-of date; confidence; ו-alternative explanation. כאשר שני מקורות חולקים — לא ממוצעים אוטומטית, אלא מיישבים הגדרות.",
+        "analyst_output": "ב-Investment Memo אל תדביק רק את המספר. כתוב: נתון → הגדרה → מקור → Peer/Historical context → Interpretation → Impact on thesis → Falsifier.",
+        "learning_outcomes": [
+          "אני יכול להסביר Volume / User & Retention ללא jargon ובמשפט אחד.",
+          "אני יכול למדוד/לחשב Volume / User & Retention עם denominator והגדרה נכונים.",
+          "אני יכול לזהות לפחות 3 דרכים שבהן Volume / User & Retention עלול להטעות.",
+          "אני יכול לחבר את הנתון ל-Thesis או להסביר למה הוא לא רלוונטי.",
+          "פתרתי את התרגיל ועניתי על Micro Exam לפני שחשפתי את ה-Rubric."
+        ],
+        "exam": [
+          "הגדרה: מה בדיוק Volume / User & Retention מודד — ומה הוא במפורש לא מודד?",
+          "Volume +40%, users +10% — volume/user?",
+          "Adversarial: תן שני מצבים שבהם Volume / User & Retention נראה חיובי אך המסקנה ההשקעתית דווקא שלילית."
+        ],
+        "rubric": [
+          "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי.",
+          "שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי.",
+          "לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "חיבור מפורש ל-business/token/valuation/risk במקום קביעה שורית/דובית אוטומטית."
+        ],
+        "source_refs": [
+          "S01",
+          "S02",
+          "S03",
+          "S04"
+        ],
+        "formula": "",
+        "exercise": "Volume +40%, users +10% — volume/user?",
+        "definition": "מפריד breadth של users מ-depth של activity.",
+        "critical": false,
+        "data_pull": [
+          "Raw value / absolute level",
+          "30d / 90d / 365d change when applicable",
+          "Historical percentile or regime context",
+          "Peer median / best-in-class comparison",
+          "Source definition + as-of date",
+          "Confidence level + alternative explanation"
+        ],
+        "institutional_questions": [
+          "מה המשתנה Volume / User & Retention אומר על העסק/הרשת — לפני הטוקן?",
+          "האם יש transmission אמיתי מהמשתנה לערך הטוקן?",
+          "האם התצפית נובעת ממחיר, תמריצים, leverage, accounting או פעילות אורגנית?",
+          "איזה denominator או cohort ישנה את המסקנה?",
+          "מה השוק כנראה כבר מתמחר מתוך הנתון הזה?",
+          "איזה נתון עתידי יפריך את הפרשנות שלי?"
+        ],
+        "memo_template": "Observation: [הנתון של Volume / User & Retention] | Definition: [...] | As-of: [...] | Peer/History: [...] | Interpretation: [...] | Token impact: [...] | Alternative explanation: [...] | Falsifier: [...] | Confidence: High/Medium/Low.",
+        "worked_example": {
+          "prompt": "Volume +40%, users +10% — volume/user?",
+          "solution": "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי. שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי. לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "lesson": "המטרה אינה להגיע למספר בלבד; צריך להסביר מה המספר כן ולא מוכיח, ואיך הוא משנה את ההסתברות של התזה."
+        }
+      }
+    },
+    {
+      "name": "Revenue / TVL & Volume / TVL",
+      "definition": "יעילות הון בתוך אותו sector.",
+      "method": "השתמש TVL מנוטרל מחיר.",
+      "trap": "להשוות lending ל-DEX.",
+      "exercise": "A ו-B TVL זהה; A volume פי3 אך revenue רק פי1.2 — מה לבדוק?",
+      "formula": "",
+      "deep": {
+        "why": "ב-Level הזה, Revenue / TVL & Volume / TVL הוא לא פרט טכני אלא חוליה בשרשרת ההחלטה. השאלה אינה רק 'מה המספר?', אלא האם הוא משנה את ההבנה שלנו לגבי איכות העסק, לכידת הערך, עוצמת הביקוש, הסיכון או מה שכבר מתומחר.",
+        "mental": "בנה Waterfall כלכלי עקבי: פעילות → Fees → תשלומים לספקים → Revenue → Incentives/Costs → Earnings → Holder Revenue. אל תחליף הגדרה בין פרויקטים.",
+        "workflow": [
+          "הגדר במילים שלך את המשתנה ואת היחידות שלו לפני שאתה פותח Dashboard.",
+          "השתמש TVL מנוטרל מחיר.",
+          "אמת לפחות מול מקור נוסף או raw on-chain evidence כאשר אפשר.",
+          "אסוף את שדות הבסיס: GMV/Activity, Fees, Supply-side fees, Revenue, Cost of revenue, Token incentives.",
+          "הפרד Level נוכחי, שינוי לאורך זמן ויחס ל-Peer Group.",
+          "כתוב לפחות הסבר אלטרנטיבי אחד לאותה תצפית.",
+          "תרגם את התוצאה להשפעה על Thesis / Valuation / Risk — או ציין שאין השפעה.",
+          "הגדר מראש מה היה גורם לך לשנות את המסקנה."
+        ],
+        "interpret": [
+          "כל מספר צריך להישען על הגדרה חשבונאית, לא על label של dashboard.",
+          "השתמש ב-30d/90d/365d כאשר המדד משתנה מהר; בנושאים מבניים השתמש גם ב-history ארוך יותר.",
+          "אל תעשה annualize לתקופת קיצון בלי להציג normalized case.",
+          "כאשר denominator או source methodology לא יציבים, הצג Range ולא מספר יחיד."
+        ],
+        "red": [
+          "להשוות lending ל-DEX.",
+          "האם Fees ו-Revenue הוגדרו זהה אצל peers?",
+          "האם incentives הם עלות כלכלית?",
+          "האם earnings כוללים/לא כוללים off-chain opex?"
+        ],
+        "evidence": "סטנדרט הראיות: מקור ראשוני/חוזה/Docs כאשר אפשר; ספק נתונים עם definition; Cross-check עצמאי; As-of date; confidence; ו-alternative explanation. כאשר שני מקורות חולקים — לא ממוצעים אוטומטית, אלא מיישבים הגדרות.",
+        "analyst_output": "ב-Investment Memo אל תדביק רק את המספר. כתוב: נתון → הגדרה → מקור → Peer/Historical context → Interpretation → Impact on thesis → Falsifier.",
+        "learning_outcomes": [
+          "אני יכול להסביר Revenue / TVL & Volume / TVL ללא jargon ובמשפט אחד.",
+          "אני יכול למדוד/לחשב Revenue / TVL & Volume / TVL עם denominator והגדרה נכונים.",
+          "אני יכול לזהות לפחות 3 דרכים שבהן Revenue / TVL & Volume / TVL עלול להטעות.",
+          "אני יכול לחבר את הנתון ל-Thesis או להסביר למה הוא לא רלוונטי.",
+          "פתרתי את התרגיל ועניתי על Micro Exam לפני שחשפתי את ה-Rubric."
+        ],
+        "exam": [
+          "הגדרה: מה בדיוק Revenue / TVL & Volume / TVL מודד — ומה הוא במפורש לא מודד?",
+          "A ו-B TVL זהה; A volume פי3 אך revenue רק פי1.2 — מה לבדוק?",
+          "Adversarial: תן שני מצבים שבהם Revenue / TVL & Volume / TVL נראה חיובי אך המסקנה ההשקעתית דווקא שלילית."
+        ],
+        "rubric": [
+          "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי.",
+          "שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי.",
+          "לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "חיבור מפורש ל-business/token/valuation/risk במקום קביעה שורית/דובית אוטומטית."
+        ],
+        "source_refs": [
+          "S01",
+          "S02",
+          "S03",
+          "S04"
+        ],
+        "formula": "",
+        "exercise": "A ו-B TVL זהה; A volume פי3 אך revenue רק פי1.2 — מה לבדוק?",
+        "definition": "יעילות הון בתוך אותו sector.",
+        "critical": true,
+        "data_pull": [
+          "Raw value / absolute level",
+          "30d / 90d / 365d change when applicable",
+          "Historical percentile or regime context",
+          "Peer median / best-in-class comparison",
+          "Source definition + as-of date",
+          "Confidence level + alternative explanation"
+        ],
+        "institutional_questions": [
+          "מה המשתנה Revenue / TVL & Volume / TVL אומר על העסק/הרשת — לפני הטוקן?",
+          "האם יש transmission אמיתי מהמשתנה לערך הטוקן?",
+          "האם התצפית נובעת ממחיר, תמריצים, leverage, accounting או פעילות אורגנית?",
+          "איזה denominator או cohort ישנה את המסקנה?",
+          "מה השוק כנראה כבר מתמחר מתוך הנתון הזה?",
+          "איזה נתון עתידי יפריך את הפרשנות שלי?"
+        ],
+        "memo_template": "Observation: [הנתון של Revenue / TVL & Volume / TVL] | Definition: [...] | As-of: [...] | Peer/History: [...] | Interpretation: [...] | Token impact: [...] | Alternative explanation: [...] | Falsifier: [...] | Confidence: High/Medium/Low.",
+        "worked_example": {
+          "prompt": "A ו-B TVL זהה; A volume פי3 אך revenue רק פי1.2 — מה לבדוק?",
+          "solution": "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי. שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי. לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "lesson": "המטרה אינה להגיע למספר בלבד; צריך להסביר מה המספר כן ולא מוכיח, ואיך הוא משנה את ההסתברות של התזה."
+        }
+      }
+    },
+    {
+      "name": "Incentive Efficiency",
+      "definition": "כמה incremental economics נוצר לכל דולר תמריץ.",
+      "method": "השווה pre/during/post ותחשב incremental.",
+      "trap": "Total revenue/incentives בלי baseline.",
+      "exercise": "5M incentives יוצרים 1M incremental revenue — ratio?",
+      "formula": "Incremental Revenue/Incentives",
+      "deep": {
+        "why": "ב-Level הזה, Incentive Efficiency הוא לא פרט טכני אלא חוליה בשרשרת ההחלטה. השאלה אינה רק 'מה המספר?', אלא האם הוא משנה את ההבנה שלנו לגבי איכות העסק, לכידת הערך, עוצמת הביקוש, הסיכון או מה שכבר מתומחר.",
+        "mental": "בנה Waterfall כלכלי עקבי: פעילות → Fees → תשלומים לספקים → Revenue → Incentives/Costs → Earnings → Holder Revenue. אל תחליף הגדרה בין פרויקטים.",
+        "workflow": [
+          "הגדר במילים שלך את המשתנה ואת היחידות שלו לפני שאתה פותח Dashboard.",
+          "השווה pre/during/post ותחשב incremental.",
+          "אמת לפחות מול מקור נוסף או raw on-chain evidence כאשר אפשר.",
+          "אסוף את שדות הבסיס: GMV/Activity, Fees, Supply-side fees, Revenue, Cost of revenue, Token incentives.",
+          "הפרד Level נוכחי, שינוי לאורך זמן ויחס ל-Peer Group.",
+          "כתוב לפחות הסבר אלטרנטיבי אחד לאותה תצפית.",
+          "תרגם את התוצאה להשפעה על Thesis / Valuation / Risk — או ציין שאין השפעה.",
+          "הגדר מראש מה היה גורם לך לשנות את המסקנה."
+        ],
+        "interpret": [
+          "כל מספר צריך להישען על הגדרה חשבונאית, לא על label של dashboard.",
+          "השתמש ב-30d/90d/365d כאשר המדד משתנה מהר; בנושאים מבניים השתמש גם ב-history ארוך יותר.",
+          "אל תעשה annualize לתקופת קיצון בלי להציג normalized case.",
+          "כאשר denominator או source methodology לא יציבים, הצג Range ולא מספר יחיד."
+        ],
+        "red": [
+          "Total revenue/incentives בלי baseline.",
+          "האם Fees ו-Revenue הוגדרו זהה אצל peers?",
+          "האם incentives הם עלות כלכלית?",
+          "האם earnings כוללים/לא כוללים off-chain opex?"
+        ],
+        "evidence": "סטנדרט הראיות: מקור ראשוני/חוזה/Docs כאשר אפשר; ספק נתונים עם definition; Cross-check עצמאי; As-of date; confidence; ו-alternative explanation. כאשר שני מקורות חולקים — לא ממוצעים אוטומטית, אלא מיישבים הגדרות.",
+        "analyst_output": "ב-Investment Memo אל תדביק רק את המספר. כתוב: נתון → הגדרה → מקור → Peer/Historical context → Interpretation → Impact on thesis → Falsifier.",
+        "learning_outcomes": [
+          "אני יכול להסביר Incentive Efficiency ללא jargon ובמשפט אחד.",
+          "אני יכול למדוד/לחשב Incentive Efficiency עם denominator והגדרה נכונים.",
+          "אני יכול לזהות לפחות 3 דרכים שבהן Incentive Efficiency עלול להטעות.",
+          "אני יכול לחבר את הנתון ל-Thesis או להסביר למה הוא לא רלוונטי.",
+          "פתרתי את התרגיל ועניתי על Micro Exam לפני שחשפתי את ה-Rubric."
+        ],
+        "exam": [
+          "הגדרה: מה בדיוק Incentive Efficiency מודד — ומה הוא במפורש לא מודד?",
+          "5M incentives יוצרים 1M incremental revenue — ratio?",
+          "Adversarial: תן שני מצבים שבהם Incentive Efficiency נראה חיובי אך המסקנה ההשקעתית דווקא שלילית."
+        ],
+        "rubric": [
+          "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי.",
+          "שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי.",
+          "לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "חיבור מפורש ל-business/token/valuation/risk במקום קביעה שורית/דובית אוטומטית."
+        ],
+        "source_refs": [
+          "S01",
+          "S02",
+          "S03",
+          "S04"
+        ],
+        "formula": "Incremental Revenue/Incentives",
+        "exercise": "5M incentives יוצרים 1M incremental revenue — ratio?",
+        "definition": "כמה incremental economics נוצר לכל דולר תמריץ.",
+        "critical": false,
+        "data_pull": [
+          "Raw value / absolute level",
+          "30d / 90d / 365d change when applicable",
+          "Historical percentile or regime context",
+          "Peer median / best-in-class comparison",
+          "Source definition + as-of date",
+          "Confidence level + alternative explanation"
+        ],
+        "institutional_questions": [
+          "מה המשתנה Incentive Efficiency אומר על העסק/הרשת — לפני הטוקן?",
+          "האם יש transmission אמיתי מהמשתנה לערך הטוקן?",
+          "האם התצפית נובעת ממחיר, תמריצים, leverage, accounting או פעילות אורגנית?",
+          "איזה denominator או cohort ישנה את המסקנה?",
+          "מה השוק כנראה כבר מתמחר מתוך הנתון הזה?",
+          "איזה נתון עתידי יפריך את הפרשנות שלי?"
+        ],
+        "memo_template": "Observation: [הנתון של Incentive Efficiency] | Definition: [...] | As-of: [...] | Peer/History: [...] | Interpretation: [...] | Token impact: [...] | Alternative explanation: [...] | Falsifier: [...] | Confidence: High/Medium/Low.",
+        "worked_example": {
+          "prompt": "5M incentives יוצרים 1M incremental revenue — ratio?",
+          "solution": "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי. שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי. לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "lesson": "המטרה אינה להגיע למספר בלבד; צריך להסביר מה המספר כן ולא מוכיח, ואיך הוא משנה את ההסתברות של התזה."
+        }
+      }
+    }
+  ],
+  "exam": "השווה שני protocols עם אותה הכנסה והסבר מי עסק איכותי יותר.",
+  "critical": false,
+  "source_refs": [
+    "S01",
+    "S02",
+    "S03",
+    "S04"
+  ],
+  "prereq": [
+    0,
+    1,
+    2
+  ],
+  "academy": {
+    "letter": "A",
+    "title": "יסודות הטוקן והחשבונאות",
+    "ids": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  }
+}

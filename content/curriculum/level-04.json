@@ -1,0 +1,549 @@
+{
+  "n": 4,
+  "title": "מעבדת יחסים — Ratio Laboratory",
+  "domain": "Ratios",
+  "obj": "להשתמש ביחסים כ-diagnostics עם שליטה במכנה, אמינות הנתון והקשר היסטורי/יחסי",
+  "topics": [
+    {
+      "name": "Volume / Market Cap",
+      "definition": "Turnover ביחס לשווי headline.",
+      "method": "השתמש trusted volume + percentile היסטורי.",
+      "trap": "Wash trading, low float, MM churn.",
+      "exercise": "Volume/MC=80% — תן 5 הסברים אפשריים.",
+      "formula": "Trusted Spot Volume/Market Cap",
+      "deep": {
+        "why": "ב-Level הזה, Volume / Market Cap הוא לא פרט טכני אלא חוליה בשרשרת ההחלטה. השאלה אינה רק 'מה המספר?', אלא האם הוא משנה את ההבנה שלנו לגבי איכות העסק, לכידת הערך, עוצמת הביקוש, הסיכון או מה שכבר מתומחר.",
+        "mental": "Ratio הוא שאלה על Numerator ביחס ל-Denominator. הוא אינו מסקנה. רוב הטעויות מגיעות ממכנה לא נכון, נתון לא אמין או peer group לא מתאים.",
+        "workflow": [
+          "הגדר במילים שלך את המשתנה ואת היחידות שלו לפני שאתה פותח Dashboard.",
+          "השתמש trusted volume + percentile היסטורי.",
+          "אמת לפחות מול מקור נוסף או raw on-chain evidence כאשר אפשר.",
+          "אסוף את שדות הבסיס: Numerator, Denominator, Units, Period, Trusted vs raw data, Historical percentile.",
+          "הפרד Level נוכחי, שינוי לאורך זמן ויחס ל-Peer Group.",
+          "כתוב לפחות הסבר אלטרנטיבי אחד לאותה תצפית.",
+          "תרגם את התוצאה להשפעה על Thesis / Valuation / Risk — או ציין שאין השפעה.",
+          "הגדר מראש מה היה גורם לך לשנות את המסקנה."
+        ],
+        "interpret": [
+          "הצג תמיד Absolute values + Ratio + Historical percentile + Peer comparison.",
+          "השתמש ב-30d/90d/365d כאשר המדד משתנה מהר; בנושאים מבניים השתמש גם ב-history ארוך יותר.",
+          "אל תעשה annualize לתקופת קיצון בלי להציג normalized case.",
+          "כאשר denominator או source methodology לא יציבים, הצג Range ולא מספר יחיד."
+        ],
+        "red": [
+          "Wash trading, low float, MM churn.",
+          "האם שני הצדדים באותה תקופה ובאותן יחידות?",
+          "מה יכול לנפח את המונה?",
+          "מה יכול להקטין מלאכותית את המכנה?"
+        ],
+        "evidence": "סטנדרט הראיות: מקור ראשוני/חוזה/Docs כאשר אפשר; ספק נתונים עם definition; Cross-check עצמאי; As-of date; confidence; ו-alternative explanation. כאשר שני מקורות חולקים — לא ממוצעים אוטומטית, אלא מיישבים הגדרות.",
+        "analyst_output": "ב-Investment Memo אל תדביק רק את המספר. כתוב: נתון → הגדרה → מקור → Peer/Historical context → Interpretation → Impact on thesis → Falsifier.",
+        "learning_outcomes": [
+          "אני יכול להסביר Volume / Market Cap ללא jargon ובמשפט אחד.",
+          "אני יכול למדוד/לחשב Volume / Market Cap עם denominator והגדרה נכונים.",
+          "אני יכול לזהות לפחות 3 דרכים שבהן Volume / Market Cap עלול להטעות.",
+          "אני יכול לחבר את הנתון ל-Thesis או להסביר למה הוא לא רלוונטי.",
+          "פתרתי את התרגיל ועניתי על Micro Exam לפני שחשפתי את ה-Rubric."
+        ],
+        "exam": [
+          "הגדרה: מה בדיוק Volume / Market Cap מודד — ומה הוא במפורש לא מודד?",
+          "Volume/MC=80% — תן 5 הסברים אפשריים.",
+          "Adversarial: תן שני מצבים שבהם Volume / Market Cap נראה חיובי אך המסקנה ההשקעתית דווקא שלילית."
+        ],
+        "rubric": [
+          "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי.",
+          "שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי.",
+          "לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "חיבור מפורש ל-business/token/valuation/risk במקום קביעה שורית/דובית אוטומטית."
+        ],
+        "source_refs": [
+          "S01",
+          "S02",
+          "S03",
+          "S04"
+        ],
+        "formula": "Trusted Spot Volume/Market Cap",
+        "exercise": "Volume/MC=80% — תן 5 הסברים אפשריים.",
+        "definition": "Turnover ביחס לשווי headline.",
+        "critical": false,
+        "data_pull": [
+          "Raw value / absolute level",
+          "30d / 90d / 365d change when applicable",
+          "Historical percentile or regime context",
+          "Peer median / best-in-class comparison",
+          "Source definition + as-of date",
+          "Confidence level + alternative explanation"
+        ],
+        "institutional_questions": [
+          "מה המשתנה Volume / Market Cap אומר על העסק/הרשת — לפני הטוקן?",
+          "האם יש transmission אמיתי מהמשתנה לערך הטוקן?",
+          "האם התצפית נובעת ממחיר, תמריצים, leverage, accounting או פעילות אורגנית?",
+          "איזה denominator או cohort ישנה את המסקנה?",
+          "מה השוק כנראה כבר מתמחר מתוך הנתון הזה?",
+          "איזה נתון עתידי יפריך את הפרשנות שלי?"
+        ],
+        "memo_template": "Observation: [הנתון של Volume / Market Cap] | Definition: [...] | As-of: [...] | Peer/History: [...] | Interpretation: [...] | Token impact: [...] | Alternative explanation: [...] | Falsifier: [...] | Confidence: High/Medium/Low.",
+        "worked_example": {
+          "prompt": "Volume/MC=80% — תן 5 הסברים אפשריים.",
+          "solution": "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי. שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי. לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "lesson": "המטרה אינה להגיע למספר בלבד; צריך להסביר מה המספר כן ולא מוכיח, ואיך הוא משנה את ההסתברות של התזה."
+        }
+      }
+    },
+    {
+      "name": "Volume / Free-Float MC",
+      "definition": "Turnover ביחס לשווי ההיצע שבאמת יכול להיסחר.",
+      "method": "בנה Free Float range ולא מספר מזויף מדויק.",
+      "trap": "Free Float estimate שגוי.",
+      "exercise": "MC=1B, FFMC=250M, Volume=200M — שני ratios?",
+      "formula": "",
+      "deep": {
+        "why": "ב-Level הזה, Volume / Free-Float MC הוא לא פרט טכני אלא חוליה בשרשרת ההחלטה. השאלה אינה רק 'מה המספר?', אלא האם הוא משנה את ההבנה שלנו לגבי איכות העסק, לכידת הערך, עוצמת הביקוש, הסיכון או מה שכבר מתומחר.",
+        "mental": "Ratio הוא שאלה על Numerator ביחס ל-Denominator. הוא אינו מסקנה. רוב הטעויות מגיעות ממכנה לא נכון, נתון לא אמין או peer group לא מתאים.",
+        "workflow": [
+          "הגדר במילים שלך את המשתנה ואת היחידות שלו לפני שאתה פותח Dashboard.",
+          "בנה Free Float range ולא מספר מזויף מדויק.",
+          "אמת לפחות מול מקור נוסף או raw on-chain evidence כאשר אפשר.",
+          "אסוף את שדות הבסיס: Numerator, Denominator, Units, Period, Trusted vs raw data, Historical percentile.",
+          "הפרד Level נוכחי, שינוי לאורך זמן ויחס ל-Peer Group.",
+          "כתוב לפחות הסבר אלטרנטיבי אחד לאותה תצפית.",
+          "תרגם את התוצאה להשפעה על Thesis / Valuation / Risk — או ציין שאין השפעה.",
+          "הגדר מראש מה היה גורם לך לשנות את המסקנה."
+        ],
+        "interpret": [
+          "הצג תמיד Absolute values + Ratio + Historical percentile + Peer comparison.",
+          "השתמש ב-30d/90d/365d כאשר המדד משתנה מהר; בנושאים מבניים השתמש גם ב-history ארוך יותר.",
+          "אל תעשה annualize לתקופת קיצון בלי להציג normalized case.",
+          "כאשר denominator או source methodology לא יציבים, הצג Range ולא מספר יחיד."
+        ],
+        "red": [
+          "Free Float estimate שגוי.",
+          "האם שני הצדדים באותה תקופה ובאותן יחידות?",
+          "מה יכול לנפח את המונה?",
+          "מה יכול להקטין מלאכותית את המכנה?"
+        ],
+        "evidence": "סטנדרט הראיות: מקור ראשוני/חוזה/Docs כאשר אפשר; ספק נתונים עם definition; Cross-check עצמאי; As-of date; confidence; ו-alternative explanation. כאשר שני מקורות חולקים — לא ממוצעים אוטומטית, אלא מיישבים הגדרות.",
+        "analyst_output": "ב-Investment Memo אל תדביק רק את המספר. כתוב: נתון → הגדרה → מקור → Peer/Historical context → Interpretation → Impact on thesis → Falsifier.",
+        "learning_outcomes": [
+          "אני יכול להסביר Volume / Free-Float MC ללא jargon ובמשפט אחד.",
+          "אני יכול למדוד/לחשב Volume / Free-Float MC עם denominator והגדרה נכונים.",
+          "אני יכול לזהות לפחות 3 דרכים שבהן Volume / Free-Float MC עלול להטעות.",
+          "אני יכול לחבר את הנתון ל-Thesis או להסביר למה הוא לא רלוונטי.",
+          "פתרתי את התרגיל ועניתי על Micro Exam לפני שחשפתי את ה-Rubric."
+        ],
+        "exam": [
+          "הגדרה: מה בדיוק Volume / Free-Float MC מודד — ומה הוא במפורש לא מודד?",
+          "MC=1B, FFMC=250M, Volume=200M — שני ratios?",
+          "Adversarial: תן שני מצבים שבהם Volume / Free-Float MC נראה חיובי אך המסקנה ההשקעתית דווקא שלילית."
+        ],
+        "rubric": [
+          "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי.",
+          "שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי.",
+          "לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "חיבור מפורש ל-business/token/valuation/risk במקום קביעה שורית/דובית אוטומטית."
+        ],
+        "source_refs": [
+          "S01",
+          "S02",
+          "S03",
+          "S04"
+        ],
+        "formula": "",
+        "exercise": "MC=1B, FFMC=250M, Volume=200M — שני ratios?",
+        "definition": "Turnover ביחס לשווי ההיצע שבאמת יכול להיסחר.",
+        "critical": false,
+        "data_pull": [
+          "Raw value / absolute level",
+          "30d / 90d / 365d change when applicable",
+          "Historical percentile or regime context",
+          "Peer median / best-in-class comparison",
+          "Source definition + as-of date",
+          "Confidence level + alternative explanation"
+        ],
+        "institutional_questions": [
+          "מה המשתנה Volume / Free-Float MC אומר על העסק/הרשת — לפני הטוקן?",
+          "האם יש transmission אמיתי מהמשתנה לערך הטוקן?",
+          "האם התצפית נובעת ממחיר, תמריצים, leverage, accounting או פעילות אורגנית?",
+          "איזה denominator או cohort ישנה את המסקנה?",
+          "מה השוק כנראה כבר מתמחר מתוך הנתון הזה?",
+          "איזה נתון עתידי יפריך את הפרשנות שלי?"
+        ],
+        "memo_template": "Observation: [הנתון של Volume / Free-Float MC] | Definition: [...] | As-of: [...] | Peer/History: [...] | Interpretation: [...] | Token impact: [...] | Alternative explanation: [...] | Falsifier: [...] | Confidence: High/Medium/Low.",
+        "worked_example": {
+          "prompt": "MC=1B, FFMC=250M, Volume=200M — שני ratios?",
+          "solution": "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי. שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי. לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "lesson": "המטרה אינה להגיע למספר בלבד; צריך להסביר מה המספר כן ולא מוכיח, ואיך הוא משנה את ההסתברות של התזה."
+        }
+      }
+    },
+    {
+      "name": "OI / MC & OI / Spot",
+      "definition": "מינוף/פוזיציות פתוחות ביחס לגודל ו-spot turnover.",
+      "method": "שלב Funding/Basis/venue mix.",
+      "trap": "High OI = bearish/bullish.",
+      "exercise": "OI/MC גבוה + funding flat — מה מותר להסיק?",
+      "formula": "",
+      "deep": {
+        "why": "ב-Level הזה, OI / MC & OI / Spot הוא לא פרט טכני אלא חוליה בשרשרת ההחלטה. השאלה אינה רק 'מה המספר?', אלא האם הוא משנה את ההבנה שלנו לגבי איכות העסק, לכידת הערך, עוצמת הביקוש, הסיכון או מה שכבר מתומחר.",
+        "mental": "Ratio הוא שאלה על Numerator ביחס ל-Denominator. הוא אינו מסקנה. רוב הטעויות מגיעות ממכנה לא נכון, נתון לא אמין או peer group לא מתאים.",
+        "workflow": [
+          "הגדר במילים שלך את המשתנה ואת היחידות שלו לפני שאתה פותח Dashboard.",
+          "שלב Funding/Basis/venue mix.",
+          "אמת לפחות מול מקור נוסף או raw on-chain evidence כאשר אפשר.",
+          "אסוף את שדות הבסיס: Numerator, Denominator, Units, Period, Trusted vs raw data, Historical percentile.",
+          "הפרד Level נוכחי, שינוי לאורך זמן ויחס ל-Peer Group.",
+          "כתוב לפחות הסבר אלטרנטיבי אחד לאותה תצפית.",
+          "תרגם את התוצאה להשפעה על Thesis / Valuation / Risk — או ציין שאין השפעה.",
+          "הגדר מראש מה היה גורם לך לשנות את המסקנה."
+        ],
+        "interpret": [
+          "הצג תמיד Absolute values + Ratio + Historical percentile + Peer comparison.",
+          "השתמש ב-30d/90d/365d כאשר המדד משתנה מהר; בנושאים מבניים השתמש גם ב-history ארוך יותר.",
+          "אל תעשה annualize לתקופת קיצון בלי להציג normalized case.",
+          "כאשר denominator או source methodology לא יציבים, הצג Range ולא מספר יחיד."
+        ],
+        "red": [
+          "High OI = bearish/bullish.",
+          "האם שני הצדדים באותה תקופה ובאותן יחידות?",
+          "מה יכול לנפח את המונה?",
+          "מה יכול להקטין מלאכותית את המכנה?"
+        ],
+        "evidence": "סטנדרט הראיות: מקור ראשוני/חוזה/Docs כאשר אפשר; ספק נתונים עם definition; Cross-check עצמאי; As-of date; confidence; ו-alternative explanation. כאשר שני מקורות חולקים — לא ממוצעים אוטומטית, אלא מיישבים הגדרות.",
+        "analyst_output": "ב-Investment Memo אל תדביק רק את המספר. כתוב: נתון → הגדרה → מקור → Peer/Historical context → Interpretation → Impact on thesis → Falsifier.",
+        "learning_outcomes": [
+          "אני יכול להסביר OI / MC & OI / Spot ללא jargon ובמשפט אחד.",
+          "אני יכול למדוד/לחשב OI / MC & OI / Spot עם denominator והגדרה נכונים.",
+          "אני יכול לזהות לפחות 3 דרכים שבהן OI / MC & OI / Spot עלול להטעות.",
+          "אני יכול לחבר את הנתון ל-Thesis או להסביר למה הוא לא רלוונטי.",
+          "פתרתי את התרגיל ועניתי על Micro Exam לפני שחשפתי את ה-Rubric."
+        ],
+        "exam": [
+          "הגדרה: מה בדיוק OI / MC & OI / Spot מודד — ומה הוא במפורש לא מודד?",
+          "OI/MC גבוה + funding flat — מה מותר להסיק?",
+          "Adversarial: תן שני מצבים שבהם OI / MC & OI / Spot נראה חיובי אך המסקנה ההשקעתית דווקא שלילית."
+        ],
+        "rubric": [
+          "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי.",
+          "שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי.",
+          "לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "חיבור מפורש ל-business/token/valuation/risk במקום קביעה שורית/דובית אוטומטית."
+        ],
+        "source_refs": [
+          "S01",
+          "S02",
+          "S03",
+          "S04"
+        ],
+        "formula": "",
+        "exercise": "OI/MC גבוה + funding flat — מה מותר להסיק?",
+        "definition": "מינוף/פוזיציות פתוחות ביחס לגודל ו-spot turnover.",
+        "critical": false,
+        "data_pull": [
+          "Raw value / absolute level",
+          "30d / 90d / 365d change when applicable",
+          "Historical percentile or regime context",
+          "Peer median / best-in-class comparison",
+          "Source definition + as-of date",
+          "Confidence level + alternative explanation"
+        ],
+        "institutional_questions": [
+          "מה המשתנה OI / MC & OI / Spot אומר על העסק/הרשת — לפני הטוקן?",
+          "האם יש transmission אמיתי מהמשתנה לערך הטוקן?",
+          "האם התצפית נובעת ממחיר, תמריצים, leverage, accounting או פעילות אורגנית?",
+          "איזה denominator או cohort ישנה את המסקנה?",
+          "מה השוק כנראה כבר מתמחר מתוך הנתון הזה?",
+          "איזה נתון עתידי יפריך את הפרשנות שלי?"
+        ],
+        "memo_template": "Observation: [הנתון של OI / MC & OI / Spot] | Definition: [...] | As-of: [...] | Peer/History: [...] | Interpretation: [...] | Token impact: [...] | Alternative explanation: [...] | Falsifier: [...] | Confidence: High/Medium/Low.",
+        "worked_example": {
+          "prompt": "OI/MC גבוה + funding flat — מה מותר להסיק?",
+          "solution": "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי. שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי. לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "lesson": "המטרה אינה להגיע למספר בלבד; צריך להסביר מה המספר כן ולא מוכיח, ואיך הוא משנה את ההסתברות של התזה."
+        }
+      }
+    },
+    {
+      "name": "Valuation Ratios",
+      "definition": "FDV/Revenue, FDV/Earnings, FDV/Holder Revenue עונים שאלות שונות.",
+      "method": "בחר denominator לפי claim של הטוקן.",
+      "trap": "Annualize peak month.",
+      "exercise": "איזה multiple מתאים יותר ל-fee-sharing token?",
+      "formula": "",
+      "deep": {
+        "why": "ב-Level הזה, Valuation Ratios הוא לא פרט טכני אלא חוליה בשרשרת ההחלטה. השאלה אינה רק 'מה המספר?', אלא האם הוא משנה את ההבנה שלנו לגבי איכות העסק, לכידת הערך, עוצמת הביקוש, הסיכון או מה שכבר מתומחר.",
+        "mental": "Ratio הוא שאלה על Numerator ביחס ל-Denominator. הוא אינו מסקנה. רוב הטעויות מגיעות ממכנה לא נכון, נתון לא אמין או peer group לא מתאים.",
+        "workflow": [
+          "הגדר במילים שלך את המשתנה ואת היחידות שלו לפני שאתה פותח Dashboard.",
+          "בחר denominator לפי claim של הטוקן.",
+          "אמת לפחות מול מקור נוסף או raw on-chain evidence כאשר אפשר.",
+          "אסוף את שדות הבסיס: Numerator, Denominator, Units, Period, Trusted vs raw data, Historical percentile.",
+          "הפרד Level נוכחי, שינוי לאורך זמן ויחס ל-Peer Group.",
+          "כתוב לפחות הסבר אלטרנטיבי אחד לאותה תצפית.",
+          "תרגם את התוצאה להשפעה על Thesis / Valuation / Risk — או ציין שאין השפעה.",
+          "הגדר מראש מה היה גורם לך לשנות את המסקנה."
+        ],
+        "interpret": [
+          "הצג תמיד Absolute values + Ratio + Historical percentile + Peer comparison.",
+          "השתמש ב-30d/90d/365d כאשר המדד משתנה מהר; בנושאים מבניים השתמש גם ב-history ארוך יותר.",
+          "אל תעשה annualize לתקופת קיצון בלי להציג normalized case.",
+          "כאשר denominator או source methodology לא יציבים, הצג Range ולא מספר יחיד."
+        ],
+        "red": [
+          "Annualize peak month.",
+          "האם שני הצדדים באותה תקופה ובאותן יחידות?",
+          "מה יכול לנפח את המונה?",
+          "מה יכול להקטין מלאכותית את המכנה?"
+        ],
+        "evidence": "סטנדרט הראיות: מקור ראשוני/חוזה/Docs כאשר אפשר; ספק נתונים עם definition; Cross-check עצמאי; As-of date; confidence; ו-alternative explanation. כאשר שני מקורות חולקים — לא ממוצעים אוטומטית, אלא מיישבים הגדרות.",
+        "analyst_output": "ב-Investment Memo אל תדביק רק את המספר. כתוב: נתון → הגדרה → מקור → Peer/Historical context → Interpretation → Impact on thesis → Falsifier.",
+        "learning_outcomes": [
+          "אני יכול להסביר Valuation Ratios ללא jargon ובמשפט אחד.",
+          "אני יכול למדוד/לחשב Valuation Ratios עם denominator והגדרה נכונים.",
+          "אני יכול לזהות לפחות 3 דרכים שבהן Valuation Ratios עלול להטעות.",
+          "אני יכול לחבר את הנתון ל-Thesis או להסביר למה הוא לא רלוונטי.",
+          "פתרתי את התרגיל ועניתי על Micro Exam לפני שחשפתי את ה-Rubric."
+        ],
+        "exam": [
+          "הגדרה: מה בדיוק Valuation Ratios מודד — ומה הוא במפורש לא מודד?",
+          "איזה multiple מתאים יותר ל-fee-sharing token?",
+          "Adversarial: תן שני מצבים שבהם Valuation Ratios נראה חיובי אך המסקנה ההשקעתית דווקא שלילית."
+        ],
+        "rubric": [
+          "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי.",
+          "שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי.",
+          "לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "חיבור מפורש ל-business/token/valuation/risk במקום קביעה שורית/דובית אוטומטית."
+        ],
+        "source_refs": [
+          "S01",
+          "S02",
+          "S03",
+          "S04"
+        ],
+        "formula": "",
+        "exercise": "איזה multiple מתאים יותר ל-fee-sharing token?",
+        "definition": "FDV/Revenue, FDV/Earnings, FDV/Holder Revenue עונים שאלות שונות.",
+        "critical": false,
+        "data_pull": [
+          "Raw value / absolute level",
+          "30d / 90d / 365d change when applicable",
+          "Historical percentile or regime context",
+          "Peer median / best-in-class comparison",
+          "Source definition + as-of date",
+          "Confidence level + alternative explanation"
+        ],
+        "institutional_questions": [
+          "מה המשתנה Valuation Ratios אומר על העסק/הרשת — לפני הטוקן?",
+          "האם יש transmission אמיתי מהמשתנה לערך הטוקן?",
+          "האם התצפית נובעת ממחיר, תמריצים, leverage, accounting או פעילות אורגנית?",
+          "איזה denominator או cohort ישנה את המסקנה?",
+          "מה השוק כנראה כבר מתמחר מתוך הנתון הזה?",
+          "איזה נתון עתידי יפריך את הפרשנות שלי?"
+        ],
+        "memo_template": "Observation: [הנתון של Valuation Ratios] | Definition: [...] | As-of: [...] | Peer/History: [...] | Interpretation: [...] | Token impact: [...] | Alternative explanation: [...] | Falsifier: [...] | Confidence: High/Medium/Low.",
+        "worked_example": {
+          "prompt": "איזה multiple מתאים יותר ל-fee-sharing token?",
+          "solution": "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי. שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי. לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "lesson": "המטרה אינה להגיע למספר בלבד; צריך להסביר מה המספר כן ולא מוכיח, ואיך הוא משנה את ההסתברות של התזה."
+        }
+      }
+    },
+    {
+      "name": "Unlock / Float & Emissions / Float",
+      "definition": "Supply pressure ביחס ליכולת ספיגה.",
+      "method": "בנה ladder ל-30/90/180 יום.",
+      "trap": "Unlock=Sell.",
+      "exercise": "Unlock 150M, Free Float 300M — ratio?",
+      "formula": "",
+      "deep": {
+        "why": "ב-Level הזה, Unlock / Float & Emissions / Float הוא לא פרט טכני אלא חוליה בשרשרת ההחלטה. השאלה אינה רק 'מה המספר?', אלא האם הוא משנה את ההבנה שלנו לגבי איכות העסק, לכידת הערך, עוצמת הביקוש, הסיכון או מה שכבר מתומחר.",
+        "mental": "Ratio הוא שאלה על Numerator ביחס ל-Denominator. הוא אינו מסקנה. רוב הטעויות מגיעות ממכנה לא נכון, נתון לא אמין או peer group לא מתאים.",
+        "workflow": [
+          "הגדר במילים שלך את המשתנה ואת היחידות שלו לפני שאתה פותח Dashboard.",
+          "בנה ladder ל-30/90/180 יום.",
+          "אמת לפחות מול מקור נוסף או raw on-chain evidence כאשר אפשר.",
+          "אסוף את שדות הבסיס: Numerator, Denominator, Units, Period, Trusted vs raw data, Historical percentile.",
+          "הפרד Level נוכחי, שינוי לאורך זמן ויחס ל-Peer Group.",
+          "כתוב לפחות הסבר אלטרנטיבי אחד לאותה תצפית.",
+          "תרגם את התוצאה להשפעה על Thesis / Valuation / Risk — או ציין שאין השפעה.",
+          "הגדר מראש מה היה גורם לך לשנות את המסקנה."
+        ],
+        "interpret": [
+          "הצג תמיד Absolute values + Ratio + Historical percentile + Peer comparison.",
+          "השתמש ב-30d/90d/365d כאשר המדד משתנה מהר; בנושאים מבניים השתמש גם ב-history ארוך יותר.",
+          "אל תעשה annualize לתקופת קיצון בלי להציג normalized case.",
+          "כאשר denominator או source methodology לא יציבים, הצג Range ולא מספר יחיד."
+        ],
+        "red": [
+          "Unlock=Sell.",
+          "האם שני הצדדים באותה תקופה ובאותן יחידות?",
+          "מה יכול לנפח את המונה?",
+          "מה יכול להקטין מלאכותית את המכנה?"
+        ],
+        "evidence": "סטנדרט הראיות: מקור ראשוני/חוזה/Docs כאשר אפשר; ספק נתונים עם definition; Cross-check עצמאי; As-of date; confidence; ו-alternative explanation. כאשר שני מקורות חולקים — לא ממוצעים אוטומטית, אלא מיישבים הגדרות.",
+        "analyst_output": "ב-Investment Memo אל תדביק רק את המספר. כתוב: נתון → הגדרה → מקור → Peer/Historical context → Interpretation → Impact on thesis → Falsifier.",
+        "learning_outcomes": [
+          "אני יכול להסביר Unlock / Float & Emissions / Float ללא jargon ובמשפט אחד.",
+          "אני יכול למדוד/לחשב Unlock / Float & Emissions / Float עם denominator והגדרה נכונים.",
+          "אני יכול לזהות לפחות 3 דרכים שבהן Unlock / Float & Emissions / Float עלול להטעות.",
+          "אני יכול לחבר את הנתון ל-Thesis או להסביר למה הוא לא רלוונטי.",
+          "פתרתי את התרגיל ועניתי על Micro Exam לפני שחשפתי את ה-Rubric."
+        ],
+        "exam": [
+          "הגדרה: מה בדיוק Unlock / Float & Emissions / Float מודד — ומה הוא במפורש לא מודד?",
+          "Unlock 150M, Free Float 300M — ratio?",
+          "Adversarial: תן שני מצבים שבהם Unlock / Float & Emissions / Float נראה חיובי אך המסקנה ההשקעתית דווקא שלילית."
+        ],
+        "rubric": [
+          "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי.",
+          "שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי.",
+          "לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "חיבור מפורש ל-business/token/valuation/risk במקום קביעה שורית/דובית אוטומטית."
+        ],
+        "source_refs": [
+          "S01",
+          "S02",
+          "S03",
+          "S04"
+        ],
+        "formula": "",
+        "exercise": "Unlock 150M, Free Float 300M — ratio?",
+        "definition": "Supply pressure ביחס ליכולת ספיגה.",
+        "critical": true,
+        "data_pull": [
+          "Raw value / absolute level",
+          "30d / 90d / 365d change when applicable",
+          "Historical percentile or regime context",
+          "Peer median / best-in-class comparison",
+          "Source definition + as-of date",
+          "Confidence level + alternative explanation"
+        ],
+        "institutional_questions": [
+          "מה המשתנה Unlock / Float & Emissions / Float אומר על העסק/הרשת — לפני הטוקן?",
+          "האם יש transmission אמיתי מהמשתנה לערך הטוקן?",
+          "האם התצפית נובעת ממחיר, תמריצים, leverage, accounting או פעילות אורגנית?",
+          "איזה denominator או cohort ישנה את המסקנה?",
+          "מה השוק כנראה כבר מתמחר מתוך הנתון הזה?",
+          "איזה נתון עתידי יפריך את הפרשנות שלי?"
+        ],
+        "memo_template": "Observation: [הנתון של Unlock / Float & Emissions / Float] | Definition: [...] | As-of: [...] | Peer/History: [...] | Interpretation: [...] | Token impact: [...] | Alternative explanation: [...] | Falsifier: [...] | Confidence: High/Medium/Low.",
+        "worked_example": {
+          "prompt": "Unlock 150M, Free Float 300M — ratio?",
+          "solution": "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי. שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי. לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "lesson": "המטרה אינה להגיע למספר בלבד; צריך להסביר מה המספר כן ולא מוכיח, ואיך הוא משנה את ההסתברות של התזה."
+        }
+      }
+    },
+    {
+      "name": "Percentiles / Z-scores",
+      "definition": "מיקום ratio מול היסטוריה/peers.",
+      "method": "בדוק stationarity ו-regime לפני z-score.",
+      "trap": "95th percentile = short signal.",
+      "exercise": "Ratio ב-95th percentile — מה זה כן אומר?",
+      "formula": "",
+      "deep": {
+        "why": "ב-Level הזה, Percentiles / Z-scores הוא לא פרט טכני אלא חוליה בשרשרת ההחלטה. השאלה אינה רק 'מה המספר?', אלא האם הוא משנה את ההבנה שלנו לגבי איכות העסק, לכידת הערך, עוצמת הביקוש, הסיכון או מה שכבר מתומחר.",
+        "mental": "Ratio הוא שאלה על Numerator ביחס ל-Denominator. הוא אינו מסקנה. רוב הטעויות מגיעות ממכנה לא נכון, נתון לא אמין או peer group לא מתאים.",
+        "workflow": [
+          "הגדר במילים שלך את המשתנה ואת היחידות שלו לפני שאתה פותח Dashboard.",
+          "בדוק stationarity ו-regime לפני z-score.",
+          "אמת לפחות מול מקור נוסף או raw on-chain evidence כאשר אפשר.",
+          "אסוף את שדות הבסיס: Numerator, Denominator, Units, Period, Trusted vs raw data, Historical percentile.",
+          "הפרד Level נוכחי, שינוי לאורך זמן ויחס ל-Peer Group.",
+          "כתוב לפחות הסבר אלטרנטיבי אחד לאותה תצפית.",
+          "תרגם את התוצאה להשפעה על Thesis / Valuation / Risk — או ציין שאין השפעה.",
+          "הגדר מראש מה היה גורם לך לשנות את המסקנה."
+        ],
+        "interpret": [
+          "הצג תמיד Absolute values + Ratio + Historical percentile + Peer comparison.",
+          "השתמש ב-30d/90d/365d כאשר המדד משתנה מהר; בנושאים מבניים השתמש גם ב-history ארוך יותר.",
+          "אל תעשה annualize לתקופת קיצון בלי להציג normalized case.",
+          "כאשר denominator או source methodology לא יציבים, הצג Range ולא מספר יחיד."
+        ],
+        "red": [
+          "95th percentile = short signal.",
+          "האם שני הצדדים באותה תקופה ובאותן יחידות?",
+          "מה יכול לנפח את המונה?",
+          "מה יכול להקטין מלאכותית את המכנה?"
+        ],
+        "evidence": "סטנדרט הראיות: מקור ראשוני/חוזה/Docs כאשר אפשר; ספק נתונים עם definition; Cross-check עצמאי; As-of date; confidence; ו-alternative explanation. כאשר שני מקורות חולקים — לא ממוצעים אוטומטית, אלא מיישבים הגדרות.",
+        "analyst_output": "ב-Investment Memo אל תדביק רק את המספר. כתוב: נתון → הגדרה → מקור → Peer/Historical context → Interpretation → Impact on thesis → Falsifier.",
+        "learning_outcomes": [
+          "אני יכול להסביר Percentiles / Z-scores ללא jargon ובמשפט אחד.",
+          "אני יכול למדוד/לחשב Percentiles / Z-scores עם denominator והגדרה נכונים.",
+          "אני יכול לזהות לפחות 3 דרכים שבהן Percentiles / Z-scores עלול להטעות.",
+          "אני יכול לחבר את הנתון ל-Thesis או להסביר למה הוא לא רלוונטי.",
+          "פתרתי את התרגיל ועניתי על Micro Exam לפני שחשפתי את ה-Rubric."
+        ],
+        "exam": [
+          "הגדרה: מה בדיוק Percentiles / Z-scores מודד — ומה הוא במפורש לא מודד?",
+          "Ratio ב-95th percentile — מה זה כן אומר?",
+          "Adversarial: תן שני מצבים שבהם Percentiles / Z-scores נראה חיובי אך המסקנה ההשקעתית דווקא שלילית."
+        ],
+        "rubric": [
+          "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי.",
+          "שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי.",
+          "לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "חיבור מפורש ל-business/token/valuation/risk במקום קביעה שורית/דובית אוטומטית."
+        ],
+        "source_refs": [
+          "S01",
+          "S02",
+          "S03",
+          "S04"
+        ],
+        "formula": "",
+        "exercise": "Ratio ב-95th percentile — מה זה כן אומר?",
+        "definition": "מיקום ratio מול היסטוריה/peers.",
+        "critical": false,
+        "data_pull": [
+          "Raw value / absolute level",
+          "30d / 90d / 365d change when applicable",
+          "Historical percentile or regime context",
+          "Peer median / best-in-class comparison",
+          "Source definition + as-of date",
+          "Confidence level + alternative explanation"
+        ],
+        "institutional_questions": [
+          "מה המשתנה Percentiles / Z-scores אומר על העסק/הרשת — לפני הטוקן?",
+          "האם יש transmission אמיתי מהמשתנה לערך הטוקן?",
+          "האם התצפית נובעת ממחיר, תמריצים, leverage, accounting או פעילות אורגנית?",
+          "איזה denominator או cohort ישנה את המסקנה?",
+          "מה השוק כנראה כבר מתמחר מתוך הנתון הזה?",
+          "איזה נתון עתידי יפריך את הפרשנות שלי?"
+        ],
+        "memo_template": "Observation: [הנתון של Percentiles / Z-scores] | Definition: [...] | As-of: [...] | Peer/History: [...] | Interpretation: [...] | Token impact: [...] | Alternative explanation: [...] | Falsifier: [...] | Confidence: High/Medium/Low.",
+        "worked_example": {
+          "prompt": "Ratio ב-95th percentile — מה זה כן אומר?",
+          "solution": "הגדרה מדויקת של numerator/denominator או המנגנון הכלכלי. שימוש בהשוואה היסטורית/יחסית במקום threshold שרירותי. לפחות הסבר אלטרנטיבי אחד וסיכון למניפולציה/measurement error.",
+          "lesson": "המטרה אינה להגיע למספר בלבד; צריך להסביר מה המספר כן ולא מוכיח, ואיך הוא משנה את ההסתברות של התזה."
+        }
+      }
+    }
+  ],
+  "exam": "בנה Ratio Sheet עם numerator/denominator audit, peer benchmark ו-percentiles.",
+  "critical": false,
+  "source_refs": [
+    "S01",
+    "S02",
+    "S03",
+    "S04"
+  ],
+  "prereq": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "academy": {
+    "letter": "A",
+    "title": "יסודות הטוקן והחשבונאות",
+    "ids": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  }
+}

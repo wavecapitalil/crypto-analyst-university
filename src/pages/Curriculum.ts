@@ -1,0 +1,2 @@
+import {getManifest} from '../data/repository.js'; import {academies} from './helpers.js';
+export async function curriculum(){const m=await getManifest();return `<div class="section"><div class="breadcrumb">Command Center ← מפת הקורס</div><h1>מפת הקורס</h1><p class="muted">50 Levels · 247 Topics. כל Level מוביל ל-Lecture 0, ואז לנושאים ולשיעורים.</p>${academies(m)}</div>`}

@@ -1,0 +1,226 @@
+{
+  "S01": {
+    "title": "DefiLlama — Data Definitions",
+    "url": "https://docs.llama.fi/analysts/data-definitions",
+    "type": "Data methodology",
+    "note": "TVL, Fees, Revenue, Token Holder Revenue and USD inflow definitions.",
+    "verification_status": "WEB VERIFIED 2026-09-22"
+  },
+  "S02": {
+    "title": "DefiLlama — Building Dimension Adapters",
+    "url": "https://docs.llama.fi/list-your-project/other-dashboards",
+    "type": "Data methodology / current guide",
+    "note": "Current guide for volume, open interest, fees, revenue, holder revenue and methodology fields.",
+    "verification_status": "WEB VERIFIED 2026-09-22"
+  },
+  "S03": {
+    "title": "Token Terminal — Financial Data",
+    "url": "https://docs.tokenterminal.com/docs/financial-data",
+    "type": "Data methodology",
+    "note": "Fees, supply-side fees, revenue, expenses, token incentives, earnings and gross profit.",
+    "verification_status": "WEB VERIFIED 2026-09-22"
+  },
+  "S04": {
+    "title": "Token Terminal — DAO Financial Statements",
+    "url": "https://tokenterminal.com/resources/articles/crypto-dao-financial-statements",
+    "type": "Research / methodology",
+    "note": "GMV → fees → supply-side fees → revenue → incentives → earnings; valuation multiples.",
+    "verification_status": "WEB VERIFIED 2026-09-22"
+  },
+  "S05": {
+    "title": "Ethereum.org — Data Availability",
+    "url": "https://ethereum.org/developers/docs/data-availability/",
+    "type": "Primary technical docs",
+    "note": "DA, rollup verification and data availability assumptions.",
+    "verification_status": "WEB VERIFIED 2026-09-22"
+  },
+  "S06": {
+    "title": "Ethereum.org — MEV",
+    "url": "https://ethereum.org/developers/docs/mev/",
+    "type": "Primary technical docs",
+    "note": "Definition and mechanics of maximal extractable value.",
+    "verification_status": "WEB VERIFIED 2026-09-22"
+  },
+  "S07": {
+    "title": "Ethereum.org — Optimistic Rollups",
+    "url": "https://ethereum.org/developers/docs/scaling/optimistic-rollups/",
+    "type": "Primary technical docs",
+    "note": "Execution, fraud proofs, DA, operator and fee mechanics.",
+    "verification_status": "WEB VERIFIED 2026-09-22"
+  },
+  "S08": {
+    "title": "Ethereum.org — ZK Rollups",
+    "url": "https://ethereum.org/developers/docs/scaling/zk-rollups/",
+    "type": "Primary technical docs",
+    "note": "Validity proofs, DA, settlement and operator assumptions.",
+    "verification_status": "WEB VERIFIED 2026-09-22"
+  },
+  "S09": {
+    "title": "L2BEAT — Stages Framework",
+    "url": "https://forum.l2beat.com/t/the-stages-framework/291",
+    "type": "Independent risk methodology",
+    "note": "Rollup maturity/security framework and upgrade/control assumptions.",
+    "verification_status": "WEB VERIFIED 2026-09-22"
+  },
+  "S10": {
+    "title": "L2BEAT — Total Value Secured",
+    "url": "https://l2beat.com/layer2s/tvs?tab=rollups",
+    "type": "Independent data",
+    "note": "TVS composition and rollup/bridge categories.",
+    "verification_status": "WEB VERIFIED 2026-09-22"
+  },
+  "S11": {
+    "title": "Aave — Health Factor & Liquidations",
+    "url": "https://aave.com/help/borrowing/liquidations",
+    "type": "Primary protocol docs",
+    "note": "Collateral, liquidation threshold, health factor and liquidation process.",
+    "verification_status": "WEB VERIFIED 2026-09-22"
+  },
+  "S12": {
+    "title": "Uniswap — Fees",
+    "url": "https://developers.uniswap.org/docs/get-started/concepts/fees",
+    "type": "Primary protocol docs",
+    "note": "LP fees, protocol fees, fee tiers and current fee-routing mechanics.",
+    "verification_status": "WEB VERIFIED 2026-09-22"
+  },
+  "S13": {
+    "title": "Uniswap — How Uniswap Works",
+    "url": "https://developers.uniswap.org/docs/get-started/concepts/how-uniswap-works",
+    "type": "Primary protocol docs",
+    "note": "AMM, pool reserves, price impact, LPs and swap mechanics.",
+    "verification_status": "WEB VERIFIED 2026-09-22"
+  },
+  "S14": {
+    "title": "Nansen — Address Labels",
+    "url": "https://docs.nansen.ai/api/profiler/address-labels",
+    "type": "Wallet intelligence methodology",
+    "note": "Entity and behavioral labels; labels are an analytics layer, not proof of beneficial ownership.",
+    "verification_status": "WEB VERIFIED 2026-09-22"
+  },
+  "S15": {
+    "title": "Nansen — Smart Money",
+    "url": "https://docs.nansen.ai/api/smart-money",
+    "type": "Wallet intelligence methodology",
+    "note": "Fund/smart-trader cohorts, netflows, holdings and historical snapshots.",
+    "verification_status": "WEB VERIFIED 2026-09-22"
+  },
+  "S16": {
+    "title": "Dune — Decoded Data",
+    "url": "https://docs.dune.com/data-catalog/evm/plume/decoded/overview",
+    "type": "Data engineering docs",
+    "note": "ABI decoding into structured tables for smart-contract analysis.",
+    "verification_status": "WEB VERIFIED 2026-09-22"
+  },
+  "S17": {
+    "title": "Dune — Event Logs",
+    "url": "https://dune.mintlify.app/data-catalog/evm/unichain/decoded/event-logs",
+    "type": "Data engineering docs",
+    "note": "Event logs, topic signatures and decoded event data.",
+    "verification_status": "WEB VERIFIED 2026-09-22"
+  },
+  "S18": {
+    "title": "Circle — USDC Transparency",
+    "url": "https://www.circle.com/transparency",
+    "type": "Issuer primary disclosure",
+    "note": "Reserve composition, issuance/redemption and third-party assurance.",
+    "verification_status": "WEB VERIFIED 2026-09-22"
+  },
+  "S19": {
+    "title": "Lido — Curated Module Overview",
+    "url": "https://docs.lido.fi/guides/curated-module/general-overview/",
+    "type": "Primary protocol docs",
+    "note": "Staking rewards, fees, node operators and protocol mechanics.",
+    "verification_status": "WEB VERIFIED 2026-09-22"
+  },
+  "S20": {
+    "title": "EigenLayer — Whitepaper",
+    "url": "https://docs.eigenlayer.xyz/assets/files/EigenLayer_WhitePaper-88c47923ca0319870c611decd6e562ad.pdf",
+    "type": "Primary protocol paper",
+    "note": "Restaking, AVSs, operator incentives and slashing/collusion risks.",
+    "verification_status": "WEB VERIFIED 2026-09-22"
+  },
+  "S21": {
+    "title": "RWA.xyz — Documentation",
+    "url": "https://docs.rwa.xyz/",
+    "type": "Sector data methodology",
+    "note": "RWA classification, methodology and tokenized-asset data model.",
+    "verification_status": "WEB VERIFIED 2026-09-22"
+  },
+  "S22": {
+    "title": "Bittensor — Documentation",
+    "url": "https://www.bittensor.com/docs",
+    "type": "Primary protocol docs",
+    "note": "Subnets, miners, validators, stakers and digital-commodity architecture.",
+    "verification_status": "WEB VERIFIED 2026-09-22"
+  },
+  "S23": {
+    "title": "Bittensor — Emissions",
+    "url": "https://www.bittensor.com/docs/concepts/emissions",
+    "type": "Primary tokenomics docs",
+    "note": "TAO/alpha issuance, subnet emissions and reward distribution.",
+    "verification_status": "WEB VERIFIED 2026-09-22"
+  },
+  "S24": {
+    "title": "Chainlink — Blockchain Oracles",
+    "url": "https://chain.link/education/blockchain-oracles",
+    "type": "Oracle technical reference",
+    "note": "Oracle problem, node/data-source aggregation and decentralized oracle networks.",
+    "verification_status": "WEB VERIFIED 2026-09-22"
+  },
+  "S25": {
+    "title": "Polymarket — Market Resolution",
+    "url": "https://help.polymarket.com/en/articles/13364518-how-are-prediction-markets-resolved",
+    "type": "Primary product docs",
+    "note": "Market rules, UMA optimistic oracle and resolution/dispute mechanics.",
+    "verification_status": "WEB VERIFIED 2026-09-22"
+  },
+  "S26": {
+    "title": "Hyperliquid — Fees",
+    "url": "https://hyperliquid.gitbook.io/hyperliquid-docs/trading/fees",
+    "type": "Primary protocol docs",
+    "note": "Fee routing, community destinations and assistance-fund/HYPE mechanics.",
+    "verification_status": "WEB VERIFIED 2026-09-22"
+  },
+  "S27": {
+    "title": "Helium — Data Credits",
+    "url": "https://docs.helium.com/tokens/data-credit/",
+    "type": "Primary DePIN docs",
+    "note": "Paid network usage, USD-pegged Data Credits and HNT burn/mint economics.",
+    "verification_status": "WEB VERIFIED 2026-09-22"
+  },
+  "S28": {
+    "title": "Helium — HNT Token",
+    "url": "https://docs.helium.com/tokens/hnt-token/",
+    "type": "Primary DePIN tokenomics",
+    "note": "HNT emissions, data-credit conversion and burn/mint design.",
+    "verification_status": "WEB VERIFIED 2026-09-22"
+  },
+  "S29": {
+    "title": "Liu, Tsyvinski & Wu — Common Risk Factors in Cryptocurrency",
+    "url": "https://onlinelibrary.wiley.com/doi/full/10.1111%2Fjofi.13119",
+    "type": "Academic research",
+    "note": "Crypto market, size and momentum factors; cross-sectional asset pricing.",
+    "verification_status": "WEB VERIFIED 2026-09-22"
+  },
+  "S30": {
+    "title": "Bailey et al. — Probability of Backtest Overfitting",
+    "url": "https://escholarship.org/uc/item/4w1110bb",
+    "type": "Academic research",
+    "note": "Backtest overfitting and robust validation concerns.",
+    "verification_status": "WEB VERIFIED 2026-09-22"
+  },
+  "S31": {
+    "title": "Harvey, Liu & Zhu — Cross-Section of Expected Returns",
+    "url": "https://www.nber.org/papers/w20592",
+    "type": "Academic research",
+    "note": "Multiple testing and higher statistical hurdles for factor discovery.",
+    "verification_status": "WEB VERIFIED 2026-09-22"
+  },
+  "S32": {
+    "title": "Cong et al. — Crypto Value, Factor Pricing, and Market Segmentation",
+    "url": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3985631",
+    "type": "Academic research",
+    "note": "On-chain activity-to-market-cap value factor and crypto factor pricing.",
+    "verification_status": "REFERENCE INCLUDED — recheck before live investment use"
+  }
+}

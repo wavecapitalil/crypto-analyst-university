@@ -1,0 +1,3 @@
+import type {Level} from '../../types/content.js';
+export interface SearchResult{level:number;topic?:number;title:string;subtitle:string}
+export function searchLevels(levels:Level[],term:string){const q=term.trim().toLowerCase();const out:SearchResult[]=[];if(!q)return out;for(const l of levels){if(`${l.title} ${l.obj}`.toLowerCase().includes(q))out.push({level:l.n,title:l.title,subtitle:l.obj});l.topics.forEach((t,i)=>{const d=t.deep;const text=`${t.name} ${t.definition} ${d?.mental||''} ${d?.why||''}`.toLowerCase();if(text.includes(q))out.push({level:l.n,topic:i,title:t.name,subtitle:l.title})})}return out}

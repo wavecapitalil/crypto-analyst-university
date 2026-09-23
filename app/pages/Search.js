@@ -1,0 +1,3 @@
+import { getAllLevels } from '../data/repository.js';
+import { searchLevels } from '../features/search/searchEngine.js';
+export async function searchPage(term) { const levels = await getAllLevels(); const results = searchLevels(levels, decodeURIComponent(term || '')); return `<div class="section"><h1>חיפוש: ${decodeURIComponent(term || '')}</h1>${results.length ? results.slice(0, 100).map(x => `<div class="card"><h3><a href="#/${x.topic === undefined ? `level/${x.level}` : `topic/${x.level}/${x.topic}`}">${x.title}</a></h3><div class="muted">${x.subtitle}</div></div>`).join('') : '<p>לא נמצאו תוצאות.</p>'}</div>`; }

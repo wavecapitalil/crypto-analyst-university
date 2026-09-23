@@ -1,0 +1,43 @@
+[
+  {
+    "t": "Low Float / High FDV",
+    "d": "Price $4 | Circ 100M | Max 1B | Free Float 45M | 90d VC Unlock 60M | Daily Trusted Volume $70M | Annual Buyback $20M | Annual Issuance $150M",
+    "q": [
+      "חשב MC, FDV ו-MC/FDV",
+      "חשב Unlock/Free Float",
+      "חשב Dilution Coverage",
+      "כתוב Bull ו-Bear thesis"
+    ],
+    "a": "MC $400M; FDV $4B; MC/FDV 10%; Unlock/FF 133%; Coverage≈13.3%. השאלה היא יכולת absorption מול float expansion."
+  },
+  {
+    "t": "DEX Growth or Farming?",
+    "d": "90d Volume +180% | TVL +120% | Revenue +35% | Incentives +260% | Returning Users +12% | New Users +210%",
+    "q": [
+      "מה organic ומה rented?",
+      "איזה quasi-experiment תריץ?",
+      "האם Revenue growth מספיק?"
+    ],
+    "a": "Returning users חלש יחסית והתמריצים קפצו. בדוק post-incentive retention ו-incremental revenue/incentive."
+  },
+  {
+    "t": "L2 Success, Token Failure",
+    "d": "TVS +90% | Sequencer Revenue $120M | Governance token only | No fee share | 12m unlocks 28% current float",
+    "q": [
+      "האם L2 success=token success?",
+      "מה ה-value path?",
+      "איזה model מתאים?"
+    ],
+    "a": "לא. אין hard capture; יש governance optionality מול dilution. Sequencer economics אינם token economics."
+  },
+  {
+    "t": "Perp DEX Crowding",
+    "d": "Price +80% 30d | OI/MC 38%→74% | Funding 0.01%→0.08%/8h | Revenue +25% | Unlock 6% free float",
+    "q": [
+      "Fundies vs positioning?",
+      "האם זה short signal?",
+      "מה לעקוב סביב unlock?"
+    ],
+    "a": "Fundies השתפרו אך leverage/crowding עלו מהר יותר. אין כיוון חד; עקוב OI/funding normalization, spot absorption ו-exchange-bound supply."
+  }
+]

@@ -1,0 +1,4 @@
+import { getManifest } from '../data/repository.js';
+import { levelProgress } from '../features/learning/mastery.js';
+import { progressStore } from '../store/progressStore.js';
+export async function examsPage() { const m = await getManifest(); return `<div class="section"><h1>Examination Center</h1><table class="tbl"><tr><th>Level</th><th>פרק</th><th>Topics Mastered</th><th>Exam</th><th></th></tr>${m.levels.map(l => { const p = levelProgress(l), e = progressStore.state.chapterExams[String(l.n)]; return `<tr><td>${l.n}</td><td>${l.title}</td><td>${p.done}/${p.total}</td><td>${e ? `${e.avg || 0}% ${e.passed ? '✓' : 'Review'}` : '—'}</td><td><button class="btn" data-route="exam/${l.n}">פתח</button></td></tr>`; }).join('')}</table></div>`; }
