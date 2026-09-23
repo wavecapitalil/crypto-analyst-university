@@ -17,6 +17,10 @@ import { sourcesPage } from './pages/Sources.js';
 import { canonPage } from './pages/Canon.js';
 import { qaPage } from './pages/QA.js';
 import { searchPage } from './pages/Search.js';
+import { accountPage } from './pages/Account.js';
+import { studentDashboard } from './pages/StudentDashboard.js';
+import { authStore } from './features/auth/authStore.js';
+import { syncProgressNow } from './features/auth/progressSync.js';
 let renderToken = 0;
 function root() {
     const el = document.querySelector('#app');
@@ -29,7 +33,7 @@ export async function render() {
     const app = root();
     const { parts, path } = currentRoute();
     progressStore.state.lastVisited = path;
-    progressStore.save();
+    progressStore.save(false, false);
     let body = '';
     try {
         switch (parts[0]) {
@@ -45,6 +49,8 @@ export async function render() {
             case 'canon': body = await canonPage(); break;
             case 'qa': body = await qaPage(); break;
             case 'search': body = await searchPage(parts.slice(1).join('/')); break;
+            case 'account': body = await accountPage(); break;
+            case 'student': body = await studentDashboard(); break;
             default: body = await commandCenter();
         }
         if (token !== renderToken)
@@ -146,13 +152,44 @@ export function bindInteractions() {
                     render();
                 }
                 break;
+            case 'auth-login': {
+                const email = document.querySelector('#login-email')?.value || '';
+                const password = document.querySelector('#login-password')?.value || '';
+                await authStore.login(email, password);
+                if (authStore.session) {
+                    await syncProgressNow();
+                    go('student');
+                }
+                else
+                    render();
+                break;
+            }
+            case 'auth-signup': {
+                const name = document.querySelector('#signup-name')?.value || '';
+                const email = document.querySelector('#signup-email')?.value || '';
+                const password = document.querySelector('#signup-password')?.value || '';
+                if (password.length < 8) {
+                    alert('הסיסמה צריכה להכיל לפחות 8 תווים');
+                    break;
+                }
+                await authStore.signup(email, password, name);
+                if (authStore.session) {
+                    await syncProgressNow();
+                    go('student');
+                }
+                else
+                    render();
+                break;
+            }
+            case 'auth-logout': await authStore.logout(); go('home'); break;
+            case 'cloud-sync': await syncProgressNow(); render(); break;
         }
     });
     document.addEventListener('change', e => {
         const el = e.target;
         switch (el.dataset.action) {
-            case 'checkpoint': progressStore.setCheck(Number(el.dataset.level), Number(el.dataset.topic), Number(el.dataset.check), el.checked); render(); break;
-            case 'topic-score': progressStore.setTopicScore(Number(el.dataset.level), Number(el.dataset.topic), Number(el.value)); render(); break;
+            case 'checkpoint': progressStore.setCheck(Number(el.dataset.level), Number(el.dataset.topic), Number(el.dataset.check), el.checked, el.dataset.topicId); render(); break;
+            case 'topic-score': progressStore.setTopicScore(Number(el.dataset.level), Number(el.dataset.topic), Number(el.value), el.dataset.topicId); render(); break;
             case 'note': progressStore.setNote(el.dataset.key || '', el.value); break;
             case 'case-answer': progressStore.setCase(el.dataset.case || '', el.value); break;
         }

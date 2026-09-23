@@ -1,6 +1,6 @@
 import type {ChapterExamState,ProgressState} from '../types/state.js';
 
-export const CURRENT_SCHEMA_VERSION=1;
+export const CURRENT_SCHEMA_VERSION=2;
 function isRecord(v:unknown):v is Record<string,unknown>{return !!v&&typeof v==='object'&&!Array.isArray(v)}
 function boolRecord(v:unknown){const out:Record<string,boolean>={};if(!isRecord(v))return out;for(const [k,x] of Object.entries(v))if(typeof x==='boolean')out[k]=x;return out}
 function numberRecord(v:unknown){const out:Record<string,number>={};if(!isRecord(v))return out;for(const [k,x] of Object.entries(v)){const n=Number(x);if(Number.isFinite(n))out[k]=Math.max(0,Math.min(100,n))}return out}
@@ -31,5 +31,6 @@ export function normalizeProgress(raw:unknown):ProgressState{
     gates:isRecord(raw.gates)?{...raw.gates}:{}
   };
   if(typeof raw.lastVisited==='string'&&raw.lastVisited.startsWith('/'))state.lastVisited=raw.lastVisited;
+  if(typeof raw.updatedAt==='string'&&!Number.isNaN(Date.parse(raw.updatedAt)))state.updatedAt=raw.updatedAt;
   return state;
 }

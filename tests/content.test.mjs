@@ -19,3 +19,10 @@ test('practice cases have unique stable ids',()=>{
   assert.equal(ids.every(Boolean),true);
   assert.equal(new Set(ids).size,ids.length);
 });
+
+test('stable topic ids are complete and unique',()=>{
+  const ids=m.levels.flatMap(l=>l.topicIds||[]);
+  assert.equal(ids.length,m.meta.topics);
+  assert.equal(new Set(ids).size,ids.length);
+  assert.equal(ids.every(id=>/^L\d{2}\.T\d{2}$/.test(id)),true);
+});

@@ -129,3 +129,6 @@ background:rgba(5,12,21,.92);backdrop-filter:blur(18px);border:1px solid var(--l
 .mechanism{border-right:4px solid #b99cff}
 .example{border-right:4px solid #48d18a}
 .mistake{border-right:4px solid #ff6f82}
+.account-input{display:block;width:100%;margin:6px 0 14px}
+.box>label{display:block;margin-top:8px;color:#b8d8f2;font-size:13px;font-weight:800}
+button:disabled{opacity:.55;cursor:not-allowed}

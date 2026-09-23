@@ -10,4 +10,5 @@ export interface ProgressState {
   cases: Record<string, string>;
   gates: Record<string, unknown>;
   lastVisited?: string;
+  updatedAt?: string;
 }

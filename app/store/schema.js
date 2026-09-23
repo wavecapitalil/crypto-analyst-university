@@ -1,4 +1,4 @@
-export const CURRENT_SCHEMA_VERSION = 1;
+export const CURRENT_SCHEMA_VERSION = 2;
 function isRecord(v) { return !!v && typeof v === 'object' && !Array.isArray(v); }
 function boolRecord(v) { const out = {}; if (!isRecord(v))
     return out; for (const [k, x] of Object.entries(v))
@@ -56,5 +56,7 @@ export function normalizeProgress(raw) {
     };
     if (typeof raw.lastVisited === 'string' && raw.lastVisited.startsWith('/'))
         state.lastVisited = raw.lastVisited;
+    if (typeof raw.updatedAt === 'string' && !Number.isNaN(Date.parse(raw.updatedAt)))
+        state.updatedAt = raw.updatedAt;
     return state;
 }

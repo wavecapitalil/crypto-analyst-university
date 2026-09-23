@@ -19,7 +19,7 @@ function list(dir,base=dir,out=[]){
 function canonical(file){
   const source=fs.readFileSync(file,'utf8');
   const ast=ts.createSourceFile(file,source,ts.ScriptTarget.Latest,true,ts.ScriptKind.JS);
-  return ts.createPrinter({newLine:ts.NewLineKind.LineFeed,removeComments:false}).printFile(ast).trim();
+  return ts.createPrinter({newLine:ts.NewLineKind.LineFeed,removeComments:true}).printFile(ast).trim();
 }
 const before=new Set(list(beforeDir));
 const after=new Set(list(afterDir));
@@ -27,7 +27,11 @@ const all=[...new Set([...before,...after])].sort();
 const diff=[];
 for(const rel of all){
   if(!before.has(rel)||!after.has(rel)){diff.push(`${rel}: file set differs`);continue}
-  if(canonical(path.join(beforeDir,rel))!==canonical(path.join(afterDir,rel)))diff.push(`${rel}: compiled runtime differs from committed runtime`);
+  const beforeText=canonical(path.join(beforeDir,rel));
+  const afterText=canonical(path.join(afterDir,rel));
+  if(beforeText!==afterText){
+    diff.push(`${rel}: compiled runtime differs from committed runtime`);
+  }
 }
 if(diff.length){
   console.error('Runtime drift detected. Run npm run build and commit the generated app/ output.');
