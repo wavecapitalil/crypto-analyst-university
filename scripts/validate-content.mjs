@@ -10,6 +10,7 @@ const canon=read('content/canon.json');
 const fail=[];
 const levelIds=new Set();
 const sourceIds=new Set(Object.keys(sources));
+const topicIds=new Set();
 let topics=0;
 
 if(!Array.isArray(manifest.levels)||manifest.levels.length===0)fail.push('manifest.levels must be a non-empty array');
@@ -25,6 +26,12 @@ for(const s of manifest.levels||[]){
   if(l.n!==s.n)fail.push(`level mismatch ${s.n}`);
   if(!Array.isArray(l.topics)||l.topics.length!==s.topicCount)fail.push(`topic count mismatch L${s.n}`);
   topics+=l.topics?.length||0;
+  if(!Array.isArray(s.topicIds)||s.topicIds.length!==s.topicCount)fail.push(`stable topic ids mismatch L${s.n}`);
+  else for(const [i,id] of s.topicIds.entries()){
+    if(typeof id!=='string'||!/^L\\d{2}\\.T\\d{2}$/.test(id))fail.push(`invalid stable topic id ${id} at L${s.n}:${i}`);
+    if(topicIds.has(id))fail.push(`duplicate stable topic id ${id}`);
+    topicIds.add(id);
+  }
 
   for(const ref of l.source_refs||[])if(!sourceIds.has(ref))fail.push(`unknown source ${ref} in L${s.n}`);
   for(const [i,t] of (l.topics||[]).entries()){
