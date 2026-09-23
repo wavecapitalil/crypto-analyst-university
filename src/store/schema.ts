@@ -31,5 +31,6 @@ export function normalizeProgress(raw:unknown):ProgressState{
     gates:isRecord(raw.gates)?{...raw.gates}:{}
   };
   if(typeof raw.lastVisited==='string'&&raw.lastVisited.startsWith('/'))state.lastVisited=raw.lastVisited;
+  if(typeof raw.updatedAt==='string'&&!Number.isNaN(Date.parse(raw.updatedAt)))state.updatedAt=raw.updatedAt;
   return state;
 }
