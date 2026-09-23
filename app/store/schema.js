@@ -1,4 +1,4 @@
-export const CURRENT_SCHEMA_VERSION = 1;
+export const CURRENT_SCHEMA_VERSION = 2;
 function isRecord(v) { return !!v && typeof v === 'object' && !Array.isArray(v); }
 function boolRecord(v) { const out = {}; if (!isRecord(v))
     return out; for (const [k, x] of Object.entries(v))
