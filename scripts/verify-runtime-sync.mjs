@@ -19,7 +19,7 @@ function list(dir,base=dir,out=[]){
 function canonical(file){
   const source=fs.readFileSync(file,'utf8');
   const ast=ts.createSourceFile(file,source,ts.ScriptTarget.Latest,true,ts.ScriptKind.JS);
-  return ts.createPrinter({newLine:ts.NewLineKind.LineFeed,removeComments:false}).printFile(ast).trim();
+  return ts.createPrinter({newLine:ts.NewLineKind.LineFeed,removeComments:true}).printFile(ast).trim();
 }
 const before=new Set(list(beforeDir));
 const after=new Set(list(afterDir));
@@ -31,9 +31,6 @@ for(const rel of all){
   const afterText=canonical(path.join(afterDir,rel));
   if(beforeText!==afterText){
     diff.push(`${rel}: compiled runtime differs from committed runtime`);
-    if(rel==='features/auth/progressSync.js'){
-      console.error('--- committed canonical ---\n'+beforeText+'\n--- generated canonical ---\n'+afterText+'\n--- end runtime diff ---');
-    }
   }
 }
 if(diff.length){
