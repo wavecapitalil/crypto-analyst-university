@@ -1,6 +1,6 @@
 export function safe(x) {
     const s = x == null ? '' : String(x);
-    return s.replace(/[&<>"']/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[ch]);
+    return s.replace(/[&<>"']/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[ch]));
 }
 export const safeAttr = safe;
 export function safeUrl(x) {
