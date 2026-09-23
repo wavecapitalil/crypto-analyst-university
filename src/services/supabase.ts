@@ -23,9 +23,11 @@ async function request(path:string,init:RequestInit={},accessToken?:string){
   return data;
 }
 export async function signUp(email:string,password:string,fullName:string){
-  const raw=await request('/auth/v1/signup',{method:'POST',body:JSON.stringify({email,password,data:{full_name:fullName}})});
+  const redirectTo=location.origin+location.pathname+'#/student';
+  const raw=await request('/auth/v1/signup?redirect_to='+encodeURIComponent(redirectTo),{method:'POST',body:JSON.stringify({email,password,data:{full_name:fullName}})});
   return{session:sessionFrom(raw),user:raw?.user?userFrom(raw.user):null};
 }
+export async function fetchCurrentUser(accessToken:string){return userFrom(await request('/auth/v1/user',{},accessToken))}
 export async function signIn(email:string,password:string){return sessionFrom(await request('/auth/v1/token?grant_type=password',{method:'POST',body:JSON.stringify({email,password})}))}
 export async function refreshSession(refreshToken:string){return sessionFrom(await request('/auth/v1/token?grant_type=refresh_token',{method:'POST',body:JSON.stringify({refresh_token:refreshToken})}))}
 export async function signOut(accessToken:string){await request('/auth/v1/logout',{method:'POST'},accessToken)}
