@@ -17,6 +17,10 @@ import {sourcesPage} from './pages/Sources.js';
 import {canonPage} from './pages/Canon.js';
 import {qaPage} from './pages/QA.js';
 import {searchPage} from './pages/Search.js';
+import {accountPage} from './pages/Account.js';
+import {studentDashboard} from './pages/StudentDashboard.js';
+import {authStore} from './features/auth/authStore.js';
+import {syncProgressNow} from './features/auth/progressSync.js';
 
 let renderToken=0;
 function root():HTMLElement{
@@ -29,7 +33,7 @@ export async function render(){
   const app=root();
   const {parts,path}=currentRoute();
   progressStore.state.lastVisited=path;
-  progressStore.save();
+  progressStore.save(false,false);
   let body='';
   try{
     switch(parts[0]){
@@ -45,6 +49,8 @@ export async function render(){
       case'canon':body=await canonPage();break;
       case'qa':body=await qaPage();break;
       case'search':body=await searchPage(parts.slice(1).join('/'));break;
+      case'account':body=await accountPage();break;
+      case'student':body=await studentDashboard();break;
       default:body=await commandCenter();
     }
     if(token!==renderToken)return;
@@ -98,6 +104,20 @@ export function bindInteractions(){
         input.onchange=()=>{const file=input.files?.[0];if(!file)return;const r=new FileReader();r.onload=()=>{try{progressStore.import(String(r.result));render()}catch{alert('Invalid progress file')}};r.readAsText(file)};input.click();break;
       }
       case'reset-progress':if(confirm('לאפס את כל ההתקדמות?')){progressStore.reset();render()}break;
+      case'auth-login':{
+        const email=(document.querySelector('#login-email') as HTMLInputElement)?.value||'';
+        const password=(document.querySelector('#login-password') as HTMLInputElement)?.value||'';
+        await authStore.login(email,password);if(authStore.session){await syncProgressNow();go('student')}else render();break;
+      }
+      case'auth-signup':{
+        const name=(document.querySelector('#signup-name') as HTMLInputElement)?.value||'';
+        const email=(document.querySelector('#signup-email') as HTMLInputElement)?.value||'';
+        const password=(document.querySelector('#signup-password') as HTMLInputElement)?.value||'';
+        if(password.length<8){alert('הסיסמה צריכה להכיל לפחות 8 תווים');break}
+        await authStore.signup(email,password,name);if(authStore.session){await syncProgressNow();go('student')}else render();break;
+      }
+      case'auth-logout':await authStore.logout();go('home');break;
+      case'cloud-sync':await syncProgressNow();render();break;
     }
   });
   document.addEventListener('change',e=>{
