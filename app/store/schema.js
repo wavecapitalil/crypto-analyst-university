@@ -42,8 +42,9 @@ function examRecord(v) {
 }
 export function emptyProgress() { return { schemaVersion: CURRENT_SCHEMA_VERSION, topicChecks: {}, topicScores: {}, chapterExams: {}, notes: {}, cases: {}, gates: {} }; }
 export function normalizeProgress(raw) {
+    const base = emptyProgress();
     if (!isRecord(raw))
-        return emptyProgress();
+        return base;
     const state = {
         schemaVersion: CURRENT_SCHEMA_VERSION,
         topicChecks: boolRecord(raw.topicChecks),
