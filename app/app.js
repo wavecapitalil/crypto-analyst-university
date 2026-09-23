@@ -151,8 +151,8 @@ export function bindInteractions() {
     document.addEventListener('change', e => {
         const el = e.target;
         switch (el.dataset.action) {
-            case 'checkpoint': progressStore.setCheck(Number(el.dataset.level), Number(el.dataset.topic), Number(el.dataset.check), el.checked); render(); break;
-            case 'topic-score': progressStore.setTopicScore(Number(el.dataset.level), Number(el.dataset.topic), Number(el.value)); render(); break;
+            case 'checkpoint': progressStore.setCheck(Number(el.dataset.level), Number(el.dataset.topic), Number(el.dataset.check), el.checked, el.dataset.topicId); render(); break;
+            case 'topic-score': progressStore.setTopicScore(Number(el.dataset.level), Number(el.dataset.topic), Number(el.value), el.dataset.topicId); render(); break;
             case 'note': progressStore.setNote(el.dataset.key || '', el.value); break;
             case 'case-answer': progressStore.setCase(el.dataset.case || '', el.value); break;
         }
