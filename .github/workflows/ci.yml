@@ -11,8 +11,10 @@ jobs:
       - uses: actions/checkout@v4
       - name: Verify runtime
         run: node --version && npm --version
-      - run: npm install
+      - run: npm ci
       - run: npm run check
       - run: npm run build
+      - name: Verify compiled runtime is committed and current
+        run: git diff --exit-code -- app
       - name: Verify deploy entry exists
         run: test -f index.html && test -f app/main.js && test -f content/manifest.json
