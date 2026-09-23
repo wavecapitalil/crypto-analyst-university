@@ -27,7 +27,14 @@ const all=[...new Set([...before,...after])].sort();
 const diff=[];
 for(const rel of all){
   if(!before.has(rel)||!after.has(rel)){diff.push(`${rel}: file set differs`);continue}
-  if(canonical(path.join(beforeDir,rel))!==canonical(path.join(afterDir,rel)))diff.push(`${rel}: compiled runtime differs from committed runtime`);
+  const beforeText=canonical(path.join(beforeDir,rel));
+  const afterText=canonical(path.join(afterDir,rel));
+  if(beforeText!==afterText){
+    diff.push(`${rel}: compiled runtime differs from committed runtime`);
+    if(rel==='features/auth/progressSync.js'){
+      console.error('--- committed canonical ---\n'+beforeText+'\n--- generated canonical ---\n'+afterText+'\n--- end runtime diff ---');
+    }
+  }
 }
 if(diff.length){
   console.error('Runtime drift detected. Run npm run build and commit the generated app/ output.');
