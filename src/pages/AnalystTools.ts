@@ -1,2 +1,8 @@
-function box(title:string,id:string,fields:[string,string][],expr:string,pct=true){return `<div class="tool" data-tool="${id}" data-expr="${expr}" data-pct="${pct}"><h3>${title}</h3>${fields.map(f=>`<label>${f[1]}</label><input data-calc-var="${f[0]}" type="number">`).join('')}<div class="result">—</div></div>`}
-export async function analystTools(){return `<div class="section"><h1>Analyst Tools</h1><div class="toolgrid">${box('Volume / Market Cap','vmc',[['vol','Screened / Verified Spot Volume'],['mc','Market Cap']],'vol/mc')}${box('Volume / Free-Float MC','vff',[['volff','Screened / Verified Spot Volume'],['ff','Free-Float Market Cap']],'volff/ff')}${box('Unlock / Free Float','ulf',[['ul','Unlock Value'],['fl','Free Float Value']],'ul/fl')}${box('Dilution Coverage','dc',[['bb','Buybacks'],['burn','Burns'],['dist','Distributions'],['iss','New Issuance']],'(bb+burn+dist)/iss')}${box('Protocol Take Rate','tr',[['rev','Protocol Revenue'],['act','Economic Activity']],'rev/act')}${box('FDV / Holder Revenue','fhr',[['fdv','FDV'],['hr','Annual Holder Revenue']],'fdv/hr',false)}${box('Implied Revenue','ir',[['val','Current Valuation'],['mul','Target Multiple']],'val/mul',false)}${box('Future Token Price','ftp',[['fv','Future Aggregate Value'],['fs','Future Supply']],'fv/fs',false)}</div></div>`}
+import {TOOL_DEFINITIONS,type CalculatorDefinition} from '../features/tools/calculators.js';
+
+function box(def:CalculatorDefinition){
+  return `<div class="tool" data-tool="${def.id}"><h3>${def.title}</h3>${def.fields.map(f=>`<label>${f.label}</label><input data-calc-var="${f.key}" type="number" inputmode="decimal">`).join('')}<div class="result">—</div></div>`;
+}
+export async function analystTools(){
+  return `<div class="section"><h1>Analyst Tools</h1><div class="toolgrid">${TOOL_DEFINITIONS.map(box).join('')}</div></div>`;
+}

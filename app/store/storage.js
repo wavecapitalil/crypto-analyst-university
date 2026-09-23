@@ -2,6 +2,7 @@ import { emptyProgress } from './schema.js';
 import { migrateProgress } from './migrations.js';
 const KEY = 'wave_crypto_uni_v10';
 const LEGACY = ['wave_crypto_uni_v7'];
+const MAX_IMPORT_BYTES = 5_000_000;
 let memory = null;
 function get(k) { try {
     return localStorage.getItem(k);
@@ -39,4 +40,8 @@ export function saveProgress(s) { set(KEY, JSON.stringify(s)); }
 export function resetProgress() { remove(KEY); for (const k of LEGACY)
     remove(k); }
 export function exportProgress(s) { return JSON.stringify(s, null, 2); }
-export function importProgress(json) { return migrateProgress(JSON.parse(json)); }
+export function importProgress(json) {
+    if (typeof json !== 'string' || json.length > MAX_IMPORT_BYTES)
+        throw new Error('Progress file is invalid or too large');
+    return migrateProgress(JSON.parse(json));
+}

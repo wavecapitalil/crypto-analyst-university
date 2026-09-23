@@ -21,7 +21,9 @@ export async function getLevel(n) {
     const existing = cache.get(n);
     if (existing)
         return existing;
-    const level = await getJson(`./content/curriculum/level-${String(n).padStart(2, '0')}.json`);
+    const [level, m] = await Promise.all([getJson(`./content/curriculum/level-${String(n).padStart(2, '0')}.json`), getManifest()]);
+    const summary = m.levels.find(x => x.n === n);
+    level.topics.forEach((topic, i) => { topic.id = topic.id || summary?.topicIds?.[i] || `L${String(n).padStart(2, '0')}.T${String(i).padStart(2, '0')}`; });
     cache.set(n, level);
     return level;
 }

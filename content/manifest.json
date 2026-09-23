@@ -5,7 +5,8 @@
     "levels": 50,
     "topics": 247,
     "content_standard": "University for Exceptional Analysts",
-    "verification": "multi-source methodology/primary docs/independent/academic"
+    "verification": "multi-source methodology/primary docs/independent/academic",
+    "progress_id_scheme": "stable-topic-ids-v1"
   },
   "levels": [
     {
@@ -32,7 +33,14 @@
         "S03",
         "S04"
       ],
-      "topicCount": 5
+      "topicCount": 5,
+      "topicIds": [
+        "L00.T00",
+        "L00.T01",
+        "L00.T02",
+        "L00.T03",
+        "L00.T04"
+      ]
     },
     {
       "n": 1,
@@ -60,7 +68,14 @@
         "S03",
         "S04"
       ],
-      "topicCount": 5
+      "topicCount": 5,
+      "topicIds": [
+        "L01.T00",
+        "L01.T01",
+        "L01.T02",
+        "L01.T03",
+        "L01.T04"
+      ]
     },
     {
       "n": 2,
@@ -89,7 +104,14 @@
         "S03",
         "S04"
       ],
-      "topicCount": 5
+      "topicCount": 5,
+      "topicIds": [
+        "L02.T00",
+        "L02.T01",
+        "L02.T02",
+        "L02.T03",
+        "L02.T04"
+      ]
     },
     {
       "n": 3,
@@ -119,7 +141,14 @@
         "S03",
         "S04"
       ],
-      "topicCount": 5
+      "topicCount": 5,
+      "topicIds": [
+        "L03.T00",
+        "L03.T01",
+        "L03.T02",
+        "L03.T03",
+        "L03.T04"
+      ]
     },
     {
       "n": 4,
@@ -150,7 +179,15 @@
         "S03",
         "S04"
       ],
-      "topicCount": 6
+      "topicCount": 6,
+      "topicIds": [
+        "L04.T00",
+        "L04.T01",
+        "L04.T02",
+        "L04.T03",
+        "L04.T04",
+        "L04.T05"
+      ]
     },
     {
       "n": 5,
@@ -184,7 +221,13 @@
         "S16",
         "S17"
       ],
-      "topicCount": 4
+      "topicCount": 4,
+      "topicIds": [
+        "L05.T00",
+        "L05.T01",
+        "L05.T02",
+        "L05.T03"
+      ]
     },
     {
       "n": 6,
@@ -218,7 +261,13 @@
         "S16",
         "S17"
       ],
-      "topicCount": 4
+      "topicCount": 4,
+      "topicIds": [
+        "L06.T00",
+        "L06.T01",
+        "L06.T02",
+        "L06.T03"
+      ]
     },
     {
       "n": 7,
@@ -252,7 +301,14 @@
         "S16",
         "S17"
       ],
-      "topicCount": 5
+      "topicCount": 5,
+      "topicIds": [
+        "L07.T00",
+        "L07.T01",
+        "L07.T02",
+        "L07.T03",
+        "L07.T04"
+      ]
     },
     {
       "n": 8,
@@ -286,7 +342,14 @@
         "S16",
         "S17"
       ],
-      "topicCount": 5
+      "topicCount": 5,
+      "topicIds": [
+        "L08.T00",
+        "L08.T01",
+        "L08.T02",
+        "L08.T03",
+        "L08.T04"
+      ]
     },
     {
       "n": 9,
@@ -320,7 +383,13 @@
         "S16",
         "S17"
       ],
-      "topicCount": 4
+      "topicCount": 4,
+      "topicIds": [
+        "L09.T00",
+        "L09.T01",
+        "L09.T02",
+        "L09.T03"
+      ]
     },
     {
       "n": 10,
@@ -354,7 +423,13 @@
         "S16",
         "S17"
       ],
-      "topicCount": 4
+      "topicCount": 4,
+      "topicIds": [
+        "L10.T00",
+        "L10.T01",
+        "L10.T02",
+        "L10.T03"
+      ]
     },
     {
       "n": 11,
@@ -388,7 +463,13 @@
         "S16",
         "S17"
       ],
-      "topicCount": 4
+      "topicCount": 4,
+      "topicIds": [
+        "L11.T00",
+        "L11.T01",
+        "L11.T02",
+        "L11.T03"
+      ]
     },
     {
       "n": 12,
@@ -418,7 +499,13 @@
         "S03",
         "S09"
       ],
-      "topicCount": 4
+      "topicCount": 4,
+      "topicIds": [
+        "L12.T00",
+        "L12.T01",
+        "L12.T02",
+        "L12.T03"
+      ]
     },
     {
       "n": 13,
@@ -449,7 +536,13 @@
         "S09",
         "S03"
       ],
-      "topicCount": 4
+      "topicCount": 4,
+      "topicIds": [
+        "L13.T00",
+        "L13.T01",
+        "L13.T02",
+        "L13.T03"
+      ]
     },
     {
       "n": 14,
@@ -481,7 +574,13 @@
         "S05",
         "S09"
       ],
-      "topicCount": 4
+      "topicCount": 4,
+      "topicIds": [
+        "L14.T00",
+        "L14.T01",
+        "L14.T02",
+        "L14.T03"
+      ]
     },
     {
       "n": 15,
@@ -512,7 +611,13 @@
         "S05",
         "S03"
       ],
-      "topicCount": 4
+      "topicCount": 4,
+      "topicIds": [
+        "L15.T00",
+        "L15.T01",
+        "L15.T02",
+        "L15.T03"
+      ]
     },
     {
       "n": 16,
@@ -543,7 +648,12 @@
         "S05",
         "S03"
       ],
-      "topicCount": 3
+      "topicCount": 3,
+      "topicIds": [
+        "L16.T00",
+        "L16.T01",
+        "L16.T02"
+      ]
     },
     {
       "n": 17,
@@ -586,7 +696,16 @@
         "S01",
         "S03"
       ],
-      "topicCount": 7
+      "topicCount": 7,
+      "topicIds": [
+        "L17.T00",
+        "L17.T01",
+        "L17.T02",
+        "L17.T03",
+        "L17.T04",
+        "L17.T05",
+        "L17.T06"
+      ]
     },
     {
       "n": 18,
@@ -628,7 +747,16 @@
         "S01",
         "S03"
       ],
-      "topicCount": 7
+      "topicCount": 7,
+      "topicIds": [
+        "L18.T00",
+        "L18.T01",
+        "L18.T02",
+        "L18.T03",
+        "L18.T04",
+        "L18.T05",
+        "L18.T06"
+      ]
     },
     {
       "n": 19,
@@ -670,7 +798,16 @@
         "S01",
         "S03"
       ],
-      "topicCount": 7
+      "topicCount": 7,
+      "topicIds": [
+        "L19.T00",
+        "L19.T01",
+        "L19.T02",
+        "L19.T03",
+        "L19.T04",
+        "L19.T05",
+        "L19.T06"
+      ]
     },
     {
       "n": 20,
@@ -712,7 +849,16 @@
         "S01",
         "S03"
       ],
-      "topicCount": 7
+      "topicCount": 7,
+      "topicIds": [
+        "L20.T00",
+        "L20.T01",
+        "L20.T02",
+        "L20.T03",
+        "L20.T04",
+        "L20.T05",
+        "L20.T06"
+      ]
     },
     {
       "n": 21,
@@ -755,7 +901,16 @@
         "S01",
         "S03"
       ],
-      "topicCount": 7
+      "topicCount": 7,
+      "topicIds": [
+        "L21.T00",
+        "L21.T01",
+        "L21.T02",
+        "L21.T03",
+        "L21.T04",
+        "L21.T05",
+        "L21.T06"
+      ]
     },
     {
       "n": 22,
@@ -800,7 +955,16 @@
         "S10",
         "S01"
       ],
-      "topicCount": 7
+      "topicCount": 7,
+      "topicIds": [
+        "L22.T00",
+        "L22.T01",
+        "L22.T02",
+        "L22.T03",
+        "L22.T04",
+        "L22.T05",
+        "L22.T06"
+      ]
     },
     {
       "n": 23,
@@ -842,7 +1006,16 @@
         "S03",
         "S01"
       ],
-      "topicCount": 7
+      "topicCount": 7,
+      "topicIds": [
+        "L23.T00",
+        "L23.T01",
+        "L23.T02",
+        "L23.T03",
+        "L23.T04",
+        "L23.T05",
+        "L23.T06"
+      ]
     },
     {
       "n": 24,
@@ -885,7 +1058,16 @@
         "S03",
         "S01"
       ],
-      "topicCount": 7
+      "topicCount": 7,
+      "topicIds": [
+        "L24.T00",
+        "L24.T01",
+        "L24.T02",
+        "L24.T03",
+        "L24.T04",
+        "L24.T05",
+        "L24.T06"
+      ]
     },
     {
       "n": 25,
@@ -928,7 +1110,16 @@
         "S03",
         "S01"
       ],
-      "topicCount": 7
+      "topicCount": 7,
+      "topicIds": [
+        "L25.T00",
+        "L25.T01",
+        "L25.T02",
+        "L25.T03",
+        "L25.T04",
+        "L25.T05",
+        "L25.T06"
+      ]
     },
     {
       "n": 26,
@@ -971,7 +1162,16 @@
         "S03",
         "S01"
       ],
-      "topicCount": 7
+      "topicCount": 7,
+      "topicIds": [
+        "L26.T00",
+        "L26.T01",
+        "L26.T02",
+        "L26.T03",
+        "L26.T04",
+        "L26.T05",
+        "L26.T06"
+      ]
     },
     {
       "n": 27,
@@ -1014,7 +1214,16 @@
         "S03",
         "S01"
       ],
-      "topicCount": 7
+      "topicCount": 7,
+      "topicIds": [
+        "L27.T00",
+        "L27.T01",
+        "L27.T02",
+        "L27.T03",
+        "L27.T04",
+        "L27.T05",
+        "L27.T06"
+      ]
     },
     {
       "n": 28,
@@ -1057,7 +1266,16 @@
         "S03",
         "S01"
       ],
-      "topicCount": 7
+      "topicCount": 7,
+      "topicIds": [
+        "L28.T00",
+        "L28.T01",
+        "L28.T02",
+        "L28.T03",
+        "L28.T04",
+        "L28.T05",
+        "L28.T06"
+      ]
     },
     {
       "n": 29,
@@ -1101,7 +1319,16 @@
         "S01",
         "S03"
       ],
-      "topicCount": 7
+      "topicCount": 7,
+      "topicIds": [
+        "L29.T00",
+        "L29.T01",
+        "L29.T02",
+        "L29.T03",
+        "L29.T04",
+        "L29.T05",
+        "L29.T06"
+      ]
     },
     {
       "n": 30,
@@ -1143,7 +1370,16 @@
         "S01",
         "S03"
       ],
-      "topicCount": 7
+      "topicCount": 7,
+      "topicIds": [
+        "L30.T00",
+        "L30.T01",
+        "L30.T02",
+        "L30.T03",
+        "L30.T04",
+        "L30.T05",
+        "L30.T06"
+      ]
     },
     {
       "n": 31,
@@ -1179,7 +1415,13 @@
         "S04",
         "S01"
       ],
-      "topicCount": 4
+      "topicCount": 4,
+      "topicIds": [
+        "L31.T00",
+        "L31.T01",
+        "L31.T02",
+        "L31.T03"
+      ]
     },
     {
       "n": 32,
@@ -1215,7 +1457,13 @@
         "S04",
         "S01"
       ],
-      "topicCount": 4
+      "topicCount": 4,
+      "topicIds": [
+        "L32.T00",
+        "L32.T01",
+        "L32.T02",
+        "L32.T03"
+      ]
     },
     {
       "n": 33,
@@ -1251,7 +1499,13 @@
         "S04",
         "S01"
       ],
-      "topicCount": 4
+      "topicCount": 4,
+      "topicIds": [
+        "L33.T00",
+        "L33.T01",
+        "L33.T02",
+        "L33.T03"
+      ]
     },
     {
       "n": 34,
@@ -1287,7 +1541,13 @@
         "S04",
         "S01"
       ],
-      "topicCount": 4
+      "topicCount": 4,
+      "topicIds": [
+        "L34.T00",
+        "L34.T01",
+        "L34.T02",
+        "L34.T03"
+      ]
     },
     {
       "n": 35,
@@ -1323,7 +1583,13 @@
         "S04",
         "S01"
       ],
-      "topicCount": 4
+      "topicCount": 4,
+      "topicIds": [
+        "L35.T00",
+        "L35.T01",
+        "L35.T02",
+        "L35.T03"
+      ]
     },
     {
       "n": 36,
@@ -1359,7 +1625,13 @@
         "S04",
         "S01"
       ],
-      "topicCount": 4
+      "topicCount": 4,
+      "topicIds": [
+        "L36.T00",
+        "L36.T01",
+        "L36.T02",
+        "L36.T03"
+      ]
     },
     {
       "n": 37,
@@ -1395,7 +1667,13 @@
         "S04",
         "S01"
       ],
-      "topicCount": 4
+      "topicCount": 4,
+      "topicIds": [
+        "L37.T00",
+        "L37.T01",
+        "L37.T02",
+        "L37.T03"
+      ]
     },
     {
       "n": 38,
@@ -1431,7 +1709,13 @@
         "S04",
         "S01"
       ],
-      "topicCount": 4
+      "topicCount": 4,
+      "topicIds": [
+        "L38.T00",
+        "L38.T01",
+        "L38.T02",
+        "L38.T03"
+      ]
     },
     {
       "n": 39,
@@ -1468,7 +1752,13 @@
         "S31",
         "S32"
       ],
-      "topicCount": 4
+      "topicCount": 4,
+      "topicIds": [
+        "L39.T00",
+        "L39.T01",
+        "L39.T02",
+        "L39.T03"
+      ]
     },
     {
       "n": 40,
@@ -1502,7 +1792,12 @@
         "S03",
         "S01"
       ],
-      "topicCount": 3
+      "topicCount": 3,
+      "topicIds": [
+        "L40.T00",
+        "L40.T01",
+        "L40.T02"
+      ]
     },
     {
       "n": 41,
@@ -1536,7 +1831,13 @@
         "S26",
         "S01"
       ],
-      "topicCount": 4
+      "topicCount": 4,
+      "topicIds": [
+        "L41.T00",
+        "L41.T01",
+        "L41.T02",
+        "L41.T03"
+      ]
     },
     {
       "n": 42,
@@ -1570,7 +1871,13 @@
         "S11",
         "S20"
       ],
-      "topicCount": 4
+      "topicCount": 4,
+      "topicIds": [
+        "L42.T00",
+        "L42.T01",
+        "L42.T02",
+        "L42.T03"
+      ]
     },
     {
       "n": 43,
@@ -1604,7 +1911,13 @@
         "S11",
         "S20"
       ],
-      "topicCount": 4
+      "topicCount": 4,
+      "topicIds": [
+        "L43.T00",
+        "L43.T01",
+        "L43.T02",
+        "L43.T03"
+      ]
     },
     {
       "n": 44,
@@ -1638,7 +1951,13 @@
         "S11",
         "S20"
       ],
-      "topicCount": 4
+      "topicCount": 4,
+      "topicIds": [
+        "L44.T00",
+        "L44.T01",
+        "L44.T02",
+        "L44.T03"
+      ]
     },
     {
       "n": 45,
@@ -1674,7 +1993,12 @@
         "S30",
         "S31"
       ],
-      "topicCount": 3
+      "topicCount": 3,
+      "topicIds": [
+        "L45.T00",
+        "L45.T01",
+        "L45.T02"
+      ]
     },
     {
       "n": 46,
@@ -1710,7 +2034,13 @@
         "S30",
         "S31"
       ],
-      "topicCount": 4
+      "topicCount": 4,
+      "topicIds": [
+        "L46.T00",
+        "L46.T01",
+        "L46.T02",
+        "L46.T03"
+      ]
     },
     {
       "n": 47,
@@ -1746,7 +2076,13 @@
         "S30",
         "S31"
       ],
-      "topicCount": 4
+      "topicCount": 4,
+      "topicIds": [
+        "L47.T00",
+        "L47.T01",
+        "L47.T02",
+        "L47.T03"
+      ]
     },
     {
       "n": 48,
@@ -1785,7 +2121,13 @@
         "S29",
         "S30"
       ],
-      "topicCount": 4
+      "topicCount": 4,
+      "topicIds": [
+        "L48.T00",
+        "L48.T01",
+        "L48.T02",
+        "L48.T03"
+      ]
     },
     {
       "n": 49,
@@ -1858,7 +2200,13 @@
         "S14",
         "S30"
       ],
-      "topicCount": 4
+      "topicCount": 4,
+      "topicIds": [
+        "L49.T00",
+        "L49.T01",
+        "L49.T02",
+        "L49.T03"
+      ]
     }
   ],
   "academies": [

@@ -1,5 +1,6 @@
 [
   {
+    "id": "low-float-high-fdv",
     "t": "Low Float / High FDV",
     "d": "Price $4 | Circ 100M | Max 1B | Free Float 45M | 90d VC Unlock 60M | Daily Trusted Volume $70M | Annual Buyback $20M | Annual Issuance $150M",
     "q": [
@@ -11,6 +12,7 @@
     "a": "MC $400M; FDV $4B; MC/FDV 10%; Unlock/FF 133%; Coverage≈13.3%. השאלה היא יכולת absorption מול float expansion."
   },
   {
+    "id": "dex-growth-or-farming",
     "t": "DEX Growth or Farming?",
     "d": "90d Volume +180% | TVL +120% | Revenue +35% | Incentives +260% | Returning Users +12% | New Users +210%",
     "q": [
@@ -21,6 +23,7 @@
     "a": "Returning users חלש יחסית והתמריצים קפצו. בדוק post-incentive retention ו-incremental revenue/incentive."
   },
   {
+    "id": "l2-success-token-failure",
     "t": "L2 Success, Token Failure",
     "d": "TVS +90% | Sequencer Revenue $120M | Governance token only | No fee share | 12m unlocks 28% current float",
     "q": [
@@ -31,6 +34,7 @@
     "a": "לא. אין hard capture; יש governance optionality מול dilution. Sequencer economics אינם token economics."
   },
   {
+    "id": "perp-dex-crowding",
     "t": "Perp DEX Crowding",
     "d": "Price +80% 30d | OI/MC 38%→74% | Funding 0.01%→0.08%/8h | Revenue +25% | Unlock 6% free float",
     "q": [
